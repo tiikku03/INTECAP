@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Sociales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        form {
+            width: 60%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .dark-blue {
+            background-color: #003366;
+            color: white;
+        }
+        .light-blue {
+            background-color: #66ccff;
+            color: black;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        select, input[type="text"], input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        header {
+            font-size: 68px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body style="background-color: #003366;">
+    <header>
+        <marquee behavior="alternate"><b>Sociales</b></marquee>
+        <marquee behavior="alternate"><img src="sociales.jpg" alt="Sociales" width="300" ></marquee>
+    </header>
+    <form>
+        <section class="dark-blue">
+            <label for="name_control">Nombre:</label>
+            <input type="text" id="name_control" name="name_control" autofocus required />
+            <label for="date_control">Fecha:</label>
+            <input type="date" id="date_control" name="date_control" />
+        </section>
+        <section class="light-blue">
+            <label for="discipline">¿Cuál de las siguientes disciplinas se enfoca en el estudio de las sociedades pasadas y sus culturas?</label>
+            <select id="discipline" name="discipline">
+                <option value="Sociología">Sociología</option>
+                <option value="Antropología">Antropología</option>
+                <option value="Psicología">Psicología</option>
+            </select>
+        </section>
+        <section class="dark-blue">
+            <label for="concept">¿Cuál es el concepto que se refiere al conjunto de creencias, valores y normas compartidas por un grupo de personas?</label>
+            <select id="concept" name="concept">
+                <option value="Cultura">Cultura</option>
+                <option value="Etiqueta">Etiqueta</option>
+                <option value="Sociedad">Sociedad</option>
+            </select>
+        </section>
+        <section class="light-blue">
+            <label for="relations">¿Cuál de las siguientes disciplinas se enfoca en el estudio de las relaciones internacionales y los sistemas de gobierno?</label>
+            <select id="relations" name="relations">
+                <option value="Psicología">Psicología</option>
+                <option value="Ciencia política">Ciencia política</option>
+                <option value="Economía">Economía</option>
+            </select>
+        </section>
+        <section class="dark-blue">
+            <label for="ww2">¿Cuándo acabó la II Guerra Mundial?</label>
+            <select id="ww2" name="ww2">
+                <option value="1945">1945</option>
+                <option value="1939">1939</option>
+                <option value="1950">1950</option>
+            </select>
+        </section>
+        <section class="light-blue">
+            <label for="guatemala">¿Qué pasó el 15 de septiembre de 1821 en Guatemala?</label>
+            <select id="guatemala" name="guatemala">
+                <option value="Se fundó la primera universidad.">Se fundó la primera universidad.</option>
+                <option value="Se firmó la paz con México.">Se firmó la paz con México.</option>
+                <option value="Se declaró la Independencia de Guatemala.">Se declaró la Independencia de Guatemala.</option>
+            </select>
+        </section>
+        <section>
+            <input type="submit" value="Submit!" />
+        </section>
+    </form>
+    <footer>
+        <center>Hecho por: Victor Ticurú Mar-2025</center>
+    </footer>
+</body>
+</html>

@@ -3,37 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <title>Formulario de Matematicas</title>
+    <style>
+        body {
+            background-color: darkcyan;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        header {
+            font-size: 36px; 
+            text-align: center;
+            margin-top: 20px;
+        }
+        table {
+            margin: 20px auto;
+            font-size: 18px;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="checkbox"],
+        input[type="submit"] {
+            font-size: 18px;
+        }
+    </style>
 </head>
-<body>
+<body style="background-color: darkcyan;">
     <header>
-      Matematicas
+      <b>Matematicas</b> 
     </header>
     <form>
-        Nombre: <input type="text" name="name_control" autofocus required /><br />
         
-        Fecha: <input type="date" name="date_control" required /><br />
-       
-        ¿Cuántos segundos hay en un día?
-        <input name="" type="checkbox" value="" checked />
-        <input name="" type="checkbox" value="" /> 
-        <input name="" type="checkbox" value="" /> <br>
-        ¿Quién descubrió el teorema de Pitágoras?
-        <input name="" type="checkbox" value="" checked />
-        <input name="" type="checkbox" value="" /> 
-        <input name="" type="checkbox" value="" /> <br>
-        ¿Quién es el científico que nació el día de Pi?
-        <input name="" type="checkbox" value="" checked />
-        <input name="" type="checkbox" value="" /> 
-        <input name="" type="checkbox" value="" /> <br>
-        ¿?
-        <input name="" type="checkbox" value="" checked />
-        <input name="" type="checkbox" value="" /> 
-        <input name="" type="checkbox" value="" /> <br>
-        ¿?
-        <input name="" type="checkbox" value="" checked />
-        <input name="" type="checkbox" value="" /> 
-        <input name="" type="checkbox" value="" /> <br>
-       
-    </form>
+            <table border="1">
+                <tr>
+                    <td>Nombre:</td>
+                    <td><input type="text" name="name_control" autofocus required /></td>
+                </tr>
+                <tr>
+                    <td>Fecha:</td>
+                    <td><input type="date" name="date_control" required /></td>
+                </tr>
+                <tr>
+                    <td>¿Quién es el padre de las matemáticas?</td>
+                    <td>
+                        <input name="Quién es el padre de las matemáticas" type="checkbox" value="Arquímedes" checked /> Arquímedes<br>
+                        <input name="Quién es el padre de las matemáticas" type="checkbox" value="Pitágoras" /> Pitágoras<br>
+                        <input name="Quién es el padre de las matemáticas" type="checkbox" value="Euclides" /> Euclides
+                    </td>
+                </tr>
+                <tr>
+                    <td>¿Valor de Pi?</td>
+                    <td>
+                        <input name="Valor de Pi" type="checkbox" value="2.71828" checked /> 2.71828<br>
+                        <input name="Valor de Pi" type="checkbox" value="3.14159" /> 3.14159<br>
+                        <input name="Valor de Pi" type="checkbox" value="1.61803" /> 1.61803
+                    </td>
+                </tr>
+                <tr>
+                    <td>¿Quién es el científico que nació el día de Pi?</td>
+                    <td>
+                        <input name="científico que nació el día de Pi" type="checkbox" value="Stephen Hawking" checked /> Stephen Hawking<br>
+                        <input name="científico que nació el día de Pi" type="checkbox" value="Isaac Newton" /> Isaac Newton<br>
+                        <input name="científico que nació el día de Pi" type="checkbox" value="Albert Einstein" /> Albert Einstein
+                    </td>
+                </tr>
+                <tr>
+                    <td>¿Cuántos segundos hay en un día?</td>
+                    <td>
+                        <input name="Cuántos segundos hay en un día" type="checkbox" value="86,400 segundos" checked /> 86,400 segundos<br>
+                        <input name="Cuántos segundos hay en un día" type="checkbox" value="144,000 segundos" /> 144,000 segundos<br>
+                        <input name="Cuántos segundos hay en un día" type="checkbox" value="36,000 segundos" /> 36,000 segundos
+                    </td>
+                </tr>
+                <tr>
+                    <td>¿Qué viene antes de Quadrillion?</td>
+                    <td>
+                        <input name="Qué viene antes de Quadrillion" type="checkbox" value="Quintillón" checked /> Quintillón<br>
+                        <input name="Qué viene antes de Quadrillion" type="checkbox" value="Trillón" /> Trillón<br>
+                        <input name="Qué viene antes de Quadrillion" type="checkbox" value="Billón" /> Billón
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" value="Submit!" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    <footer>
+        <center>Hecho por: Victor Ticurú Mar-2025</center>
+       </footer>
+       <marquee behavior="alternate"> <img src="matematicas-concepto-lifeder-min-1024x682.jpg" alt="Matematica" width="450" ></marquee>
 </body>
 </html>
