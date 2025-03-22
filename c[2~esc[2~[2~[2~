@@ -1,0 +1,72 @@
+[33mcommit 9a6159b7ca4a9bcf9a5db6fb3c5f1c4b1adee6e0[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mEmilio[m[33m, [m[1;31morigin/Emilio[m[33m)[m
+Merge: 1936180 b56ac91
+Author: Victor Emanuel Ticuru Arevalo <83295425+tiikku03@users.noreply.github.com>
+Date:   Fri Mar 21 18:37:58 2025 -0600
+
+    Merge branch 'main' into Emilio
+
+[33mcommit 1936180e58367665538139bbc7356843cadd3e3f[m
+Author: Victor Emanuel <victorticu2003@gmail.com>
+Date:   Fri Mar 21 18:23:58 2025 -0600
+
+    cambios de paginas le agrege la redirreccion a las otras paginas falta hacer la pagina de educacion fisica
+
+[33mcommit b56ac919dafc80b6a849844babfa75a75fbbc9c2[m
+Merge: b808b36 6f9a1e6
+Author: Victor Emanuel Ticuru Arevalo <83295425+tiikku03@users.noreply.github.com>
+Date:   Fri Mar 21 01:14:01 2025 -0600
+
+    Merge pull request #2 from tiikku03/Emilio
+    
+    ya termine con lo de matematicas y ya esta listo para unir las ramas
+
+[33mcommit b808b3614b80f5f651bb3588ba65fbc5b85947f7[m
+Merge: ac71afb fa5959c
+Author: Victor Emanuel Ticuru Arevalo <83295425+tiikku03@users.noreply.github.com>
+Date:   Fri Mar 21 01:13:27 2025 -0600
+
+    Merge pull request #1 from tiikku03/victor
+    
+    el archivo de ingles esta terminado y esta listo para unir las ramas
+
+[33mcommit 6f9a1e610b50c2dd52be5b51c56578c129443117[m
+Author: Victor Emanuel <victorticu2003@gmail.com>
+Date:   Fri Mar 21 01:11:07 2025 -0600
+
+    ya termine con lo de matematicas y ya esta listo para unir las ramas
+
+[33mcommit fa5959cdbcf7bcd884ae6e5c3d6d05f79bd47756[m[33m ([m[1;31morigin/victor[m[33m)[m
+Author: Victor <victorticu2003@gmail.com>
+Date:   Fri Mar 21 01:09:57 2025 -0600
+
+    el archivo de ingles esta terminado y esta listo para unir las ramas
+
+[33mcommit ac71afbdd0536948f8af8b8317d5d558070e346b[m
+Author: Victor Emanuel <victorticu2003@gmail.com>
+Date:   Thu Mar 20 23:54:38 2025 -0600
+
+    marzo 20, archivos creados para la tarea
+
+[33mcommit 305ec4acac12d5aba4dd9ef52142f0ce0a8a5367[m
+Author: Victor Emanuel <victorticu2003@gmail.com>
+Date:   Tue Mar 18 13:32:46 2025 -0600
+
+    removed the pdf file
+
+[33mcommit ba723de1d87d5198b169e02cca394ce8173593dd[m
+Author: Victor Emanuel <victorticu2003@gmail.com>
+Date:   Tue Mar 18 13:30:44 2025 -0600
+
+    clase 17 de marzo
+
+[33mcommit 9bc6fc7fc2770e5bc1dcae5bfc40952e2e688e6d[m
+Author: Victor Emanuel <victorticu2003@gmail.com>
+Date:   Mon Mar 17 11:43:23 2025 -0600
+
+    CLASS MARCH 14
+
+[33mcommit 1723875a6391c3a5331b47f30aa991a7d8194ba8[m
+Author: Victor Emanuel Ticuru Arevalo <83295425+tiikku03@users.noreply.github.com>
+Date:   Thu Mar 13 19:42:05 2025 -0600
+
+    Initial commit
