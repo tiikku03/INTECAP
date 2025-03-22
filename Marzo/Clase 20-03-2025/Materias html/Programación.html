@@ -1,3 +1,112 @@
-¿?
-        <input name="python_control" type="radio" value="si" checked /> Si
-        <input name="python_control" type="radio" value="no" /> No<br />
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Programación</title>
+    <style>
+        body {
+            background-color: rgb(255, 161, 37);
+            font-family: Arial, sans-serif;
+            color: rgb(0, 0, 0);
+        }
+        header {
+            font-size: 40px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        table {
+            margin: 20px auto;
+            font-size: 20px;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="radio"],
+        input[type="submit"] {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Programación</h1>
+        <marquee behavior="alternate"><img src="programacion.png" alt="imagen de Programacion" width="300"></marquee>
+    </header>
+    <center>
+        <section>
+            <h2>Instrucciones</h2>
+            <p>
+                Este examen evaluará tus conocimientos en Programación. Por favor, llena el formulario con tus datos y contesta las preguntas. ¡Buena suerte!
+            </p>
+        </section>
+    </center>
+    <form>
+        <table border="1">
+            <tr>
+                <td>Nombre:</td>
+                <td><input type="text" name="name_control" autofocus required /></td>
+            </tr>
+            <tr>
+                <td>Fecha:</td>
+                <td><input type="date" name="date_control" required /></td>
+            </tr>
+            <tr>
+                <td>¿HTML es un lenguaje de marcado que posibilita definir la estructura de nuestro documento mediante etiquetas?</td>
+                <td>
+                    <input name="html_structure" type="radio" value="verdadero" checked /> Verdadero
+                    <input name="html_structure" type="radio" value="falso" /> Falso
+                </td>
+            </tr>
+            <tr>
+                <td>¿La etiqueta h1 h2 h3 etc sirven para poner títulos y subtítulos?</td>
+                <td>
+                    <input name="html_headings" type="radio" value="verdadero" checked /> Verdadero
+                    <input name="html_headings" type="radio" value="falso" /> Falso
+                </td>
+            </tr>
+            <tr>
+                <td>¿La etiqueta "ol" es para hacer una lista desordenada?</td>
+                <td>
+                    <input name="html_list" type="radio" value="verdadero" checked /> Verdadero
+                    <input name="html_list" type="radio" value="falso" /> Falso
+                </td>
+            </tr>
+            <tr>
+                <td>¿Todas las etiquetas HTML vienen en pares?</td>
+                <td>
+                    <input name="html_tags" type="radio" value="verdadero" checked /> Verdadero
+                    <input name="html_tags" type="radio" value="falso" /> Falso
+                </td>
+            </tr>
+            <tr>
+                <td>¿Se puede unir un documento CSS con uno de códigos para mejorar la estética de la página?</td>
+                <td>
+                    <input name="css_integration" type="radio" value="verdadero" checked /> Verdadero
+                    <input name="css_integration" type="radio" value="falso" /> Falso
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Submit!" />
+                </td>
+            </tr>
+        </table>
+    </form>
+    <footer>
+        <p>Hecho por Victor Emanuel Ticuru Arevalo</p>
+          <p>march 20, 2025</p>
+    </footer>
+    <section>
+        <h3>Conoce otros exámenes</h3>
+        <nav>
+            <ul>
+                <li><a href="Materias.html">Inicio</a></li>
+                <li><a href="Matematicas.html">Programación</a></li>
+                <li><a href="Ingles.html">Inglés</a></li>
+                <li><a href="Educacion física.html">Educación Física</a></li>
+                <li><a href="Matematicas.html">Matemáticas</a></li>
+                <li><a href="Sociales.html">Sociales</a></li>
+            </ul>
+        </nav>
+    </section>
+</body>
+</html>
