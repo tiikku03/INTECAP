@@ -1,0 +1,36 @@
+
+    body {
+       background-color: darkcyan;
+       text-align: center;
+       font-family: inherit;
+       
+    }
+    h1{
+        color: aliceblue;
+        font-family: chiller ;
+        font-size: 90px;
+    }
+    h2{
+        color: aliceblue;
+        font-family: cursive;
+    }
+    h3{
+        color: aliceblue;
+        font-family: cursive;
+    }
+    h4{
+        color: aliceblue;
+        font-family: cursive;
+    }
+    h5{
+        color: aliceblue;
+        font-family: cursive;
+    }
+    h6{
+        color: aliceblue;
+        font-family: cursive;
+    }
+    main {
+        padding: 20px;
+        text-align: center;
+    }
