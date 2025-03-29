@@ -46,16 +46,16 @@ table th, table td {
 
 table th {
     background-color: #00509e;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 table td img {
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 table td video {
     display: block;
-    margin: 0 auto;
+    margin:  auto;
 }
 
 table td iframe {
