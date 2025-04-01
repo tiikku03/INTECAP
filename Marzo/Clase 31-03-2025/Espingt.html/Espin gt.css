@@ -1,0 +1,23 @@
+body{
+       background-color: #1a5fa1;
+            
+}
+
+ img{
+    width: 100px;
+    height: 100px;
+}
+img{
+    width: 150px;
+    height: 150px;
+}
+footer {
+    color: azure;
+    text-align: center;
+    padding: 10px;
+    background-color: #13109c;
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: impact;
+    border-radius: 10px 10px 10px 10px;
+}

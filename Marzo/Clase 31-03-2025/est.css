@@ -1,0 +1,73 @@
+body{
+      background-color: fuchsia;
+}
+header{
+    text-shadow: gray 20px 20px 20px; 
+    text-align: center;
+}
+header:hover{
+    font-size: 10px;
+}
+h1{
+    color: rgb(21, 0, 112);
+    width: 1000px;
+    height: auto;
+
+}
+section{
+    border: rgb(34, 16, 99) 40px solid;
+    padding: 20px;
+    width: 85%;
+    
+}
+h2{
+    color: azure;
+      
+}
+h2:hover{
+    color: rgb(255, 255, 255);
+    background-color: darkblue;
+}
+h3{
+   color: whitesmoke; 
+   font-family: system-ui;
+}
+h3:hover{
+    color: rgb(252, 252, 252);
+    background-color: rgb(18, 18, 105);
+}
+p{
+    color: azure;
+}
+table{
+    color: azure;
+    border: rgb(0, 0, 80) 10px outset;
+}
+table:hover{
+       color: #000000;
+       background-color: #b300aa;
+       
+}
+img{
+    border-radius: 50%;
+}
+
+footer{
+    color: azure;
+}
+p{
+    color: azure;
+    font-family: system-ui;
+    font-size: 20px;
+}
+footer {
+    color: azure;
+    text-align: center;
+    padding: 10px;
+    background-color: #070679;
+    margin-top: 20px;
+    box-shadow: rgb(0, 0, 0) 15px 15px 15px; 
+    font-size: 30px;
+    font-family: impact;
+    border-radius: 10px 10px 10px 10px;
+}
