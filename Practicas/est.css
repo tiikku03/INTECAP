@@ -1,0 +1,60 @@
+body {
+    background-color: white;
+    width: 960px;
+    margin: auto;
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: cursive;
+    color: beige;
+    background-color: darkslategray;
+  }
+  h1:hover{
+    font-size: 90px;
+  }
+  h2{
+    color: beige;
+    background-color: darkslategray;
+    font-family: cursive;
+    font-size: 20px ;
+  }
+  h2:hover{
+    font-size: 40px;
+  }
+  
+ section.atributos{
+    font-size: 10px;
+    float: right;
+    padding: 0;
+    margin: 0;
+  }
+section.contenido{
+    width: 700px;
+}
+section.contenido{
+    list-style-type: none;
+    padding: 0;
+  }
+  
+section.contenido li {
+    float: left;
+    width: 33%;
+  
+  }
+footer{
+    color: beige;
+    background-color:darkslategray ;
+  }
+  a:link, a:visited {
+    background-color: darkslategray;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: darkslategrey;
+}

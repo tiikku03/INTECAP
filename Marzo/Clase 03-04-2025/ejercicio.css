@@ -1,0 +1,129 @@
+body {
+  background-color: fuchsia;
+  font-family:-apple-system;
+}
+
+header {
+  text-shadow: gray 20px 20px 20px; 
+  text-align: center;
+}
+
+header:hover {
+  color: white;
+}
+nav{
+  font-size: 25px;
+  font-family:"Helvetica Neue";
+  width: 43%;
+  margin-bottom: 10px;
+}
+a{
+  text-decoration: none;
+  background-color: rgb(38, 38, 90);
+  text-align: center;
+  box-shadow: rgb(255, 255, 255) 10px 10px 10px;
+  border-radius: 10%;
+  
+}
+a:link{
+  color: rgb(255, 255, 255);
+}
+a:visited{
+  color: rgb(255, 0, 0);
+}
+a:hover{
+  color: blue;
+  background-color: #b300aa;
+}
+a:active{
+  color: rgb(251, 255, 0);
+}
+h1 {
+  color: rgb(21, 0, 112);
+  width: 100%;
+  font-size: 50px;
+}
+h1:hover{
+  font-size: 90px;
+}
+
+section{
+  border: rgb(34, 16, 99) 40px solid;
+  padding: 25px;
+  width: 65%;
+  margin-right: 26%; 
+  top: 10px;
+  position: relative;
+  z-index: 0;
+}
+
+h2 {
+  color: azure;
+}
+h2:hover{
+  font-size: 30px;
+}
+
+h2:hover {
+  color: rgb(255, 255, 255);
+  background-color: darkblue;
+}
+
+h3 {
+  color: rgb(151, 8, 132); 
+  font-family: system-ui;
+}
+
+h3:hover {
+  color: rgb(252, 252, 252);
+  background-color: rgb(18, 18, 105);
+  font-size: 40px;
+}
+
+p {
+  color: azure;
+  font-family: system-ui;
+  font-size: 20px;
+}
+
+table {
+  color: azure;
+  border: rgb(0, 0, 80) 10px outset;
+}
+
+table:hover {
+  color: #000000;
+  background-color: #b300aa;
+}
+
+img {
+  border-radius: 50%;
+}
+
+footer {
+  color: azure;
+  text-align: center;
+  padding: 10px;
+  background-color: #070679;
+  margin-top: 20px;
+  box-shadow: rgb(0, 0, 0) 15px 15px 15px; 
+  font-size: 30px;
+  font-family: impact;
+  border-radius: 10px;
+}
+
+aside {
+  background: url(php.jpg);
+  position: fixed;
+  width: 25%;
+  right: 0;
+  top: 10px;
+  bottom: 0;
+  background-size: 90%; 
+  background-repeat: no-repeat;
+  background-position: center;
+}
+aside:hover{
+  background-color: rgb(86, 15, 153);
+  background-size: 120%;
+}

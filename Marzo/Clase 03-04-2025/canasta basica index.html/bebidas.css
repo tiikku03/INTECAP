@@ -1,0 +1,70 @@
+body {
+    background-color: white;
+    width: 50%;
+    margin: auto;
+  }
+  nav{
+    font-size: 25px;
+    font-family:"Helvetica Neue";
+    width: 73%;
+    margin-bottom: 10px;
+  }
+  h1 {
+    text-align: center;
+    font-family: cursive;
+    background-color: darkcyan;
+  }
+  a{
+    text-decoration: none;
+    background-color: darkcyan;
+    text-align: center;
+    box-shadow: rgb(255, 255, 255) 10px 10px 10px;
+    border-radius: 10px;
+  }
+  a:link{
+    color: rgb(255, 255, 255);
+  }
+  a:visited{
+    color: azure;
+  }
+  a:hover{
+    color: darkcyan;
+    background-color: navy;
+  }
+  a:active{
+    color: navajowhite;
+    }
+  img{
+    width: 100px;
+    height: 100px;
+  }
+
+  h2{
+    color: beige;
+    background-color: darkcyan;
+    font-family: cursive;
+    font-size: 20px ;
+    text-align: center;
+  }
+
+  table{
+        color: rgb(255, 255, 255);
+        border: darkcyan 30px outset;
+        background-color: darkcyan;
+  }
+  footer{
+    color: beige;
+    background-color:darkslategray ;
+  }
+  aside {
+    background: url(ofertass.jpg);
+    position: absolute; 
+    width: 20%; 
+    right: 0;
+    top: 10px; 
+    bottom: 0;
+    background-size: 80%; 
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
+}
