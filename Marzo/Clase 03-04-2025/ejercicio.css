@@ -99,7 +99,12 @@ table:hover {
 img {
   border-radius: 50%;
 }
+img:hover{
 
+ filter:drop-shadow(15px 15px 15px purple);
+ box-shadow: rgb(0, 0, 0) 15px 15px 15px; 
+ filter: hue-rotate(50deg);
+}
 footer {
   color: azure;
   text-align: center;
@@ -111,7 +116,6 @@ footer {
   font-family: impact;
   border-radius: 10px;
 }
-
 aside {
   background: url(php.jpg);
   position: fixed;
@@ -119,11 +123,16 @@ aside {
   right: 0;
   top: 10px;
   bottom: 0;
-  background-size: 90%; 
+  background-size: 70%; 
   background-repeat: no-repeat;
   background-position: center;
 }
+aside img{
+  border-radius: 10%;
+}
 aside:hover{
-  background-color: rgb(86, 15, 153);
-  background-size: 120%;
+  background-color: darkviolet;
+  background-size: 100%;
+  color: #000000;
+  transition: all 2.5s ease-in-out;
 }

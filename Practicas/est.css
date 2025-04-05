@@ -22,19 +22,10 @@ body {
   h2:hover{
     font-size: 40px;
   }
-  
- section.atributos{
-    font-size: 10px;
-    float: right;
-    padding: 0;
-    margin: 0;
-  }
-section.contenido{
-    width: 700px;
-}
 section.contenido{
     list-style-type: none;
     padding: 0;
+    width: 700px;
   }
   
 section.contenido li {
@@ -46,15 +37,30 @@ footer{
     color: beige;
     background-color:darkslategray ;
   }
-  a:link, a:visited {
-    background-color: darkslategray;
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+div.margen{
+  background-color: darkslategrey;
+  margin: 10px 20px 25px 30px; 
+  padding: 30px 25pc 20px 10px;
+  border: solid 5px black;
+  width: 50px;
+  height: 100px;
+  overflow: scroll;
 }
+aside{
+  color: azure;
+  background-color: darkslategrey;
+  text-align: center;
+  position: fixed;
+  width: 25%;
+  right: 0;
+  top: 10px;
+  bottom: 0;
+  background-size: 90%; 
+  background-repeat: no-repeat;
+  background-position: center;
 
-a:hover, a:active {
-    background-color: darkslategrey;
+}
+aside:hover{
+  color: black;
+  background-color: white;
 }
