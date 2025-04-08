@@ -21,7 +21,7 @@ body {
     color: rgb(255, 255, 255);
   }
   a:visited{
-    color: black;
+    color: rgb(255, 255, 255);
   }
   a:hover{
     color: rgb(255, 255, 255);
@@ -81,7 +81,7 @@ body {
     background-size: 90%; 
     background-repeat: no-repeat;
     background-position: center;
-    overflow-y: scroll;
+    overflow: scroll;
     overflow-x: hidden;
   }
   aside img{
@@ -90,3 +90,8 @@ body {
     border-radius: 10%;
   }
   
+  /*Básicamente, mi objetivo fue crear una página web que sea informativa, visualmente atractiva y  además de evocar nostalgia y destacar una época crucial en la tecnología .Quería llevar a las personas a un viaje al pasado y mostrar la importancia de dispositivos innovadores 
+Básicamente, mi objetivo fue crear una página web que sea informativa, visualmente atractiva y evoque un sentido de aprecio por la historia de los teléfonos móviles y las características innovadoras ".
+Opté por un diseño limpio y sencillo colores de inspiración retro sin resultar anticuada para centrarme en la información y los teléfonos destacados La barra lateral, con teléfonos más recientes como lo es Samsung y Apple
+Al principio cuando agrege mi aside no podía sobir o bajar para ver las demás marcas de celulares modernas entonces que había colocado hice una pequeña investigación de como podría solucionar eso y me tope con la etiqueta overflow: scroll; que prácticamente añade un deslizamiento para subir o bajar 
+/*
