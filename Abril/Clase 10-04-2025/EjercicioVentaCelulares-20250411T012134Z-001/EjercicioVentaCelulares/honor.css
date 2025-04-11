@@ -1,0 +1,25 @@
+body{background-color:#838f97;margin:50px;}
+header{text-shadow: gray 20px 20px 25px; text-align: center;}
+nav{font-size:35px; font-family:Rockwell;width:45%; margin-bottom:10px;}
+a{text-decoration:none; background-color:#72bdbd; box-shadow:rgb(149, 140, 231) 10px 10px 10px;border-radius:20%;} 
+a:link{color:#00bcd4;}
+a:visited{color:#494872;}
+a:hover{color:#3b4081;background-color:#62c0da;}
+a:active{color:#465586;}
+section{background-color: rgb(90, 137, 179);}
+h1{color:White; font-family:Broadway;}
+h2{color:rgb(54, 54, 51); font-family:copper black;}
+h3{color:rgb(36, 39, 36); font-family:Rockwell;}
+p{color:White; font-family:calibri;text-align:left;font-size:20px;}
+table{color:rgb(25, 48, 255);border:blue 10px outset;}
+table:hover{color:#f8c471;background-color:#041dfc;}
+header:hover{font-size:30px;}
+footer{background-color:rgb(14, 0, 138); color:black; box-shadow:rgb(24, 10, 73) 15px 15px 15px; width:80%;
+		font-size:30px;text-align:center;font-family:Forte;border-radius:10px 10px 10px 10px;}
+aside img{border-radius:10%; }
+img{border-radius:10%;}
+img:hover{filter:drop-shadow(15px 15px 15px rgb(146, 99, 255));box-shadow:yellow 15px 15px 15px; filter:hue-rotate(50deg);}
+section{border:rgb(12, 116, 185) 5px solid; padding:25px; width:78%; border-radius: 20px;} /*bordes en la seccion*/
+aside{background:url(php.png);position:fixed; width:18%; right:5%; left:81%; top:20px; bottom:20px; 
+		background-size:60%;background-repeat:no-repeat;background-position: center;}
+aside:hover{background-color:rgb(166, 144, 216);border:rgb(126, 13, 233) 5px solid;color:rgb(55, 20, 211);transition:all 1.5s ease-in-out;}		

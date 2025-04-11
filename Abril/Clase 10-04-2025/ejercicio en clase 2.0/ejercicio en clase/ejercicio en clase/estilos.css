@@ -1,0 +1,233 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2c3e50; /* Un tono oscuro */
+    color: white;
+    padding: 1em 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #34495e;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+}
+
+/* Estilos para la página principal */
+main p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Estilos para las páginas de marca (Apple y Honor) */
+.pagina-marca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-marca {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-marca img {
+    max-height: 50px;
+    margin-right: 15px;
+}
+
+.pagina-marca h1 {
+    color: #e74c3c; /* Un color distintivo para el título */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.productos {
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+.productos h2 {
+    color: #3498db; /* Otro color distintivo para los subtítulos */
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.lista-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.articulo {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.articulo:hover {
+    transform: translateY(-5px);
+}
+
+.articulo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.articulo h3 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.articulo .descripcion {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.articulo strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.articulo .precio {
+    font-size: 1.1em;
+    color: #27ae60; /* Un color para el precio */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.video-marca {
+    width: 80%;
+    text-align: center;
+}
+
+.video-marca h2 {
+    color: #e67e22; /* Otro color distintivo */
+    border-bottom: 2px solid #e67e22;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.video-marca iframe {
+    width: 100%;
+    max-width: 560px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para la página Retro */
+.pagina-retro {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.pagina-retro h1 {
+    color: #9b59b6; /* Un color nostálgico */
+    text-align: center;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.retro-apple, .retro-honor {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.retro-apple h2, .retro-honor h2 {
+    color: #d35400; /* Otro color retro */
+    border-bottom: 1px dashed #d35400;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.articulo-retro img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.articulo-retro h3 {
+    color: #34495e;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.articulo-retro .descripcion {
+    color: #555;
+    line-height: 1.7;
+}
+
+.articulo-retro strong {
+    font-weight: bold;
+    color: #333;
+}

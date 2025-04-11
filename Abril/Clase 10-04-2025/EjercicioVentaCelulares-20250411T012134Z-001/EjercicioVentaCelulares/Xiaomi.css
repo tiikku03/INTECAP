@@ -1,0 +1,130 @@
+body {
+    background-color: #21618c;
+    margin: 50px;
+  }
+  
+ 
+  header {
+    text-shadow: gray 20px 20px 25px;
+    text-align: center;
+  }
+  header:hover {
+    font-size: 30px;
+  }
+  
+ 
+  nav {
+    font-size: 35px;
+    font-family: Rockwell;
+    width: 45%;
+    margin-bottom: 10px;
+  }
+  
+ 
+  a {
+    text-decoration: none;
+    background-color: #91fafa;
+    box-shadow: orange 10px 10px 10px;
+    border-radius: 20%;
+  }
+  a:link {
+    color: #00bcd4;
+  }
+  a:visited {
+    color: #ba68c8;
+  }
+  a:hover {
+    color: #e0fa91;
+    background-color: #2b8da9;
+  }
+  a:active {
+    color: #43a047;
+  }
+  
+ 
+  h1 {
+    color: white;
+    font-family: Broadway;
+  }
+  h2 {
+    color: yellow;
+    font-family: Copper Black;
+  }
+  h3 {
+    color: green;
+    font-family: Rockwell;
+  }
+  
+
+  p {
+    color: white;
+    font-family: Calibri;
+    text-align: left;
+    font-size: 20px;
+  }
+  
+  
+  table {
+    color: orange;
+    border: blue 10px outset;
+  }
+  table:hover {
+    color: #f8c471;
+    background-color: #7d3c98;
+  }
+  
+ 
+  img {
+    border-radius: 10%;
+  }
+  img:hover {
+    filter: drop-shadow(15px 15px 15px red);
+    box-shadow: yellow 15px 15px 15px;
+    filter: hue-rotate(50deg);
+  }
+  aside img {
+    border-radius: 10%;
+  }
+  
+
+  section {
+    border: red 5px solid;
+    padding: 25px;
+    width: 78%;
+  }
+  
+
+  aside {
+    background: url(php.png);
+    position: fixed;
+    width: 18%;
+    right: 5%;
+    left: 81%;
+    top: 20px;
+    bottom: 20px;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  aside:hover {
+    background-color: gray;
+    border: red 5px solid;
+    color: black;
+    transition: all 1.5s ease-in-out;
+  }
+  
+  
+  footer {
+    background-color: green;
+    color: black;
+    box-shadow: yellow 15px 15px 15px;
+    width: 80%;
+    font-size: 30px;
+    text-align: center;
+    font-family: Forte;
+    border-radius: 10px 10px 10px 10px;
+  }
+  video{
+    width: 400px;
+    height: 400px;
+  }
