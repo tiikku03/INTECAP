@@ -1,0 +1,11 @@
+header{
+    font-family: impact;
+    font-size: 70px;
+    background-image: url(true.jpg);
+    background-clip: text;
+    color: transparent;
+    background-size: 50% 100%;
+}
+li{
+    list-style: none;
+}
