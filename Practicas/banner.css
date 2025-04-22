@@ -166,6 +166,7 @@ html {
   height: 100%;
   padding: 1rem;
 }
+/*banner*/
 .banner {
   background-image: linear-gradient(100deg, #000000, #00000020), url(cafe.jpg);
   height: 50rem;
@@ -264,6 +265,7 @@ html {
     page: 2rem;
     margin-bottom: 3rem;
     text-align: center;
+    margin-top: 5rem;
 }
 .container-categories{
     display: grid;
@@ -282,61 +284,40 @@ html {
   text-align: center;
   
 }
-/*titulo mov
+/*titulo mov*/
 .heading-1{
-  font-size: 34px;
+  font-size: 50px;
   font-family: 'Sedan SC';
   font-weight: 600;
   min-width: 280px;
+  transition: all 0.4s ease;
 }
-.heading-1 span{
+.heading-1:hover{
+  font-size: 60px;
+  transition: all 0.4s ease;
+}
+.maquina{
+  background-color: var(--background-color);
   position: relative;
 }
-.heading-1 span::before{
-  content: 'Categorias';
-  color:black;
-  animation: words 20s infinite;
-}
-.heading-1 span::after{
+.maquina::after{
   content: '';
-  background-color:#f9f5f0;
-  position: absolute;
-  width: calc(100% + 8px);
+  border-left: 3px solid black;
+  background: var(--background-color);
+  right: 0;
+  width: 101%;
   height: 100%;
-  border-left: 2px solid var(--primary-color);
-  right: -8px;
-  animation: cursor 0.6s infinite, typing 20s steps(10);
+  position: absolute;
+  animation: maquina 3s infinite alternate steps(19);
 }
-@keyframes cursor{
-   to{
-    border-left: 2px solid black;
-   }
+@keyframes maquina{
+      from{
+        width: 100%;
+      }
+      to{
+        width: 0%;
+      }
 }
-@keyframes words{
-  0%, 40%{
-    content: 'secciones';
-  }
-  21%, 40%{
-    content: 'Categorias';
-  }
-  41%, 60%{
-    content: 'Cafés';
-  }
-  61%, 80%{
-    content: 'Favoritos de todos';
-  }
-  81%, 100%{
-    content: 'Especialidades';
-  }
-}
-@keyframes typing{
-   10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
-    width: 0;
-   }
-   5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
-    width: calc(100% + 8px);
-   }
-}*/
 .category-mocha{
     font-family: 'Limelight';
     background-image: linear-gradient(#00000060,#00000040), url(moca.jpg);
@@ -366,12 +347,13 @@ html {
 }
 .card-category p::after{
     content:'';
-    width: 2.5rem;
+    width: 3rem;
     height: 2px;
     background-color: #fff;
     position: absolute;
     bottom: -1rem;
     left:50%;
+    transform: translate(-50%, 50%);
 }
 .card-category p:hover{
   font-size: 3rem;
@@ -389,12 +371,46 @@ html {
   transition: all 0.3s ease;
   font-size: 2rem;
 }
-.card-category p:hover::after {
-  opacity: 1;
+/*TOP PRODUCTS*/
+.top-products{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.container-options{
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 1rem;
+}
+.container-options span{
+  color: #777;
+  background-color: #fff;
+  padding: .7rem 3rem;
+  font-size: 30px;
+  text-transform: capitalize;
+  border-radius: 2rem;
+  cursor: pointer;
+
+}
+.container-options span:hover{
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.container-options span.active{
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
-
-
+/*Productos*/
+.containers-products{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem) );
+  gap: 3rem;
+  align-content: fle;
+  
+}
 
 
 
