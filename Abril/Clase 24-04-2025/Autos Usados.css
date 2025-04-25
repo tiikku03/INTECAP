@@ -104,3 +104,8 @@ h2{
 .marcaname:hover, .modelo:hover, .color:hover, .precio:hover{
     background: #778da9d2;
 }
+
+footer{
+    height: 15rem;
+    background: var(--color3);
+}
