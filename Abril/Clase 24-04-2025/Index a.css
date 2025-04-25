@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Sancreek&family=Vollkorn+SC:wght@400;600;700;900&display=swap');
+:root{
+    --color-1--: #213435;
+    --color-2--: #46685b;
+    --color-3--: #648a64;
+    --color-4--: #a6b985;
+    --color-5--: #e1e3ac;
+    color: #f9f5f0;
+}
+body{
+  background-color: #e1e3ac;
+}
+/*header*/
+.container-su{
+    background-color: var(--color-5--);
+    color: black;
+}
+.sup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+.customer-support {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .customer-support i {
+    font-size: 500%;
+    transition: all 0.6s ease;
+  }
+  .customer-support i:hover {
+    font-size: 600%;
+    transition: all 0.6s ease;
+  }
+  .content-customer-support {
+    flex-direction: column;
+    display: flex;
+    font-family: "Sancreek";
+  }
+.titulo{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+.titulo i{
+    font-size: 600%;
+    background-clip: text;
+    color:#46685b;
+}
+.titulo h1 {
+    font-family: "Sancreek";
+    text-decoration: none;
+    color: black;
+    font-size: 500%;
+    text-transform: uppercase;
+}
+.Redes{
+    display: flex;
+    gap: 10%;
+}
+.Redes .fa-brands{
+     font-size: 300%;
+     color: black;
+     transition: all 0.5s ease;
+     text-decoration: none;
+}
+
+.Redes .fa-brands:hover{
+    font-size: 400%;
+    transition: all 0.5s ease;
+}
+/*Enlaces*/ 
+
+.menu{
+    background-color: #213435;
+    align-items: center;
+    display:  flex;
+    gap: 2rem;
+    margin: 0;
+}
+.menu li{
+    list-style: none;
+}
+.menu a{
+    text-decoration: none;
+  font-size: 200%;
+  color: #a6b985;
+  font-weight: 600;
+  text-decoration: uppercase;
+  transition: all 0.5s ease;
+  position: relative;
+  font-family: "Vollkorn SC";
+}
+.menu a:hover{
+    transition: all 0.6s ease;
+    color: #f9f5f0;
+    font-size:300%;
+}
+.banner {
+    background-image: linear-gradient(100deg, #000001, #00000010), url(banner2.jpg);
+    background-color: #a6b985;
+    height: 50rem;
+    background-size: cover;
+    background-position: center;
+  }
+  .content-banner {
+    margin: 0 auto;
+    padding: 10%;
+  }
+  .content-banner p {
+    color: #a6b985;
+    font-size: 300%;
+    margin-bottom: 1%;
+    font-weight: 600;
+    font-family: "Vollkorn SC";
+  }
+  .content-banner h2 {
+    color:#a6b985;
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: "Amatic SC";
+  }
+  .content-banner a {
+    margin-top: 2rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #a6b985;
+    display: inline-block;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    transition: all 0.4s ease;
+  }
+  .content-banner a:hover {
+    font-size: 2.5rem;
+    background-color: #e1e3ac;
+    transition: all 0.5s ease;
+  }
+  /*main*/
+  main{
+    background-color: #e1e3ac;
+  }
+  /*hitoria*/
+  section{
+    margin: 100px;
+    padding: 1%;
+  }
+h4{
+     color: #213435;
+     font-family: "Sancreek";
+     font-size: 500%;
+     text-align: center;
+     transition: all 0.5s ease;
+     border: #000000 solid;
+     background-color: #46685b;
+}
+p{
+    font-size: 200%;
+    color: #46685b;
+}
+h5{
+    font-family:"Sancreek" ;
+    font-size: 500%;
+    text-align: center;
+}
+.container-options{
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    margin-bottom: 1%;
+  }
+  .container-options span{
+    color: #f9f5f0;
+    background-color: #213435;
+    padding: .7rem 3rem;
+    font-size: 30px;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    transform:  translateY(20px) scale(1);
+  
+  }
+  .container-options span:hover{
+    background-color: #46685b;
+    transition: all 0.5s ease;
+    transform: scale(1.1);
+  }
+  .container-features {
+    flex: 5;
+   width: 20%px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #a6b985;
+  }
+  .card {
+    background-color: #648a64; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 1.5rem;
+    text-align: center; 
+    width: 300px;
+    transition: 0.5s ease; 
+    transform:  translateY(20px) scale(1);
+  }  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  .card i {
+    font-size: 2.5rem;
+    color: #213435; 
+    margin-bottom: 1rem;
+  }
+  aside{
+    flex: 1;
+      color: #000000;
+      background-color: #648a64;
+      text-align: center;
+      padding: 1rem;
+      width: 20%;
+      left: 79%;
+  }
