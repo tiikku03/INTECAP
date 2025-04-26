@@ -6,6 +6,9 @@
     --color-4--: #a6b985;
     --color-5--: #e1e3ac;
     color: #f9f5f0;
+    --letra1--:"Vollkorn SC";
+    --letra2--:"Sancreek";
+    --letra3--:"Amatic SC";
 }
 body{
   background-color: #e1e3ac;
@@ -98,6 +101,7 @@ body{
     color: #f9f5f0;
     font-size:300%;
 }
+/*banner*/
 .banner {
     background-image: linear-gradient(100deg, #000001, #00000010), url(banner2.jpg);
     background-color: #a6b985;
@@ -144,6 +148,13 @@ body{
   main{
     background-color: #e1e3ac;
   }
+  .container-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+  }
   /*hitoria*/
   section{
     margin: 100px;
@@ -161,11 +172,6 @@ h4{
 p{
     font-size: 200%;
     color: #46685b;
-}
-h5{
-    font-family:"Sancreek" ;
-    font-size: 500%;
-    text-align: center;
 }
 .container-options{
     display: flex;
@@ -190,8 +196,8 @@ h5{
     transform: scale(1.1);
   }
   .container-features {
-    flex: 5;
-   width: 20%px;
+    flex: 3;
+   width: 200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -217,12 +223,21 @@ h5{
     color: #213435; 
     margin-bottom: 1rem;
   }
+  h5{
+    font-family: var(--letra3--);
+    font-size: 50px;
+  }
+  h6{
+    font-family:var(--letra1--);
+    font-size: 30px;
+  }
   aside{
     flex: 1;
-      color: #000000;
-      background-color: #648a64;
-      text-align: center;
-      padding: 1rem;
-      width: 20%;
-      left: 79%;
+    color: #000000;
+    background-color: #648a64;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    width: auto;
   }
+  

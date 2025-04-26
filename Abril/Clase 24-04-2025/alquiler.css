@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Sancreek&family=Vollkorn+SC:wght@400;600;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #E0E1DD;
+    color: Black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root{
+    --color1: #0D1B2A;
+    --color2: #1B263B;
+    --color3: #415A77;
+    --colorTexto: #778DA9;
+    --color5: #E0E1DD;
+}
+
+header{
+    background: #1B263B ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
+    width: auto;
+}
+.fa-brands{
+   font-size: 2rem;
+   justify-content: space-between;
+   transition: all 0.6s ease;
+}
+.fa-brands:hover{
+    font-size: 2.5rem;
+    transition: all 0.6s ease;
+}
+.banner{
+    background-image: linear-gradient(100deg, #000001, #0010), url(banner1.jpg);
+    background-color: #415A77;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.content-banner{
+    margin: 0 auto;
+    padding: 10%;
+}
+.content-banner p{
+      color: #E0E1DD;
+      font-family: "Vollkorn SC";
+      font-size: 4rem;
+}
+.content-banner span{
+    font-size: 6rem;
+      color: #778DA9;
+      font-family: "Vollkorn SC";
+}
+.content-banner form{
+      color: #E0E1DD;
+      height: 20rem;
+}
+.banner a{
+      color: #E0E1DD;
+      background-color: #778DA9;
+      border-radius: 3rem;
+      font-size: 1.5rem;
+      transition: all 0.6s ease;
+}
+.banner a:hover{
+    color: #E0E1DD;
+    background-color: #415A77;
+    border-radius: 3rem;
+    font-size:2.5rem;
+    transition: all 0.6s ease;
+}
+nav{
+    width: 50%;
+    padding: 1rem;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 100%; 
+    font-size: 1.5rem;
+}
+
+a:hover{
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+
+.logo{
+    width: 150px;
+    height: auto;
+}
+
+main{
+    margin: auto;
+    width: 60%;
+}
+
+h2{
+    margin: auto;
+    text-align: center;
+    margin-top: 3.5rem;
+    border-bottom: solid 2px var(--colorTexto) ;
+    font-family:"Amatic SC" ;
+    font-size: 10rem;
+}
+
+.marca{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+}
+.auto{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    align-items: center;
+    border: solid 2px #778DA9;
+    border-radius: 10px;
+    margin-top: 2rem;
+    transform:  translateY(20px) scale(1);
+    transition: all 0.6s ease;
+}
+.auto:hover{
+    transform: translateY(-5px);
+    transition: all 0.6s ease;
+    box-shadow: #777 0px 2px 30px 2px;
+    cursor: pointer;
+}
+
+.imagen{
+    height: 10rem;
+    width: auto;
+    border-radius: 20px;
+}
+
+.marcaname, .modelo, .color, .precio{
+    padding: 0.2rem;
+    margin: 0.2rem 0;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    background: var(--colorTexto);
+    color: #fff;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+.marcaname:hover, .modelo:hover, .color:hover, .precio:hover{
+    background: #778da9d2;
+}
+
+footer{
+    height: 15rem;
+    background: var(--color3);
+}
