@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Pompiere&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap');
 :root{
     --color1: #0D1B2A;
     --color2: #1B263B;
@@ -63,17 +64,35 @@ header{
     display: flex;
     background-color: #cccccc;
     width: 50%;
-    margin-left: 20%;
+    margin-left: 5%;
     margin-top: 2%;
     box-shadow: black 0px 0px 5px 0px ;
  }
  .infor{
     flex-direction: column;
+    margin-left: 9%;
  }
- .interior{
+ .servicio{
     font-family:"Bodoni Moda";
     text-align: center;
     margin-top: 50px;
+ }
+ .infor a{
+    color: #E0E1DD;
+    background-color: #415A77;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 30%;
+    font-size: 20px;
+    opacity: 0.65;
+    transition: all 0.6s ease;
+ }
+ .infor a:hover{
+    color: #fff;
+    font-size: 30px;
+    opacity: 1;
+    transition: all 0.6s ease;
+    box-shadow: #0D1B2A 0px 0px 0px 0px;
  }
  .text{
     font-size: 15px;
@@ -82,11 +101,90 @@ header{
  }
  .image{
     width: 50%;
+    display: flex;
  }
  .image img{
     width: 350px;
+    height: 250px;
     border-radius: 5px;
     align-items: center; 
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 10%;
  }
+ /*datos*/
+ .detailing{
+    width: 70%;
+    margin-left: 5%;
+ }
+ .datos{
+    display: flex;
+ }
+ .informacion{
+    font-family:"Asul";  
+    font-size: 15px;
+ }
+h3{
+    font-family:"Bodoni Moda" ;
+    font-size: 40px;
+    color: #415A77;
+    
+}
+footer{
+    background: var(--color3); 
+    padding: 20px 50px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap:wrap ;
+}
+.icon-elem{
+    list-style: none;
+}
+.icon{
+    color: #E0E1DD;
+    font-size: 32px;
+    display: inline-block;
+    margin: 0 10px;
+    transition: all 0.6s ease;
+    opacity: 0.70;
+}
+.icon:hover{
+    color: #fff ;
+    transition: all 0.6s ease;
+    opacity: 1;
+}
+.menu-f{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+.menu-elem{
+    list-style: none;
+}
+.menu-icon{
+    margin: 10px;
+    display: inline-block;
+    font-size: 25px;
+    text-decoration: none;
+    opacity: 0.75;
+    transition: all 0.6s ease;
+    color: #E0E1DD;
+}
+.menu-icon:hover{
+    opacity: 1;
+    transition: all 0.6s ease;
+    color: #fff;
+}
