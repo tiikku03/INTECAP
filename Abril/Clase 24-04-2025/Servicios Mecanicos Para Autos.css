@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Sancreek&family=Vollkorn+SC:wght@400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Pompiere&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap");
+:root {
+  --color1: #0d1b2a;
+  --color2: #1b263b;
+  --color3: #415a77;
+  --colorTexto: #778da9;
+  --color5: #e0e1dd;
+}
+
+*{
+    margin:  0;
+    padding: 0;
+}
+/*--------------- HEADER --------------------*/
+header {
+  background: #1b263b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7rem;
+  width: auto;
+}
+
+.menu {
+  display: inline-flex;
+}
+.menu li {
+  list-style: none;
+}
+.menu a {
+  color: #e0e1dd;
+  opacity: 0.75;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+.menu a:hover {
+  opacity: 1;
+  color: #fff;
+  transition: all 0.6s ease;
+}
+
+.logo {
+  width: 150px;
+}
+
+/*--------------- BODY -------------------*/
+body {
+  background: #e0e1dd;
+}
+
+.servicioDelTaller{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.servicio{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+h2{
+
+}
+
+.servicio img{
+    width: 201px;
+    height: 200px;
+    border-radius: 100px;
+    margin: auto;
+}
+
+
+/*--------------- FOOTER-------------------*/
+footer {
+  background: var(--color3);
+  padding: 20px 50px;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fa-brands {
+  font-size: 2rem;
+  transition: all 0.6s ease;
+  color: #e0e1dd;
+  text-decoration: none;
+  margin-right: 5px;
+}
+.fa-brands:hover {
+  font-size: 2.5rem;
+  transition: all 0.6s ease;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.icon-elem {
+  list-style: none;
+}
+
+.icon {
+  color: #e0e1dd;
+  font-size: 32px;
+  display: inline-block;
+  margin: 0 10px;
+  transition: all 0.6s ease;
+  opacity: 0.7;
+}
+
+.icon:hover {
+  color: #fff;
+  transition: all 0.6s ease;
+  opacity: 1;
+}
+
+main {
+  background-color: #e0e1dd;
+}
+
+.menu-f {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.menu-elem {
+  list-style: none;
+}
+
+.menu-icon {
+  margin: 10px;
+  display: inline-block;
+  font-size: 25px;
+  text-decoration: none;
+  opacity: 0.75;
+  transition: all 0.6s ease;
+  color: #e0e1dd;
+}
+
+.menu-icon:hover {
+  opacity: 1;
+  transition: all 0.6s ease;
+  color: #fff;
+}
