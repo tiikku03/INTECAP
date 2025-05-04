@@ -242,3 +242,26 @@ footer {
   transition: all 0.6s ease;
   color: #fff;
 }
+h5{
+  font-size: 50px;
+}
+h6{
+  font-size: 20px;
+}
+.as{
+  margin-top: 70px;
+  border:#1b263b solid 1px;
+  margin: 5%;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  transform: translateY(10px) scale(0.9);
+}
+.as:hover{
+  transition: all 0.5s ease;
+  transform: scale(1);
+  box-shadow: #0d1b2a 0px 0px 20px 0px;
+}
+.stars{
+  color: yellow;
+  opacity: 0.80;
+}
