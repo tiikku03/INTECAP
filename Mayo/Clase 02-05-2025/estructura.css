@@ -1,112 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Sancreek&family=Vollkorn+SC:wght@400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Pompiere&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap");
+:root {
+  --color1: #0d1b2a;
+  --color2: #1b263b;
+  --color3: #415a77;
+  --colorTexto: #778da9;
+  --color5: #e0e1dd;
+}
+body {
+  font-family: "Bodoni Moda";
+  margin: 0;
+  padding: 0;
+  background-color: #e0e1dd;
+}
+header,
+nav,
+section,
+footer {
+  width: 80%;
+}
+header,
+nav,
+section,
+article,
+aside,
+footer {
+  padding: 0.5%;
+  margin: 0.4%;
+  border-radius: 15px;
+}
+h1{
+    font-size: 40px;
+    animation: fuente infinite 4s,
+     color infinite 4s;
 
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Sancreek&family=Vollkorn+SC:wght@400;600;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Pompiere&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap');
-:root{
-    --color1: #0D1B2A;
-    --color2: #1B263B;
-    --color3: #415A77;
-    --colorTexto: #778DA9;
-    --color5: #E0E1DD;
 }
-body{
-    font-family:"Bodoni Moda" ;
-    margin: 0;
-    padding: 0;
-    background-color: #E0E1DD;
+@keyframes fuente{
+    from{
+         font-size: 40px;
+    }
+    to{
+        font-size: 45px;
+    }
 }
-header, nav,section,footer{
-width: 80%;
+@keyframes color{
+            0%{
+                color: #1b263b;
+            }
+             25%{
+                color: #e0e1dd;
+             }
+             50%{
+                color: #fff;
+             }
 }
-header, nav, section, article, aside, footer {
-    padding: 0.5%;
-    margin: 0.4%;
-    border-radius: 15px;
+header {
+  background-color: #415a77;
+  color: #0d1b2a;
+  text-align: center;
 }
-header{
-    background-color: #415A77;
-    color: #0D1B2A;
-    text-align: center;
+nav {
+  background-color: #778da9;
+  color: #0d1b2a;
+  text-align: center;
 }
-nav{
-    background-color: #778DA9;
-    color: #0D1B2A;
-    text-align: center;
+article {
+  background-color: #415a77;
+  padding: 0.5%;
+  animation: change-color infinite 6s;
+  color: #fff;
 }
-article{
-    background-color: #415A77;
-    padding: 0.5%;
+@keyframes change-color {
+  0% {
+    background-color: #0d1b2a;
+  }
+  25% {
+    background-color: #1b263b;
+  }
+  50% {
+    background-color: #415a77;
+  }
+  100% {
+    background-color: #778da9;
+  }
 }
 aside {
-    width: 15.5%;
-    background: #778DA9;
-    padding: 0.5%;
-    position: fixed;
-    right: 0;
-    left: 82%;
-    top: 0.5%;
-    bottom: 0;
+  width: 15.5%;
+  background: #778da9;
+  padding: 0.5%;
+  position: fixed;
+  right: 0;
+  left: 82%;
+  top: 0.5%;
+  bottom: 0;
 }
-footer{
-    background-color: #778DA9;
-    color: #0D1B2A;
-    text-align: center;
-}
- 
-a{
-    color: #E0E1DD;
-    margin: 0.4%;
-    text-decoration: none;
-}
-article img{
-    width: 10%;
-    border-radius: 5%;
-}
-aside img{
-    width: 100%;
-    border-radius: 5%;
-    align-items: center;
+footer {
+  background-color: #778da9;
+  color: #0d1b2a;
+  text-align: center;
 }
 
-img{
-    width: 5%;
-    height: 5%;
-    border-radius: 50%;
-    overflow: hidden;
-    animation: spin 10s linear infinite;
+a {
+  color: #e0e1dd;
+  margin: 0.4%;
+  text-decoration: none;
 }
-.animlogo{
-    width: 100%;
-    border-radius: 5%;
-    animation-duration: 5s;
-    animation-name: animlogo;
-    animation-iteration-count: infinite;
-    width: 60%;
+article img {
+  width: 10%;
+  border-radius: 50%;
 }
-.latido{
-    font-size: 50px;
-    color: red;
-    text-align: center;
-    animation: latCor 1s infinite;
+article {
+  padding: 0.5%;
+  margin: 0.4%;
 }
-@keyframes spin{
-    to{
-        rotate:360deg
-    }
+aside img {
+  width: 100%;
+  border-radius: 5%;
+  align-items: center;
 }
-@keyframes animlogo{
-    from{
-        -webkit-transform: rotate(0deg);
-        transform: rotateY(0deg);
-    }
-    50%{
-        -webkit-transform:rotate(180deg);
-        transform: rotateY(180deg);
-    }
-    to{
-        -webkit-transform: rotate(360deg);
-        transform: rotateY(360deg);
-    }
+
+img {
+  width: 5%;
+  height: 5%;
+  border-radius: 50%;
+  overflow: hidden;
+  animation: spin 10s linear infinite;
+}
+.animlogo {
+  width: 100%;
+  border-radius: 5%;
+  animation-duration: 5s;
+  animation-name: animlogo;
+  animation-iteration-count: infinite;
+  width: 60%;
+}
+.latido {
+  font-size: 50px;
+  color: red;
+  text-align: center;
+  animation: latCor 1s infinite;
+}
+@keyframes spin {
+  to {
+    rotate: 360deg;
+  }
+}
+@keyframes animlogo {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotateY(180deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotateY(360deg);
+  }
 }

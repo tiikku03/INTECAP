@@ -1,0 +1,27 @@
+p{
+    font-size: 15px;
+    animation: fuentes infinite 5s, color infinite 5s;;
+    
+}
+@keyframes fuentes {
+  from {
+    font-size: 15px;
+  }
+  to {
+    font-size: 30px;
+  }
+}
+@keyframes color{
+    0%{
+        color: black;
+    }
+    25%{
+           color: green;
+    }
+    50%{
+          color: red;
+    }
+    100%{
+         color: blue;
+    }
+}

@@ -1,0 +1,61 @@
+:root{
+    --color1: #0D1B2A;
+    --color2: #1B263B;
+    --color3: #415A77;
+    --colorTexto: #778DA9;
+    --color5: #E0E1DD;
+}
+.element{
+    width: 100px;
+    height: 100px;
+    background-color: #415A77;
+    animation: change-color infinite 5s;
+}
+@keyframes change-color{
+    from{
+        background-color: #778DA9;
+    }
+    to{
+        background-color: #415A77;
+    }
+}
+.change-c{
+    width: 100px;
+    height: 100px;
+    background-color: #E0E1DD;
+    animation: ejemplo infinite 4s;
+    color: red;
+}
+@keyframes ejemplo{
+   0%{
+    background-color: #0D1B2A;
+   }
+   25%{
+          background-color: #1B263B;
+   }
+   50%{
+              background-color: #415A77;
+   }
+   100%{
+              background-color: #778DA9;
+   }
+}
+.elemento{
+    width: 100px;
+    height: 100px;
+    background: green;
+    animation: mover 3s infinite 0s,
+               rotar 3s infinite 5s ;
+}
+@keyframes mover{
+    to{
+        transform: translateX(500px);
+        background: red;
+    }
+}
+@keyframes rotar{
+    to{
+        transform: rotateY(360deg) scale(0.5);
+        background: blue;
+    }
+}
