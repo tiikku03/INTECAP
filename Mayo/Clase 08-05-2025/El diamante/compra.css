@@ -12,9 +12,9 @@
   --color5--: #dee2e6;
   --color6--: #bfc0c0;
   --color7--: #000000;
-  --color8--: #f4f4f4;
-  --color10--: #;
-  --color11--: #;
+  --color8--: #ef233c;
+  --color10--: #ffb703;
+  --color11--: #fafafa;
   --color12--: #;
 
   --lETRA-1--: "Poppins";
@@ -25,7 +25,6 @@
   --lETRA-8--: "Pompiere";
   --LETRA-9--: "Sour Gummy";
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -35,6 +34,7 @@ body {
   background: #fff;
   color: Black;
 }
+/*-------------------Aqui comienza el header---------------------------------*/
 header {
   background-color: #fff;
   display: flex;
@@ -89,6 +89,9 @@ a {
   color: #bfc0c0;
   transition: all 0.6 ease;
 }
+/* ---------------------------Aqui termina el header--------------------------------*/
+
+/*---------------------------------------------Aqui comienza el banner-------------------------------------*/
 .banner {
   background-image:
     url(images/banner6.png);
@@ -126,26 +129,22 @@ a {
   transform: scale(1);
   transition: all 0.6s ease;
 }
+/*---------------------------------------------Aqui termina el banner-------------------------------------*/
+
+/*----------------------------------Aqui comienza el main o el contenido-----------*/
 .main-container {
   display: flex;
   flex-wrap: wrap;
 }
+/*-----------------------------------------------Aqui comienza el Contenido principal---------*/
 .principal {
   display: flex;
   flex-direction: column;
   flex: 60%;
   margin-top: 100px;
 }
-.text {
-  font-family: var(--lETRA-4--);
-  font-size: 40px;
-  margin-left: 25%;
-  margin-top: 50px;
-}
-.text p {
-  font-family: var(--lETRA-8--);
-  font-size: 20px;
-}
+
+/* ---------------------------- Aqui comienza el form-------------------------- */
 .Cliente {
   align-items: center;
   background-color: #f4f4f4;
@@ -155,6 +154,13 @@ a {
   max-width: 800px;
   margin-left: 20%;
 }
+ /*-------------------------- Titulo de cada parte del form ----------------------*/
+.text {
+  font-family: var(--lETRA-4--);
+  font-size: 40px;
+  margin-left: 25%;
+  margin-top: 50px;
+}
 .Datos {
   padding: 10px;
   gap: 10px;
@@ -162,6 +168,7 @@ a {
   display: flex;
   align-items: center;
 }
+/*-----------Seleccionar metodo de pago---------------*/
 .Datos2 {
   background-color: #f4f4f4;
   border: 1px solid #ccc;
@@ -196,19 +203,20 @@ a {
   transform: scale(0.9);
   transition: all 0.6s ease;
 }
+/*---------------------- interior de cada cuadrado del --------------------*/
 .Datos input,
 select {
   font-family: var(--lETRA-1--);
   width: 100%;
   padding: 10px 90px 10px 10px;
 }
+/*-----------linea que separa partes del form--------*/
 hr {
   margin-top: 50px;
   width: 50%;
   margin-left: 20%;
 }
-/*aside*/
-
+/*---------------------- Aqui comienza el aside------------------ */
 aside {
   flex: 10%;
   height: 1000px;
@@ -226,6 +234,7 @@ h4 {
   text-align: center;
   padding: 10px;
 }
+/*----------trustpilot -----------------*/
 .score {
   width: 250px;
   transform: scale(1);
@@ -235,6 +244,7 @@ h4 {
   transform: scale(1.1);
   transition: all 0.6s ease;
 }
+/*---------- aqui termina trustpilot -----------------*/
 h5 {
   margin-top: 10px;
   font-family: var(--lETRA-4--);
@@ -247,6 +257,7 @@ h5 {
   justify-content: center;
   align-items: center;
 }
+/*------------------premios--------------*/
 .pre {
   transform: scale(1);
   transition: all 0.6s ease;
@@ -255,6 +266,7 @@ h5 {
   transform: scale(0.9);
   transition: all 0.6s ease;
 }
+/*----------------------ver valoraciones-----------*/
 .valo {
   background-color: #dee2e6;
   margin-top: 10px;
@@ -268,7 +280,9 @@ h5 {
   transition: all 0.6s ease;
   transform: scale(1);
 }
-/*aside*/
+/*------------------Aqui Terminan las Colecciones------------------*/
+
+/*------------------Aqui comienzan los bancos asociados---------------*/
 .bancos {
   margin-top: 30px;
   display: flex;
@@ -288,6 +302,9 @@ h5 {
   transition: all 0.6s ease;
   filter: grayscale(0%);
 }
+/*------------------Aqui Terminan los bancos asociados---------------*/
+
+/*------------------Aqui comienzan el footer---------------*/
 footer {
   background-color: #343434;
   padding: 10px;
@@ -373,3 +390,4 @@ h6 {
   font-size: 20px;
   padding: 7px;
 }
+/*------------------Aqui Termina el footer---------------*/

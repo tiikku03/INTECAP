@@ -34,7 +34,7 @@ body {
   background: #fff;
   color: Black;
 }
-/*-------------------header---------------------------------*/
+/*-------------------Aqui comienza el header---------------------------------*/
 header {
   background-color: #fff;
   display: flex;
@@ -89,8 +89,9 @@ a {
   color: #bfc0c0;
   transition: all 0.6 ease;
 }
-/* header*/
-/*banner*/
+/* ------------------------------------------------Aqui termina el header-------------------------------------*/
+
+/*---------------------------------------------Aqui comienza el banner-------------------------------------*/
 .banner {
   background-image: url(images/banner.png);
   background-size: cover;
@@ -132,9 +133,9 @@ a {
   transform: scale(1);
   transition: all 0.6s ease;
 }
-/*banner*/
+/*----------------------------------------------Aqui termina el banner------------------------------*/
 
-/*MARQUEE*/
+/*--------------------------------------------Aqui comienza la marquee-----------------------------*/
 marquee {
   max-width: 100%;
   display: flex;
@@ -143,18 +144,23 @@ marquee {
 .mar {
   margin-top: 1px;
 }
-/*MARQUEE*/
+/*----------------------------------------------Aqui termina la marquee------------------------------*/
 
+/*----------------------------------------------Aqui comienza el main o el contenido-----------*/
 .main-container {
   display: flex;
   flex-direction: column;
 }
-.principal-content {
-  flex: 75%;
-}
+
+/*-----------------------------------------------Aqui comienza el Contenido principal---------*/
 .principal {
   display: flex;
   flex-wrap: wrap;
+}
+
+/*-------------------Aqui comienza la presentacion de la empresa-----------*/
+.principal-content {
+  flex: 75%;
 }
 .Nosotros {
   display: flex;
@@ -188,7 +194,9 @@ h2 {
   border-radius: 1500px 1500px 0px 0px;
   width: 500px;
 }
-/*----------------------------aside------------------------------*/
+/*-------------------Aqui Termina la presentacion de la empresa-----------*/ 
+
+/*----------------------------Aqui comienza el aside-----------------------------*/
 aside {
   flex: 20%;
   height: 1000px;
@@ -213,13 +221,6 @@ h4 {
   margin-left: 10%;
   font-family: var(--LETRA-9--);
 }
-.videos {
-  display: flex;
-  gap: 60px;
-  background: #000000;
-  margin: auto;
-  align-items: center;
-}
 .precios {
   margin-left: 10%;
   color: #000;
@@ -237,7 +238,12 @@ h4 {
   transform: scale(0.8);
   transition: all 0.6s ease;
 }
-/*aside*/
+/*----------------------------Aqui Termina el aside-----------------------------*/
+
+/*----------------------------Aqui comienza el Segundo contenido----------*/
+
+
+/*-----------------Titulo del segundo contenido----------*/
 h5 {
   font-size: 100px;
   font-family: var(--lETRA-4--);
@@ -248,6 +254,21 @@ h5 {
   font-family: var(--lETRA-3--);
   margin-left: 20%;
 }
+
+/*-----------------------Videos--------------------*/
+.videos {
+  display: flex;
+  gap: 60px;
+  background: #000000;
+  margin: auto;
+  align-items: center;
+}
+video {
+  width: 600px;
+  margin-left: 50px;
+}
+
+/*------------------Aqui comienzan las Colecciones------------------*/
 .secciones {
   display: flex;
   margin-left: 5%;
@@ -255,6 +276,18 @@ h5 {
 }
 .sec-inf {
   margin-left: 10%;
+}
+.art {
+  margin-top: 50px;
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+.art img {
+  display: block;
+  margin-top: 10%;
 }
 .sec-img {
   width: 250px;
@@ -270,21 +303,6 @@ h5 {
   transform: scale(0.9);
   transition: all 0.6s ease;
   filter: blur(0);
-}
-.art {
-  margin-top: 50px;
-  background-color: #fff;
-  text-align: center;
-  display: flex;
-  margin: auto;
-  align-items: center;
-}
-.art img {
-  width: 360px;
-  transform: scale(1);
-  transition: all 0.9s ease;
-  display: block;
-  margin-top: 10%;
 }
 .cole {
   font-family: var(--lETRA-4--);
@@ -309,10 +327,9 @@ h5 {
   background-color: #bfc0c0;
   transition: all 0.6s ease;
 }
-video {
-  width: 600px;
-  margin-left: 50px;
-}
+/*------------------Aqui Terminan las Colecciones------------------*/
+
+/*------------------Aqui comienzan los bancos asociados---------------*/
 .bancos {
   margin-top: 30px;
   display: flex;
@@ -332,6 +349,9 @@ video {
   transition: all 0.6s ease;
   filter: grayscale(0%);
 }
+/*------------------Aqui Terminan los bancos asociados---------------*/
+
+/*------------------Aqui comienzan el footer---------------*/
 footer {
   background-color: #343434;
   padding: 10px;
@@ -417,3 +437,4 @@ h6 {
   font-size: 20px;
   padding: 7px;
 }
+/*------------------Aqui Termina el footer---------------*/

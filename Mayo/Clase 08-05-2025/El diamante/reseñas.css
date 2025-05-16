@@ -311,6 +311,8 @@ margin-left: 2rem;
 }
 
 /*---------------------Styling the reviews Form------------------------------*/
+
+/*------------------Aqui comienzan los bancos asociados---------------*/
 .bancos {
   margin-top: 30px;
   display: flex;
@@ -330,6 +332,9 @@ margin-left: 2rem;
   transition: all 0.6s ease;
   filter: grayscale(0%);
 }
+/*------------------Aqui Terminan los bancos asociados---------------*/
+
+/*------------------Aqui comienzan el footer---------------*/
 footer {
   background-color: #343434;
   padding: 10px;
@@ -415,3 +420,4 @@ h6 {
   font-size: 20px;
   padding: 7px;
 }
+/*------------------Aqui Termina el footer---------------*/

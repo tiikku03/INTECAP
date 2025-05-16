@@ -14,7 +14,7 @@
   --color7--: #000000;
   --color8--: #ef233c;
   --color10--: #ffb703;
-  --color11--: #;
+  --color11--: #fafafa;
   --color12--: #;
 
   --lETRA-1--: "Poppins";
@@ -25,7 +25,6 @@
   --lETRA-8--: "Pompiere";
   --LETRA-9--: "Sour Gummy";
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -35,6 +34,7 @@ body {
   background: #fff;
   color: Black;
 }
+/*-------------------Aqui comienza el header---------------------------------*/
 header {
   background-color: #fff;
   display: flex;
@@ -89,18 +89,26 @@ a {
   color: #bfc0c0;
   transition: all 0.6 ease;
 }
+/* ---------------------------Aqui termina el header--------------------------------*/
+
+/*-------------------------------------Aqui comienza el main o el contenido-----------*/
 .main-container {
   display: flex;
   flex: 55%;
 }
+
+/*--------------------------Aqui comienza el Contenido principal---------*/
 .principal {
   margin-top: 10px;
 }
+/*------------------Aqui comienzan las secciones-----------------*/
 .secciones {
   background-color: #fff;
   display: flex;
   flex-direction: column;
 }
+
+/*--------------Aqui comienzan los productos-----------------*/
 .secc {
   background-color: #fff;
   text-align: center;
@@ -125,32 +133,38 @@ a {
   align-items: center;
   margin-right: 100px;
 }
+/*----------Producto o Nombre del producto------------*/
 h2 {
   font-size: 50px;
   font-family: var(--lETRA-4--);
 }
+/*------------ 10% de descuento o 55% mas bara------------------*/
 h4 {
   color: #000;
   font-size: 20px;
   font-family: var(--lETRA-5--);
   margin-top: 20px;
 }
+/*---------Precio del producto-----------------*/
 h5 {
   color: #ef233c;
   font-family: var(--LETRA-9--);
   margin-top: 20px;
 }
+/*------------------Datos del producto-------*/
 p {
   font-family: var(--lETRA-5--);
   font-size: 20px;
   margin-top: 20px;
 }
+/*----------Linea---------------------*/
 hr {
   width: 50px;
   align-items: center;
   margin: auto;
   margin-top: 20px;
 }
+/*------------------Boton de comprar ahora-------------*/
 .enlace1 {
   background-color: #ffb703;
   margin: auto;
@@ -167,6 +181,7 @@ hr {
   transform: scale(1);
   transition: all 0.6s ease;
 }
+/*--------------Imagen del producto----------------*/
 .sec-img {
   margin-right: 100px;
   margin-left: 5%;
@@ -174,6 +189,7 @@ hr {
 .sec-img img {
   width: 110%;
 }
+/*-------------------- Aqui comienza el aside---------------*/
 aside {
   display: flex;
   flex-direction: column;
@@ -204,6 +220,9 @@ video{
   font-family: var(--lETRA-8--);
   color: #000;
 }
+/*-------------------- Aqui Termina el aside---------------*/
+
+/*------------------Aqui comienzan los bancos asociados---------------*/
 .bancos {
   margin-top: 30px;
   display: flex;
@@ -223,6 +242,9 @@ video{
   transition: all 0.6s ease;
   filter: grayscale(0%);
 }
+/*------------------Aqui Terminan los bancos asociados---------------*/
+
+/*------------------Aqui comienzan el footer---------------*/
 footer {
   background-color: #343434;
   padding: 10px;
@@ -308,3 +330,4 @@ h6 {
   font-size: 20px;
   padding: 7px;
 }
+/*------------------Aqui Termina el footer---------------*/
