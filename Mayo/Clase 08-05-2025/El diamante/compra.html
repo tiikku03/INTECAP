@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>infcompra</title>
     <link rel="stylesheet" href="compra.css">
-      <script src="https://kit.fontawesome.com/6013ac0acd.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6013ac0acd.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!-- Aqui comienza el header -->
     <header>
@@ -56,30 +58,30 @@
         <!--  Aqui comienza el contenido principal -->
         <div class="principal">
             <!--  Aqui comienza el formulario -->
-            <div class="Cliente">
-                <form action="">
-                    <!-- Aqui comienzan los datos de contacto -->
-                    <div class="text">
+            <form>
+                <fieldset class="Cliente">
+                    <legend>
                         <h2>CONTACTO</h2>
+                    </legend>
+                    <div class="Datos">
+                        <input type="text" id="name" name="Nombres" autofocus required placeholder="Nombres" />
+                        <input type="text" id="last-name" name="Apellidos" autofocus required placeholder="Apellidos" />
+                        <br>
                     </div>
                     <div class="Datos">
-                        <input type="text" name="Nombres" autofocus required placeholder="Nombres" />
-                        <input type="text" name="Apellidos" autofocus required placeholder="Apellidos" /> <br>
+                        <input type="text" id="dpi" name="DPI" autofocus required placeholder="DPI" /><br />
                     </div>
                     <div class="Datos">
-                        <input type="text" name="DPI" autofocus required placeholder="DPI" /><br />
-                    </div>
-                    <div class="Datos">
-                        <input class="min" type="text" name="Teléfono principal" autofocus required
+                        <input class="min" id="phone" type="text" name="Teléfono principal" autofocus required
                             placeholder="Teléfono principal " />
-                        <input class="min" type="text" name="Teléfono secundario " autofocus required
+                        <input class="min" type="text" name="Teléfono secundario " autofocus
                             placeholder="Teléfono secundario " /><br />
                     </div>
                     <div class="Datos">
-                        <input type="email" name="Email" autofocus required placeholder="Email" /><br />
+                        <input type="email" id="user-email" name="Email" autofocus placeholder="Email" /><br />
                     </div>
                     <div class="Datos">
-                        <input type="text" name="Dirección"  required placeholder="Dirección"> <br />
+                        <input type="text" id="user-addres" name="Dirección" placeholder="Dirección"> <br />
                     </div>
                     <div class="Datos">
                         <select name="search_control" autofocus class="pai">
@@ -108,24 +110,27 @@
                             <option value="23">Zacapa</option>
                         </select> <br>
                     </div>
-                    <hr>
-                    <!-- Aqui comienzan los datos de entrega -->
-                    <div class="text">
+                </fieldset>
+
+                <fieldset class="Cliente">
+                    <legend>
                         <h2>ENTREGA</h2>
+                    </legend>
+                    <div class="Datos">
+                        <input type="text" id="" name="name_control" autofocus required placeholder="NIT"> <br>
                     </div>
                     <div class="Datos">
-                        <input type="text" id="name" name="name_control" autofocus required placeholder="NIT"> <br>
-                    </div>
-                    <div class="Datos">
-                        <input type="text" id="last-name" name="name_control" autofocus required placeholder="Nombres" />
+                        <input type="text" id="" name="name_control" autofocus required placeholder="Nombres" />
                         <input type="text" name="name_control" autofocus required placeholder="Apellidos" /> <br>
                     </div>
                     <div class="Datos">
-                        <input class="Num" id="company" type="text" name="name_control" autofocus placeholder="Empresa (opcional)">
+                        <input class="Num" id="company" type="text" name="name_control" autofocus
+                            placeholder="Empresa (opcional)">
                         <br>
                     </div>
                     <div class="Datos">
-                        <input type="text" id="addres" name="name_control" autofocus required placeholder="Dirección"><br>
+                        <input type="text" id="addres" name="name_control" autofocus required
+                            placeholder="Dirección"><br>
                     </div>
                     <div class="Datos">
                         <input type="text" id="House" name="name_control" autofocus
@@ -163,12 +168,13 @@
                     <div class="Datos">
                         <input type="text" id="" name="name_control" required autofocus placeholder="Telefono"> <br>
                     </div>
-                    <hr>
-                    <!-- Aqui comienzan las formas de pago-->
-                    <div class="text">
+                </fieldset>
+
+                <fieldset class="Cliente">
+                    <legend>
                         <h2>PAGO</h2>
-                        <p>Todas las transacciones son seguras y están encriptadas.</p>
-                    </div>
+                    </legend>
+                    <p class="Formas">Todas las transacciones son seguras y están encriptadas.</p>
                     <div class="Datos2">
                         <input name="payment" type="radio" value="Tarjeta de crédito o débito" checked autofocus />
                         Tarjeta
@@ -188,10 +194,12 @@
                     <div class="Datos2">
                         <input name="payment" type="radio" value="Pagos con Criptomonedas" />Pagos con Criptomonedas
                     </div>
-                    <!-- Aqui comienzan los datos de la targeta-->
-                    <div class="text">
+                </fieldset>
+
+                <fieldset class="Cliente">
+                    <legend>
                         <h2>TARGETA</h2>
-                    </div>
+                    </legend>
                     <div class="target">
                         <img class="target1" src="images/TARGET.PNG" alt="">
                     </div>
@@ -208,10 +216,12 @@
                     <div class="Datos">
                         <input type="text" name="Código CVV/CVC" required autofocus placeholder="Código CVV/CVC"><br>
                     </div>
-                    <div class="text">
-                        <!-- Aqui comienzan los datos para la facturación-->
+                </fieldset>
+
+                <fieldset class="Cliente">
+                    <legend>
                         <h2>FACTURACIÓN</h2>
-                    </div>
+                    </legend>
                     <div class="Datos">
                         <input type="text" name="name_control" autofocus required placeholder="NIT"> <br>
                     </div>
@@ -255,107 +265,108 @@
                     <div class="Datos">
                         <input type="text" name="name_control" autofocus placeholder="Telefono (opcional)"> <br>
                     </div>
-                    <div class="Datos">
-                        <input class="submit" type="submit" value="Finalizar el pedido" />
+                </fieldset>
+
+                <div class="Datos3">
+                    <input class="submit" type="submit" value="Finalizar el pedido" />
+                </div>
+            </form>
+            <!--  Aqui comienza el aside-->
+            <aside>
+                <div class="valoraciones">
+                    <div class="top">
+                        <h4>VALORACIONES</h4>
+                        <p>Descubra lo que piensan los clientes de nuestros servicios</p>
+                        <img src="images/SCORE.png" alt="" class="score">
                     </div>
-                </form>
-            </div>
-        </div>
-        <!--  Aqui comienza el aside-->
-        <aside>
-            <div class="valoraciones">
-                <div class="top">
-                    <h4>VALORACIONES</h4>
-                    <p>Descubra lo que piensan los clientes de nuestros servicios</p>
-                    <img src="images/SCORE.png" alt="" class="score">
-                </div>
-                <div class="top">
-                    <h5>PREMIOS</h5>
-                    <div class="gold">
-                        <img src="images/p1.png" alt="Top kundenzufriedenheit" class="pre">
-                        <img src="images/p2.png" alt="Herausragend" class="pre">
-                        <img src="images/p3.png" alt="Platz" class="pre">
-                    </div>
-                    <div class="valo">
-                        <a href="reseñas.html">VER VALORACIONES</a>
+                    <div class="top">
+                        <h5>PREMIOS</h5>
+                        <div class="gold">
+                            <img src="images/p1.png" alt="Top kundenzufriedenheit" class="pre">
+                            <img src="images/p2.png" alt="Herausragend" class="pre">
+                            <img src="images/p3.png" alt="Platz" class="pre">
+                        </div>
+                        <div class="valo">
+                            <a href="reseñas.html">VER VALORACIONES</a>
+                        </div>
                     </div>
                 </div>
+            </aside>
+        </div>
+        <!--  Aqui comienzan los bancos asociados -->
+        <div class="bancos">
+            <div class="alianza">
+                <img src="images/mastercard.png" alt="MasterCard">
             </div>
-        </aside>
-    </div>
-    <!--  Aqui comienzan los bancos asociados -->
-    <div class="bancos">
-        <div class="alianza">
-            <img src="images/mastercard.png" alt="MasterCard">
-        </div>
-        <div class="alianza">
-            <img src="images/visa.png" alt="Visa">
-        </div>
-        <div class="alianza">
-            <img src="images/american-express.png" alt="American Express">
-        </div>
-        <div class="alianza">
-            <img src="images/diners.png" alt="Diners Club">
-        </div>
-        <div class="alianza">
-            <img src="images/jcb.png" alt="JCB">
-        </div>
-        <div class="alianza">
-            <img src="images/crypto.png" alt="Crypto">
-        </div>
-    </div>
-    <!-- Aqui comienza el footer  -->
-    <footer>
-        <div class="fo1">
-            <div class="f-container">
-                <div class="footer-container">
-                    <h6>Información</h6>
-                    <p>Una marca nacida del amor por crear joyas con imaginación y pasión. Somos una marca de lujo
-                        única.
-                        Celebramos la singularidad, la calidad, la creatividad y la artesanía. Cada pieza se somete
-                        a altos
-                        estándares para comprometernos con nuestra visión de convertirnos en una marca para siempre.
-                    </p>
-                    <p>+502 0000-0000</p>
-                    <p>Lu-Vi: 8:00 - 17:00</p>
-                    <p>Sáb-Dom: 8:00 - 12:00</p>
-                    <p>custome@diamondjewlery.com</p>
-                    <p><iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d965.2719030653519!2d-90.5120653303888!3d14.594083296952727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a3c6502bb46f%3A0x64b6c73702a32606!2sJoyer%C3%ADa%20C&#39;SANTOS%20La%20Estaci%C3%B3n!5e0!3m2!1ses!2sgt!4v1746840062140!5m2!1ses!2sgt"
-                            width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe></p>
-                </div>
-                <div class="footer-container">
-                    <h6>DIAMOND JEWLERY</h6>
-                    <ul class="lists">
-                        <li><a href="Eldiamante.html">Home</a></li>
-                        <li><a href="Piedras.html">Colección de Piedras Preciosas</a></li>
-                        <li><a href="Oro.html">Colección de Oro</a></li>
-                        <li><a href="plata.html">Colección de Plata</a></li>
-                        <li><a href="otros.html">Colección de Otros Materiales</a></li>
-                    </ul>
-                </div>
-                <div class="footer-container">
-                    <h6>Navegar</h6>
-                    <ul class="lists">
-                        <li><a href="compra.html">Fomulario de Compra</a></li>
-                        <li><a href="reseñas.html">Valoraciones</a></li>
-                        <li><a href="proceso.html">Elaboración de Joyas</a></li>
-                    </ul>
-                </div>
-                <div class="footer-container">
-                    <h6>Siguenos</h6>
-                    <ul class="social">
-                        <li><a href="https://www.facebook.com/" i class="fa-brands fa-facebook"></i></a></li>
-                        <li><a href="https://www.instagram.com/" i class="fa-brands fa-square-instagram"></i></a></li>
-                        <li><a href="https://x.com/?lang=es" i class="fa-brands fa-square-x-twitter"></i></a></li>
-                    </ul>
-                </div>
+            <div class="alianza">
+                <img src="images/visa.png" alt="Visa">
             </div>
-            <div class="bottom-bar">
-                <p>&copy 2025 Diamond Jewlery | Todos los derechos reservados | por Victor Ticurú</p>
+            <div class="alianza">
+                <img src="images/american-express.png" alt="American Express">
             </div>
-    </footer>
-    <script src="ejercicio.js"></script>
+            <div class="alianza">
+                <img src="images/diners.png" alt="Diners Club">
+            </div>
+            <div class="alianza">
+                <img src="images/jcb.png" alt="JCB">
+            </div>
+            <div class="alianza">
+                <img src="images/crypto.png" alt="Crypto">
+            </div>
+        </div>
+        <!-- Aqui comienza el footer  -->
+        <footer>
+            <div class="fo1">
+                <div class="f-container">
+                    <div class="footer-container">
+                        <h6>Información</h6>
+                        <p>Una marca nacida del amor por crear joyas con imaginación y pasión. Somos una marca de lujo
+                            única.
+                            Celebramos la singularidad, la calidad, la creatividad y la artesanía. Cada pieza se somete
+                            a altos
+                            estándares para comprometernos con nuestra visión de convertirnos en una marca para siempre.
+                        </p>
+                        <p>+502 0000-0000</p>
+                        <p>Lu-Vi: 8:00 - 17:00</p>
+                        <p>Sáb-Dom: 8:00 - 12:00</p>
+                        <p>custome@diamondjewlery.com</p>
+                        <p><iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d965.2719030653519!2d-90.5120653303888!3d14.594083296952727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a3c6502bb46f%3A0x64b6c73702a32606!2sJoyer%C3%ADa%20C&#39;SANTOS%20La%20Estaci%C3%B3n!5e0!3m2!1ses!2sgt!4v1746840062140!5m2!1ses!2sgt"
+                                width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                    </div>
+                    <div class="footer-container">
+                        <h6>DIAMOND JEWLERY</h6>
+                        <ul class="lists">
+                            <li><a href="Eldiamante.html">Home</a></li>
+                            <li><a href="Piedras.html">Colección de Piedras Preciosas</a></li>
+                            <li><a href="Oro.html">Colección de Oro</a></li>
+                            <li><a href="plata.html">Colección de Plata</a></li>
+                            <li><a href="otros.html">Colección de Otros Materiales</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-container">
+                        <h6>Navegar</h6>
+                        <ul class="lists">
+                            <li><a href="compra.html">Fomulario de Compra</a></li>
+                            <li><a href="reseñas.html">Valoraciones</a></li>
+                            <li><a href="proceso.html">Elaboración de Joyas</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-container">
+                        <h6>Siguenos</h6>
+                        <ul class="social">
+                            <li><a href="https://www.facebook.com/" i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/" i class="fa-brands fa-square-instagram"></i></a>
+                            </li>
+                            <li><a href="https://x.com/?lang=es" i class="fa-brands fa-square-x-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom-bar">
+                    <p>&copy 2025 Diamond Jewlery | Todos los derechos reservados | por Victor Ticurú</p>
+                </div>
+        </footer>
+        <script src="ejercicio.js"></script>
 </body>
 </html>

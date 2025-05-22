@@ -102,6 +102,15 @@ a {
 .content-banner {
   margin: 0 auto;
   padding: 10%;
+  animation: Entrada2 0.9s ease;
+}
+@keyframes Entrada2 {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 .content-banner h1 {
   color: #f5f3f4;
@@ -134,12 +143,11 @@ a {
 /*----------------------------------Aqui comienza el main o el contenido-----------*/
 .main-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 /*-----------------------------------------------Aqui comienza el Contenido principal---------*/
 .principal {
   display: flex;
-  flex-direction: column;
   flex: 60%;
   margin-top: 100px;
 }
@@ -149,19 +157,22 @@ a {
   align-items: center;
   background-color: #f4f4f4;
   border-radius: 10px;
-  margin: 10px auto;
+  padding: 10px;
+  margin: 90px auto;
   width: 100%;
-  max-width: 800px;
-  margin-left: 20%;
+  margin-left: 30%;
 }
  /*-------------------------- Titulo de cada parte del form ----------------------*/
-.text {
+legend{
   font-family: var(--lETRA-4--);
   font-size: 40px;
-  margin-left: 25%;
-  margin-top: 50px;
+  text-align: center;
 }
-.Datos {
+.Formas{
+  font-family: var(--lETRA-1--);
+  text-align: center;
+}
+.Datos{
   padding: 10px;
   gap: 10px;
   margin: auto;
@@ -185,7 +196,7 @@ a {
   border-color: #888;
 }
 .Datos2 input[type="radio"] {
-  margin-right: 20px;
+  margin-right: 50px;
 }
 .ban {
   width: 50px;
@@ -206,15 +217,17 @@ a {
 /*---------------------- interior de cada cuadrado del --------------------*/
 .Datos input,
 select {
+  border-radius: 4px;
   font-family: var(--lETRA-1--);
   width: 100%;
   padding: 10px 90px 10px 10px;
 }
-/*-----------linea que separa partes del form--------*/
-hr {
-  margin-top: 50px;
-  width: 50%;
-  margin-left: 20%;
+.Datos3 input{
+  border-radius: 4px;
+  font-family: var(--lETRA-1--);
+  width: 100%;
+  padding: 10px 90px 10px 10px;
+  margin-left: 31%;
 }
 /*---------------------- Aqui comienza el aside------------------ */
 aside {
@@ -284,7 +297,7 @@ h5 {
 
 /*------------------Aqui comienzan los bancos asociados---------------*/
 .bancos {
-  margin-top: 30px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
