@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If compuesto</title>
+</head>
+
+<body>
+    <h1>If Compuesto</h1>
+    <h2>Generar dos números aleatorios entre 1 - 25, verificar quien es el mayor</h2>
+    <script>
+        let num1 = Math.trunc(Math.random() * 25 + 1);
+        let num2 = Math.trunc(Math.random() * 25 + 1);
+        document.write("El número generado es: ", num1, "<br>");
+        document.write("El número generado es: ", num2, "<br>");
+        if (num1 > num2) {
+            document.write("<b>", "num1: ", num1, "Es mayor a num2: ", num2, "<br>")
+        }
+        else {
+            document.write("<b>", "num2: ", num2, "Es mayor a num2: ", num1, "<br>")
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Funciones math en JS</h1>
+    <section>
+        <h2>Redondeado</h2>
+        <article>
+            <script>
+                let num1 = 5.99;
+                document.write("El primer número redondeado es: ", Math.round(num1), "<br>");
+                document.write("El primer número con floor es: ", Math.floor(num1), "<br>");
+                document.write("El primer número con ceil  es: ", Math.ceil(num1), "<br>");
+                /* quita o elimina la parte decimal  */
+                document.write("El primer número con trunc  es: ", Math.trunc(num1), "<br>");
+
+            </script>
+        </article>
+    </section>
+    <section>
+        <h2>otros</h2>
+        <article>
+            <script>
+                let num2 = 3;
+                let num3 = 4;
+                /*  elije el numero mayor */
+                document.write("El numero mayor es: ", Math.max(num2, num3), "<br>");
+                /* Elije el numero menor */
+                document.write("El numero menor es: ", Math.min(num2, num3), "<br>");
+                /* Eleva un numero a otro */
+                document.write("El segundo elevado al tercero es: ", Math.pow(num2, num3) + "<br>");
+                /* genera la raiz cuadrada de un numero determinado */
+                document.write("La raiz cuadrada del segundo numero es: ", Math.sqrt(num2) + "<br>");
+                /* genera la raiz cubica de un numero determinado */
+                document.write("La raiz cubica del segundo numero es ", Math.cbrt(num2) + "<br>");
+                /*  Genera un numero aleatorio */
+                document.write("El numero aleatorio es: ", Math.trunc(Math.random() * 10) + "<br>");// genera un numero entre 0 y 9
+                document.write("El numero aleatorio es: ", Math.trunc(Math.random() * 10 + 1) + "<br>");// Genera un numero entre 1 y 10
+                document.write("El numero aleatorio es: ", Math.trunc(Math.random() * 10 + 100) + "<br>");// Genera un numero entre 100 y 109
+            </script>
+        </article>
+    </section>
+    <section>
+        <h2>Funciones math y mas</h2>
+        <h3>Generar 3 notas, mostrar nota mas alta y mas baja, costrar nota final</h3>
+        <article>
+            <script>
+                let no1 = Math.trunc(Math.random() * 101 + 0);
+                let no2 = Math.trunc(Math.random() * 101 + 0);
+                let no3 = Math.trunc(Math.random() * 101 + 0);
+                result=(no1+no2+no3);
+                document.write("La primera nota es de: ", no1, "<br>");
+                document.write("La segunda nota es de: ", no2, "<br>");
+                document.write("La tercera nota es de: ", no3, "<br>");
+                document.write("La nota mas alta es: ", Math.max(no1, no2, no3), "<br>");
+                document.write("La nota final es de: ",result/3,"<br>");
+            </script>
+        </article>
+    </section>
+</body>
+
+</html>

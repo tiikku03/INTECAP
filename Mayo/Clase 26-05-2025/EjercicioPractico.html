@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-size: 100%;
+        text-align: center;
+        background: #EEAECA;
+background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    }
+    
+</style>
+<body>
+    <h1>Ejercicio</h1>
+    <section>
+        <h2>Ejercicio 1</h2>
+        <p>Realizar un programa que genere un número entre -100 a 100 y
+            luego que muestre si es positivo. </p>
+        <article>
+            <script>
+                let n = Math.trunc(Math.random() * 201 - 100);
+                document.write("El numero generado es: ", n, "<br>")
+                if (n >= 0) {
+                    document.write("El número generado es: positivo","<br>");
+                }
+                if (n <= 0) {
+                    document.write("El número generado es: negativo");
+                }
+            </script>
+        </article>
+    </section>
+    <section>
+        <h2>Ejercicio 2</h2>
+        <p>Realizar un programa que genere 2 números aleatorios entre 1 y 100,
+            luego muestre cual es el mayor y el menor. </p>
+        <article>
+            <script>
+                let nu = Math.trunc(Math.random() * 100 + 1);
+                let nu2 = Math.trunc(Math.random() * 100 + 1);
+                document.write("El Primer número generado es :", nu, "<br>");
+                document.write("El Segundo número generado es :", nu2, "<br>");
+                if (nu > nu2) {
+                    document.write("El primer numero es mayor: ", nu, "<br>", " a el segundo numero: ", nu2, "<br>");
+                }
+                else {
+                    document.write("El segundo número es mayor: ", nu2, "<br>", " a el primer numero: ", nu, "<br>");
+                }
+            </script>
+        </article>
+    </section>
+    <section>
+        <h2>Ejercicio 3</h2>
+        <p>Realizar un programa que ingrese 1 número y luego muestre
+            si es divisible dentro de 10 o no. </p>
+        <article>
+            <script>
+                num = parseInt(prompt("ingrese un numero"));
+                if (num % 10 == 0) {
+                    document.write("El numero ingresado es:", num, "<br>", "es divisible detro de 10", "<br>");
+                }
+                else {
+                    document.write("El numero no es divisible dentro de 10");
+                }
+            </script>
+        </article>
+    </section>
+    <section>
+        <h2>Ejercicio 4</h2>
+        <p>Realizar un programa que solicite el ingreso de un año verificar si el año ingresado es bisiesto o no.
+            Recordemos que un año bisiesto es el que se repite a cada 4 años y tiene 366 días.</p>
+        <article>
+            <script>
+                let year = parseInt(prompt("Ingrese el año"));
+                document.write("El año ingresado es:", year, "<br>");
+                if (year % 4 == 0 && year %100 !== 0 || year %400 == 0 ){
+                  document.write("Es año bisiesto")
+                }
+                else{
+                    document.write("No es año bisiesto")
+                }
+            </script>
+        </article>
+    </section>
+    <footer>
+        <p>&copy 2025 | por Victor Ticurú</p>
+    </footer>
+</body>
+
+</html>

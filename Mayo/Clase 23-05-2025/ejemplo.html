@@ -10,15 +10,31 @@
 <body>
     <section>
         <article>
-            <script>
-                var prod = "zapato";
-                let precio = 225.5;
-                let cant = 1;
-                const iva = 0.12;
-                  document.write("Su ", prod, " el precio es: ", precio, " el iva a pagar es: ");
-                document.write(precio * iva, " Su total a pagar es: ", precio + precio * iva);
+            <h2>Ingreso de notas por alumno</h2>
+            <script >
+                let nombre;
+                let n1, n2, n3, n4;
+                let result;
+                nombre=prompt("Ingrese nombre del alumno");
+                document.write("El nombre ingresado es:", nombre, "<br>");
+                n1=prompt("ingrese nota 1:");
+                n2=prompt("ingrese nota 2:"); 
+                n3=prompt("ingrese nota 3:");
+                n4=prompt("ingrese nota 4:");
+                alert("Las notas ingresadas son:\n"+n1+"\n"+n2+"\n"+n3+"\n"+n4+"\n");
+                document.write("Las notas ingresadas son:"+"<br>"+n1+"<br>"+n2+"<br>"+n3+"<br>"+n4,"<br>");
+                //promedio es la suma de los datos, dividiendo el total de datos.
+                //promedio--->(n1+n2+n3+n4)
+
+                //como dar la suma 
+                //con el parseInte se convierte en un numero 
+                result=(parseInt(n1)+parseInt(n2)+parseInt(n3)+parseInt(n4))/4;
+                document.write("La nota obtenida es:",result,"<br>");
+
             </script>
+        </article>
     </section>
+    <script src="Problema1.JS"></script>
 </body>
 
 </html>

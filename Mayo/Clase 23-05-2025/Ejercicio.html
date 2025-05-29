@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Ejercico</h1>
+    <section>
+        <h2>Problema 1</h2>
+        <article>
+            <script>
+                const xValue = 4
+                let yValue = 3 * xValue ** 3 + Math.pow(xValue, 2) - xValue + 5;
+                console.log(yValue);
+                document.write("El valor de X es:", xValue + "<br>");
+                document.write("El valor de Y es:", yValue);
+            </script>
+        </article>
+    </section>
+
+
+    <section>
+        <h2>Problema 2</h2>
+        <article>
+            <script>
+                let Producto;
+                let precio, cantidad;
+                let descuento = 0.20 ;
+                Producto = prompt("Ingrese el producto");
+                precio = prompt("ingrese Precio");
+                cantidad = prompt("ingrese cantidad");
+                alert("El descuento es del 20%");
+                alert("Los datos ingresados son:\n" + Producto + "\n" + precio + "\n" + cantidad + "\n");
+                document.write("El Producto ingresado es:", Producto, "<br>");
+                document.write("El precio es:", precio + "<br>")
+                document.write("La cantidad es:", cantidad + "<br>")
+                document.write("El descuento es del 20% : ",Math.trunc(precio * 0.20)+ "<br>")
+                document.write("El total a pagar es de:",Math.trunc( precio * cantidad * 0.20 )+ "<br>")
+            </script>
+        </article>
+    </section>
+</body>
+
+</html>
