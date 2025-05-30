@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background: #2A7B9B;
+        background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(52, 140, 150, 1) 21%, rgba(78, 184, 137, 1) 50%, rgba(87, 199, 133, 1) 63%, rgba(115, 203, 124, 1) 82%, rgba(237, 221, 83, 1) 100%);
+    }
+</style>
+
+<body>
+    <h1>Ejercicio 1</h1>
+    <p>Realizar el código en Js genere un número entre 1-15, dependiendo el número mostrar un emoticon.
+        (Realizarlo con If anidado y Switch)</p>
+    <section>
+        <article>
+            <script>
+                let numeros = Math.trunc(Math.random() * 15 + 1);
+                document.write("El numero generado es ", numeros, "<br>");
+
+                switch (numeros) {
+                    case 1:
+                        document.write("El emoticono es: ", "👻");
+                        break;
+                    case 2:
+                        document.write("El emoticono es: ", "🤓");
+                        break;
+                    case 3:
+                        document.write("El emoticono es: ", "🤯");
+                        break;
+                    case 4:
+                        document.write("El emoticono es: ", "🫠");
+                        break;
+                    case 5:
+                        document.write("El emoticono es: ", "🫡");
+                        break;
+                    case 6:
+                        document.write("El emoticono es: ", "🤞");
+                        break;
+                    case 7:
+                        document.write("El emoticono es: ", "✌️");
+                        break;
+                    case 8:
+                        document.write("El emoticono es: ", "😒");
+                        break;
+                    case 9:
+                        document.write("El emoticono es: ", "😁");
+                        break;
+                    case 10:
+                        document.write("El emoticono es: ", "👍");
+                        break;
+                    case 11:
+                        document.write("El emoticono es: ", "👌");
+                        break;
+                    case 12:
+                        document.write("El emoticono es: ", "🤣");
+                        break;
+                    case 13:
+                        document.write("El emoticono es: ", "😶‍🌫️");
+                        break;
+                    case 14:
+                        document.write("El emoticono es: ", "😬");
+                        break;
+                    case 15:
+                        document.write("El emoticono es: ", "🧐");
+                }
+            </script>
+        </article>
+    </section>
+    <hr>
+    <h1>Ejercicio 2</h1>
+    <p>Realizar el código en Js permita ingresar una cantidad de puntos múltiplos de 100 con tope en 500, dependiendo la
+        cantidad de puntos ingresados los premios son los siguientes: <br>
+        100 - "Pelota de futbol"<br>
+        200 - "Airpod"<br>
+        300 - "Celular Android"<br>
+        400 - "Tablet"<br>
+        500 - "Laptop"<br>
+        Mostrar el premio ganado con su imagen. <br>
+
+        Validar que no ingrese números fuera de lo establecido. </p>
+    <hr>
+
+    <section>
+        <article>
+            <script>
+                let puntos = parseInt(prompt("Ingrese la cantidad de puntos"));
+                document.write("Puntos ingresasdos:", puntos,"<br>")
+                if (puntos % 100 === 0 && puntos >= 100 && puntos <= 500) {
+                    switch (puntos) {
+                        case 100:
+                            document.write("Felicidades", "<br>", "Su premio es una pelota de futbol", "<br>", '<img src="pelota.png" alt="Pelota de futbol" width="200px" height="200px">');
+                            break;
+                        case 200:
+                            document.write("Felicidades", "<br>", "Su premio son unos Airpods", "<br>", '<img src="air.png" alt="Airpods" width="200px" height="200px">');
+                            break;
+                        case 300:
+                            document.write("Felicidades", "<br>", "Su premio es un Celular Android", "<br>", '<img src="and.png" alt="Celular Android" width="200px" height="150px">');
+                            break;
+                        case 400:
+                            document.write("Felicidades", "<br>", "Su premio es una Tablet", "<br>", '<img src="tab.png" alt="Tablet" width="200px" height="200px">');
+                            break;
+                        case 500:
+                            document.write("Felicidades", "<br>", "Su premio es una Laptop", "<br>", '<img src="lap.png" alt="Laptop" width="200px" height="200px">');
+                            break;
+                    }
+                } else {
+                    document.write("Cantidad inválida");
+                }
+            </script>
+        </article>
+    </section>
+
+    <section>
+
+    </section>
+</body>
+
+</html>

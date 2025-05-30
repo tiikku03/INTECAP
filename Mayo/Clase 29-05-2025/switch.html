@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Ejemplo de Switch</h1>
+    <p>Generar un numero entre 1 - 5 mostrarlo en letras</p>
+    <section>
+        <article>
+            <script>
+                let letra = prompt("Ingrese una letra")
+                /* Math.trunc(Math.random() * 5 + 1) */
+                document.write("La letra ingresada es: ", letra, "<br>")
+                switch (letra) {
+                    case "a":
+                    case "e":
+                    case "i":
+                    case "o":
+                    case "u":
+
+                    case "A":
+                    case "E":
+                    case "I":
+                    case "O":
+                    case "U": { document.write("Es vocal", "<br>"); break; }
+                    default: { document.write("Es consonante o simbolo especial", "<br>") }
+                }
+            </script>
+        </article>
+    </section>
+    <section>
+        <img src="" alt="" width="100px" height="100px">
+        <h1>Ejemploo 2</h1>
+        <p>Generar 2 numeros entre 10-25, luego mostrar las operaciones basicas con los numeros</p>
+        <article>
+            <script>
+                let n1 = Math.trunc(Math.random() * 16 + 10);
+                let n2 = Math.trunc(Math.random() * 16 + 10);
+                document.write("El principal numero generado es: ", n1, "<br>");
+                document.write("El segundo numero generado es: ", n2, "<br>", "<hr>");
+                document.write("Menu de operaciones ", "<br>");
+                document.write("1 suma", "<br>");
+                document.write("2 resta", "<br>");
+                document.write("3 multiplicacion", "<br>");
+                document.write("4 division", "<br>", "<hr>");
+                let op = parseInt(prompt("Ingrese su opcion 1 suma \ 2 resta\ 3 multiplicacion \ 4 division") )
+                switch (op) {
+                    case 1: { document.write("La suma es: ", n1 + n2, "<br>"); break; }
+                    case 2: { document.write("La resta es: ", n1 - n2, "<br>"); break; }
+                    case 3: { document.write("La multiplicacion es: ", n1 * n2, "<br>"); break; }
+                    case 4: { document.write("La division es: ", n1 / n2, "<br>"); break; }
+                    default: { document.write("Operacion no valida") }
+                }
+            </script>
+        </article>
+    </section>
+</body>
+
+</html>
