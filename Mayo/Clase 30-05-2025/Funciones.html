@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        color: #000;
+        background: #2980B9;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    }
+</style>
+
+<body>
+    <h1>Funciones</h1>
+    <h2>Ejemplo 1</h2>
+     
+    <section>
+        <article>
+            <script>
+                function cuadrado(num) {
+                    return num * num;
+                }
+                let ni = prompt("Ingrese numero");
+                document.write("el número ingresado es: ", ni, "<br>");
+                document.write(cuadrado(ni), "<br>");
+            </script>
+        </article>
+    </section>
+
+    <hr>
+    <h2>Ejemplo 2</h2>
+    <section>
+        <article>
+            <script>
+                function numalea(num) {
+                    return Math.trunc(Math.random() * num + 1);
+                }
+                let nt = prompt("Ingrese numero tope para generar el nuemro");
+                document.write("numero aleatorio entre 1 y ", nt, "<br>");
+                document.write(numalea(nt), "<br>");
+            </script>
+        </article>
+    </section>
+
+    <hr>
+    <h2>Ejemplo 3</h2>
+    <section>
+        <article>
+            <script>
+                function multi(p1, p2) {
+                    return p1 * p2
+                }
+                let n1 = prompt("ingrese numero");
+                document.write("numero ingresado: "+ n1, "<br>", "<hr>");
+                let n2 = prompt("ingrese numero");
+                document.write("numero ingresado: "+ n2, "<br>", "<hr>");
+                document.write(multi(n1, n2), "<br>");
+
+            </script>
+        </article>
+    </section>
+
+    <hr>
+    <h2>Ejemplo 4</h2>
+    <section>
+        <article>
+            <script>
+            function valiEdad(edad){
+                if(edad>18)
+            {
+                return true;
+            }
+            else{
+                return confirm("¿Tienes permiso de tus padres?");
+            }
+            }
+            let edad= prompt("¿Que edad tienes?", 18);
+            if( valiEdad(edad)){
+                document.write( "Acseso otorgado","<br>","<hr>");
+            }
+            else{
+                document.write( "Acceso denegado","<br>","<hr>");
+            }
+
+            </script>
+        </article>
+    </section>
+
+    <hr>
+    <h2>Ejemplo 5</h2>
+    <section>
+        <article>
+            <script>
+             let mult=(a,b)=> a * b;
+             let nu1=prompt("Ingrese numero");
+             document.write("numero ingresado: "+nu1,"<br>");
+              let nu2=prompt("Ingrese numero");
+             document.write("numero ingresado: "+nu2,"<br>");
+             document.write(mult(nu1,nu2), "<br>");
+            </script>
+        </article>
+    </section>
+
+</body>
+
+</html>

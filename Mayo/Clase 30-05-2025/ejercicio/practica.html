@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+</head>
+<style>
+    body {
+        color: #f4f4f4;
+        background: #c31432;
+        background: -webkit-linear-gradient(to right, #240b36, #c31432);
+        background: linear-gradient(to right, #240b36, #c31432);
+    }
+</style>
+
+<body>
+
+    <h1>Ejercicio practico</h1>
+    <section>
+        <h2>Ejercicio 1</h2>
+        <p>Realizar el código Js utilizando funciones para generar las 4 operaciones matemáticas y elevar al cuadrado,
+            al
+            cubo y a la 4. Crear un menú para que la persona pueda seleccionar la opción.</p>
+        <article>
+            <script>
+                /*    suma */
+                function suma(sum) {
+                    return num1 + num2;
+                }
+
+                /* resta */
+                function resta(rest) {
+                    return num1 - num2;
+                }
+
+                /*  multiplicacion */
+                function multipli(mul) {
+                    return num1 * num2;
+                }
+
+                /* divicion */
+                function divicion(divic) {
+                    return num1 / num2;
+                }
+
+                /* cuadrado */
+                function cua(cuadra) {
+                    return num1 ** 2;
+                }
+
+                /*  cubo */
+                function cubo(cub) {
+                    return num1 ** 3;
+                }
+
+                /*   cuarta */
+                function cuart(cuar) {
+                    return num1 ** 4;
+                }
+                let num1 = parseInt(prompt("Ingrese un numero"));
+                let num2 = parseInt(prompt("Ingrese un numero"));
+                alert("los numeros ingresados son: \n" + num1 + "\n" + num2);
+                let opcion = prompt(
+                    "Selecciona una operación:\n" +
+                    "1. Sumar\n" +
+                    "2. Restar\n" +
+                    "3. Multiplicar\n" +
+                    "4. Dividir\n" +
+                    "5. Elevar al Cuadrado\n" +
+                    "6. Elevar al Cubo\n" +
+                    "7. Elevar a la Cuarta"
+                );
+                let resultadoOperacion;
+
+                switch (opcion) {
+                    case "1":
+                        resultadoOperacion = suma();
+                        alert("El resultado de la suma es: " + resultadoOperacion);
+                        break;
+                    case "2":
+                        resultadoOperacion = resta();
+                        alert("El resultado de la resta es: " + resultadoOperacion);
+                        break;
+                    case "3":
+                        resultadoOperacion = multipli();
+                        alert("El resultado de la multiplicación es: " + resultadoOperacion);
+                        break;
+                    case "4":
+                        resultadoOperacion = divicion();
+                        alert("El resultado de la división es: " + resultadoOperacion);
+                        break;
+                    case "5":
+                        resultadoOperacion = cua();
+                        alert("El resultado de elevar al cuadrado el es: " + resultadoOperacion);
+                        break;
+                    case "6":
+                        resultadoOperacion = cubo();
+                        alert("El resultado de elevar al cubo es: " + resultadoOperacion);
+                        break;
+                    case "7":
+                        resultadoOperacion = cuart();
+                        alert("El resultado de elevar a la cuarta es: " + resultadoOperacion);
+                        break;
+                }
+
+            </script>
+        </article>
+    </section>
+</body>
+
+</html>
