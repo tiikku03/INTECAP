@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Sancreek&family=Vollkorn+SC:wght@400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Pompiere&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  /* Fila superior (más claros a medios) */
+  --color1--: #e3f2fd;
+  --color2--: #bbdefb;
+  --color3--: #90caf9;
+  --color4--: #64b5f6;
+  --color5--: #42a5f5;
+
+  /* Fila inferior (más oscuros) */
+  --color6--: #2196f3;
+  --color7--: #1e88e5;
+  --color8--: #1976d2;
+  --color9--: #1565c0;
+  --color10--: #0d47a1;
+
+  --primary-color: #c7a17a;
+  --background-color: #f9f5f0;
+
+  /*   Tonos neutros */
+  --color11--: #fff;
+  --color12--: #fefdf9;
+  --color13--: #f8f9fa;
+  --color14--: #f5f3f4;
+  --color15--: #dee2e6;
+  --color16--: #bfc0c0;
+  --color17--: #fafafa;
+  /* letras */
+  --lETRA-1--: "Poppins";
+  --lETRA-2--: "Amatic SC";
+  --lETRA-3--: "Alumni Sans Pinstripe";
+  --lETRA-4--: "Bodoni Moda";
+  --lETRA-5--: "Cormorant";
+  --lETRA-8--: "Pompiere";
+  --LETRA-9--: "Sour Gummy";
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  max-width: 1300px; 
+  margin: 0 auto; 
+  padding: 0 20px; 
+  background-color: #f9f5f0;               
+}
+/* ----------------------------------------Aqui coienza el header--------------------------- */
+header {
+  display: flex;
+  flex-direction: column;
+}
+.tittle{
+  font-family: var(--lETRA-4--);
+  font-size: 90px;
+}
+.up {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.fa-brands,
+.fa-solid {
+  color: #000001;
+  margin-left: 5px;
+  text-decoration: none;
+  font-size: 30px;
+  margin-top: 50px;
+}
+.fa-brands:hover {
+  color: #bfc0c0;
+}
+.fa-solid:hover {
+  color: #bfc0c0;
+}
+.menu{
+  display: flex;
+  justify-content: center;
+}
+.conteiner-navbar,
+li,
+a {
+  color: #000;
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.6 ease;
+  font-family: var(--lETRA-1--);
+}
+.menu a:hover {
+  color: #bfc0c0;
+  transition: all 0.6 ease;
+}
