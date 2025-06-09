@@ -15,9 +15,9 @@
   /* Fila inferior (más oscuros) */
   --color6--: #2196f3;
   --color7--: #1e88e5;
-  --color8--: #1976d2;
+  --color8--: #ef233c;
   --color9--: #1565c0;
-  --color10--: #0d47a1;
+  --color10--: #B22222;
 
   --primary-color: #c7a17a;
   --background-color: #f9f5f0;
@@ -96,4 +96,109 @@ a {
 .menu a:hover {
   color: #bfc0c0;
   transition: all 0.6 ease;
+}
+/*---------------------------- Aqui comienzan los productos------------------- */
+.bike{
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+.bike2{
+  display: flex;
+  gap: 30px;
+}
+/* ------------------------------Aqui comienza el estilo de los productos-------------- */
+.product{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.6s ease;
+}
+.product:hover{
+  transition: all 0.6s ease;
+  background-color: #fff;
+  scale: 1.01;
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.1);
+}
+.product-image img{
+  width: 100%;
+}
+.details h1{
+  font-family: var(--lETRA-4--);
+  font-size: 20px;
+}
+.details p{
+  font-family: var(--lETRA-5--);
+  font-size: 20px;
+}
+.price{
+  margin-top: 30px;
+}
+.original{
+  color:#bfc0c0;
+  font-size: 20px;
+  font-family: var(--LETRA-9--);
+}
+.current{
+  color:#B22222;
+  font-size: 30px;
+  font-family: var(--LETRA-9--);
+}
+.payment{
+  margin-top: 3px;
+  font-size: 20px;
+  font-family: var(--lETRA-5--);
+  margin-bottom: 20px;
+}
+.payment b{
+  font-size: 30px;
+}
+.add-cart{
+  font-family: var(--lETRA-1--);
+  border: none;
+  opacity: 0.90;
+  background-color: #ef293c;
+  border-bottom: 3px solid #000;
+  height: 40px;
+  width: 355px;
+  transition: all 0.6s ease;
+}
+.add-cart:hover{
+scale: 1.02;
+opacity: 1;
+transition: all 0.6s ease;
+background-color: #ef233c;
+}
+.Pay{
+  margin-top: 10px;
+  display: flex;
+  gap: 5px;
+}
+.Ban img{
+width: 50px;
+}
+
+/* ------------------------Aqui comienza el footer-------------------- */
+footer{
+  margin-top: 100px;
+  justify-content: center;
+  padding: 30px;
+}
+.icons{
+  display: flex;
+  justify-content: center;
+}
+.menu-f{
+  display: flex;
+  justify-content: center;
+}
+.menu-f a:hover{
+  color: #bfc0c0;
+  transition: all 0.6 ease;
+}
+
+footer p{
+  font-family: var(--lETRA-1--);
+  font-size: 14px;
+  text-align: center;
 }

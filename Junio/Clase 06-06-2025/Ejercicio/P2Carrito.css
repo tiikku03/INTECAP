@@ -97,35 +97,16 @@ a {
   color: #bfc0c0;
   transition: all 0.6 ease;
 }
-/*---------------------------- Aqui comienzan los productos------------------- */
-.Elect{
+/* ------------Aqui comienzan los productos---------- */
+.Prod{
   display: flex;
-  gap: 30px;
-  margin-top: 30px;
+  gap: 3rem;
+  margin-top: 40px;
 }
-.Elect2{
-   margin-top: 30px;
-  display: flex;
-  gap: 30px;
+.show img{
+  width: 150px;
 }
-/* ------------------------------Aqui comienza el estilo de los productos-------------- */
-.product{
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  transition: all 0.6s ease;
-}
-.product:hover{
-  transition: all 0.6s ease;
-  background-color: #fff;
-  scale: 1.01;
-  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.1);
-}
-.product-image img{
-
-  width: 100%;
-}
-.details h1{
+details h1{
   font-family: var(--lETRA-4--);
   font-size: 20px;
 }
@@ -134,26 +115,17 @@ a {
   font-size: 20px;
 }
 .price{
-  margin-top: 30px;
+  margin-top: 15px;
 }
 .original{
   color:#bfc0c0;
-  font-size: 20px;
+  font-size: 15px;
   font-family: var(--LETRA-9--);
 }
 .current{
   color:#B22222;
-  font-size: 30px;
-  font-family: var(--LETRA-9--);
-}
-.payment{
-  margin-top: 3px;
   font-size: 20px;
-  font-family: var(--lETRA-5--);
-  margin-bottom: 20px;
-}
-.payment b{
-  font-size: 30px;
+  font-family: var(--LETRA-9--);
 }
 .add-cart{
   font-family: var(--lETRA-1--);
@@ -162,7 +134,7 @@ a {
   background-color: #ef293c;
   border-bottom: 3px solid #000;
   height: 40px;
-  width: 355px;
+  width: 105px;
   transition: all 0.6s ease;
 }
 .add-cart:hover{
@@ -171,14 +143,6 @@ opacity: 1;
 transition: all 0.6s ease;
 background-color: #ef233c;
 }
-.Pay{
-  margin-top: 10px;
-  display: flex;
-  gap: 5px;
-}
-.Ban img{
-width: 50px;
-}
 
 /* ------------------------Aqui comienza el footer-------------------- */
 footer{
@@ -186,7 +150,7 @@ footer{
   justify-content: center;
   padding: 30px;
 }
-.icons{
+.icons{ 
   display: flex;
   justify-content: center;
 }

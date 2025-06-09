@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/6013ac0acd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="P2Carrito.css">
+</head>
+
+<body>
+    <header>
+        <section class="up">
+            <article class="redes">
+                <a href="https://www.facebook.com/" i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://x.com/?lang=es" i class="fa-brands fa-square-x-twitter"></i></a>
+            </article>
+            <article class="tittle">
+                <h1>Casa Y Estilo</h1>
+            </article>
+
+            <article class="usuario">
+                <a href="" i class="fa-solid fa-user"></i></a>
+                <a href="" id="shoppingCart" i class="fa-solid fa-bag-shopping"></a></i></a>
+            </article>
+        </section>
+        <section class="dowm">
+            <ul class="menu">
+                <li><a href="P1 Home.html">Home</a></li>
+                <li><a href="P2 Camas y Salas.html">Camas y Salas</a></li>
+                <li><a href="P3 Electrodomesticos.html">Electrodomesticos</a></li>
+                <li><a href="P4 Motocicletas.html">Motocicletas</a></li>
+            </ul>
+        </section>
+    </header>
+    <main>
+        <!-- Producto 1 -->
+        <section class="Prod">
+            <div class="show">
+                <img src="imgs/1C.png" alt="Cama Simmons Harmony Lux Pillow Top">
+            </div>
+            <div class="inf">
+                <div class="details" id="product-name">
+                    <h1> Simmons Harmony Lux Pillow Top</h1>
+                    <p>Indufoam</p>
+                </div>
+                <div class="price" id="product-price">
+                    <p class="original"><s>Q 12,099.00</s></p>
+                    <p class="current">Q 8,469.00</p>
+                </div>
+                <button class="add-cart" onclick="realizarPedido()">
+                    comprar ahora
+                </button>
+            </div>
+        </section>
+
+        <!-- producto 2 -->
+        <section class="Prod">
+            <div class="show">
+                <img src="imgs/C2.png" alt="Cama Sealy Alicante">
+            </div>
+            <div class="inf">
+                <div class="details">
+                    <h1>Cama Sealy Alicante</h1>
+                    <p>Sealy</p>
+                </div>
+                <div class="price">
+                    <p class="original"><s>Q 18,479.00</s></p>
+                    <p class="current">Q 12,011.00</p>
+                </div>
+                <button class="add-cart" onclick="realizarPedido()">
+                    comprar ahora
+                </button>
+            </div>
+
+        </section>
+
+        <!-- producto 3 -->
+        <section class="Prod">
+            <div class="show">
+                <img src="imgs/C3.png" alt="Cama Beautyrest Harmony Pillow Top">
+            </div>
+            <div class="inf">
+                <div class="details">
+                    <h1>Beautyrest Harmony Pillow Top</h1>
+                    <p>Simmons</p>
+                </div>
+                <div class="price">
+                    <p class="original"><s>Q 9,999.00</s></p>
+                    <p class="current">Q 5,799.00</p>
+                </div>
+                <button class="add-cart" onclick="realizarPedido()">
+                    comprar ahora
+                </button>
+            </div>
+
+        </section>
+
+        <!-- producto 4 -->
+        <section class="Prod">
+            <div class="show">
+                <img src="imgs/S1.png" alt="Sofá cama">
+            </div>
+            <div class="inf">
+                <div class="details">
+                    <h1>Sofá cama</h1>
+                    <p>Home Furniture</p>
+                </div>
+                <div class="price">
+                    <p class="original"><s>Q 4,999.00</s></p>
+                    <p class="current">Q 3,999.20</p>
+                </div>
+                <button class="add-cart" onclick="realizarPedido()">
+                    comprar ahora
+                </button>
+            </div>
+        </section>
+
+        <!-- producto 5 -->
+        <section class="Prod">
+            <div class="show">
+                <img src="imgs/S2.png" alt="Sala 3-2 Camilo">
+            </div>
+            <div class="inf">
+                <div class="details">
+                    <h1>Sala 3-2 Camilo</h1>
+                    <p>Home Furniture</p>
+                </div>
+                <div class="price">
+                    <p class="original"><s>Q 14,399.00</s></p>
+                    <p class="current">Q 11,519.20</p>
+                </div>
+                <button class="add-cart" onclick="realizarPedido()">
+                    comprar ahora
+                </button>
+            </div>
+        </section>
+
+        <!-- producto 6 -->
+        <section class="Prod">
+            <div class="show">
+              <img src="imgs/S3.png" alt="Sala 3-2 Napa">
+            </div>
+            <div class="inf">
+                <div class="details">
+                    <h1>Sala 3-2 Napa</h1>
+                    <p>Home Furniture</p>
+                </div>
+                <div class="price">
+                    <p class="original"><s>Q 12,999.00</s></p>
+                    <p class="current">Q 10,399.20</p>
+                </div>
+                <button class="add-cart" onclick="realizarPedido()">
+                    comprar ahora
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!------ aqui comienza el footer -------------->
+    <footer>
+        <hr>
+        <ul class="icons">
+
+            <li class="icon-elem">
+                <a href="https://www.youtube.com" class="icon">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="https://www.facebook.com/" class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="https://x.com/" class="icon">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="https://www.instagram.com/" class="icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="menu-f">
+            <li><a href="P1 Home.html">Home</a></li>
+            <li><a href="P2 Camas y Salas.html">Camas y Salas</a></li>
+            <li><a href="P3 Electrodomesticos.html">Electrodomesticos</a></li>
+            <li><a href="P4 Motocicletas.html">Motocicletas</a></li>
+        </ul>
+        <p>&copy 2025 Casa Y Estilo <br>
+            Todos los derechos reservados | por Victor Ticurú</p>
+    </footer>
+    <script src="P2 Camas y Salas.js"></script>
+</body>
+
+</html>
