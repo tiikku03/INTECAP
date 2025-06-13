@@ -14,11 +14,8 @@ function realizarPedido() {
     6: { nombre: "Motocicleta Yamaha FZ 2.0", precio: 20285.38 },
   };
   alert("¡Bienvenido a la sección de motocicletas!");
-  while (comprar) {
-    producto = prompt("Que desea adquirir \n Motocicleta Katana R1 200 \nMotocicleta Katana Scrambler 250R \nMotocicleta Yamaha FZ25 \nMotocicleta Yamaha FZS 3.0 \nMotocicleta Yamaha XTZ 125 \nMotocicleta Yamaha FZ 2.0");
+    producto = prompt("Que desea adquirir \n 1.Motocicleta Katana R1 200 \n 2.Motocicleta Katana Scrambler 250R \n 3.Motocicleta Yamaha FZ25 \n 4.Motocicleta Yamaha FZS 3.0 \n 5.Motocicleta Yamaha XTZ 125 \n 6.Motocicleta Yamaha FZ 2.0 \n Seleccione cancelar " );
     if (producto === null) {
-      comprar = false;
-      break;
     }
     comprar;
     OpcionElegida = parseInt(producto);
@@ -54,8 +51,8 @@ function realizarPedido() {
         break;
       }
     }
-  }
-  cantidad = parseInt(prompt("Ingrese la cantidad deseada"));
+     cantidad = parseInt(prompt("Ingrese la cantidad deseada"));
   total = cantidad * ProductoActual;
   alert("Su total a pagar es de " + total);
-}
+  }
+

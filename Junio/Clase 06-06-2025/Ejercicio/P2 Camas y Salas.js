@@ -14,13 +14,11 @@ function realizarPedido() {
         6: { nombre: "Sala 3-2 Napa", precio: 10399.20 }
     };
   alert("¡Bienvenido a la sección de Camas y Salas!");
-  while (comprar) {
+
     producto = prompt(
-      "Que desea adquirir \n 1.Simmons Harmony Lux Pillow Top \n 2.Cama Sealy Alicante \n 3.Beautyrest Harmony Pillow Top \n 4.Sofá cama \n 5.Sala 3-2 Camilo \n 6.Sala 3-2 Napa \n Seleccione cancelar si no desea otro producto"
+      "Que desea adquirir \n 1.Simmons Harmony Lux Pillow Top \n 2.Cama Sealy Alicante \n 3.Beautyrest Harmony Pillow Top \n 4.Sofá cama \n 5.Sala 3-2 Camilo \n 6.Sala 3-2 Napa \n Seleccione cancelar "
     );
     if (producto === null){
-        comprar = false;
-        break;
     }
     comprar 
     OpcionElegida =parseInt(producto);
@@ -42,7 +40,6 @@ function realizarPedido() {
       }
       case 4: {
         alert("ha elegido Sofá cama Lux Pillow(Q 3,999.20) ");
-            document.write("ha elegido Sofá cama Lux Pillow(Q 3,999.20)");
           ProductoActual = preciosProductos[4].precio;
         break;
       }
@@ -57,8 +54,7 @@ function realizarPedido() {
         break;
       }
     }
-  }
-   cantidad = parseInt(prompt("Ingrese la cantidad deseada"))
+       cantidad = parseInt(prompt("Ingrese la cantidad deseada"))
    total = cantidad * ProductoActual;
    alert("Su total a pagar es de "+ total)
-}
+  }

@@ -14,13 +14,10 @@ function realizarPedido() {
         6: { nombre: "Parrilla Interior Antiadherente", precio: 1619.00 }
     };
   alert("¡Bienvenido a la sección de CElectrodomesticos!");
-  while (comprar) {
     producto = prompt(
-      "Que desea adquirir \n 1.Molinillo de café plateado \n 2.Aspiradora de piso robot Multilaser \n 3.Aspiradora 2 en 1 \n 4.Freidora de aire 6 en 1 DualZone XL \n 5.Horno tostador con Sure-Crisp Air \n 6.Parrilla Interior Antiadherente \n Seleccione cancelar si no desea otro producto"
+      "Que desea adquirir \n 1.Molinillo de café plateado \n 2.Aspiradora de piso robot Multilaser \n 3.Aspiradora 2 en 1 \n 4.Freidora de aire 6 en 1 DualZone XL \n 5.Horno tostador con Sure-Crisp Air \n 6.Parrilla Interior Antiadherente \n Seleccione cancelar "
     );
     if (producto === null){
-        comprar = false;
-        break;
     }
     comprar 
     OpcionElegida =parseInt(producto);
@@ -56,10 +53,7 @@ function realizarPedido() {
         break;
       }
     }
-  }
-   cantidad = parseInt(prompt("Ingrese la cantidad deseada"))
+    cantidad = parseInt(prompt("Ingrese la cantidad deseada"))
    total = cantidad * ProductoActual;
    alert("Su total a pagar es de "+ total)
-
-   
-}
+  }
