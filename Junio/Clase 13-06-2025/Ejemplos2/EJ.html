@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="alert('Esto es una prueba')"> Haz click</button>
+
+    <div onmouseover="this.style.backgroundColor = 'green'; this.style.color='red' "
+        onmouseout="this.style.backgroundColor = 'navi'; this.style.color='white' ">Pasa por aqui
+
+    </div>
+    <form id="Formu">
+        <label>Ingrese su nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre"> <br>
+        <label>Ingrese su telefono</label>
+        <input type="text" id="tel" name="telefono" placeholder="Telefono"> <br>
+        <label>Seleccione Rango de edad</label>
+        <select name="edad" id="edad">
+            <option value="0-10">0-10</option>
+            <option value="11-25">11-25</option>
+            <option value="26-40">26-40</option>
+            <option value="41-60">41-60</option>
+            <option value="61-100">61-100</option>
+            <option value=">100">>100</option>
+        </select>
+      <button onclick="GuardarDatos()">Enviar</button>
+    </form>
+     <div id="ShowDatos"></div>
+    <script>
+        function GuardarDatos(){
+            let nom = document.getElementById("nombre").value;
+            let tel = document.getElementById("tel").value;
+            let ed= document.getElementById("edad").value
+            let show = document.getElementById("ShowDatos");
+            ShowDatos.innerHTML = "<hr>"+ "nombre" + nombre + "<br>" + "telefonop" + tel + "<br>" + "edad" + ed + "<hr>"
+
+
+      /*   document.write("El nombre ingresado es; " + nom  + "<br>")
+        document.write("El telefono ingresado es: "+ tel + "<br>")
+        document.write("La edad selecionada es: "+ ed + "<br>"+ "<br>") */
+
+        }
+    </script>
+</body>
+
+</html>
