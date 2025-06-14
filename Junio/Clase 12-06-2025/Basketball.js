@@ -3,14 +3,14 @@ const Products = [
     Code: "SX1234764",
     Name: "Tenis Para Basquetboll",
     Description: "Tenis con plataforma para mayor comodidad en el juego",
-    Ph: '<img src="tenisDeBasquetball.png"',
+    Ph: '<img src="img/tenisDeBasquetball.png"',
     Price: 795.0,
   },
   {
     Code: "SX45687808",
     Name: "Balon Spalding",
     Description: "Pelota spalding para basquetball",
-    Ph: '<img src="balonSpalding.png"',
+    Ph: '<img src="img/balonSpalding.png"',
     Price: 234.23,
   },
   {
