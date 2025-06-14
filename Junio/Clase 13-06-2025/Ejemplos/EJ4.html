@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Elemento Object</h1>
+    <h2>Diferencias en innerHTML, innerText y textContent</h2>
+
+    <p id="myP">El elemento tendra un espacio extra <span>Un elemento span </span></p>
+    <button onclick="getinnerHTML()">get innerHTML</button>
+    <button onclick="getinnerText()">get innerText</button>
+    <button onclick="gettextContent()">get textContent</button>
+    <pre id="demo"></pre>
+    <script>
+        function getinnerHTML(){
+            let text = document.getElementById("myP").innerHTML;
+            document.getElementById("demo").innerText = text;
+        }
+
+         function getinnerText(){
+            let text = document.getElementById("myP").innerText;
+            document.getElementById("demo").innerText = text;
+        }
+
+         function gettextContent(){
+            let text = document.getElementById("myP").text;
+            document.getElementById("demo").innerText = text;
+        }
+    </script>
+</body>
+</html>

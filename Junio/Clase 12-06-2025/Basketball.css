@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Sancreek&family=Vollkorn+SC:wght@400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Pompiere&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+
+:root {
+  /* Fila superior (más claros a medios) */
+  --color1--: #e3f2fd;
+  --color2--: #bbdefb;
+  --color3--: #90caf9;
+  --color4--: #64b5f6;
+  --color5--: #42a5f5;
+
+  /* Fila inferior (más oscuros) */
+  --color6--: #2196f3;
+  --color7--: #1e88e5;
+  --color8--: #1976d2;
+  --color9--: #1565c0;
+  --color10--: #0d47a1;
+
+  --background-color: #f9f5f0;
+
+  /*   Tonos neutros */
+  --color11--: #fff;
+  --color12--: #fefdf9;
+  --color13--: #f8f9fa;
+  --color14--: #f5f3f4;
+  --color15--: #dee2e6;
+  --color16--: #bfc0c0;
+  --color17--: #fafafa;
+  /* letras */
+  --lETRA-1--: "Poppins";
+  --lETRA-2--: "Amatic SC";
+  --lETRA-3--: "Alumni Sans Pinstripe";
+  --lETRA-4--: "Bodoni Moda";
+  --lETRA-5--: "Cormorant";
+  --lETRA-8--: "Pompiere";
+  --LETRA-9--: "Sour Gummy";
+  --Letra-10--: "Creepster";
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/*-------------------------------- Aqui comienza el header------------------------ */
+.navbar {
+  background-color: #000;
+  padding: 15px;
+}
+.navdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo a {
+  font-size: 50px;
+  font-family: var(--lETRA-4--);
+  color: #fff;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+  display: inline-block;
+}
+li a {
+  font-family: var(--lETRA-3--);
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+  margin-right: 25px;
+  text-decoration: none;
+  transition: all 0.6 ease;
+}
+.menu a:hover {
+  color: #bfc0c0;
+  transition: all 0.6 ease;
+}
+.up {
+  display: flex;
+  justify-content: flex-end;
+}
+button {
+  width: 100px;
+  background-color: #000;
+  margin-left: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+button a {
+  text-decoration: none;
+  color: #fefdf9;
+  font-weight: bold;
+}
+/* -------------------------------------Icons------------------------------------ */
+.fa-brands,
+.fa-solid {
+  color: #fff;
+  margin-left: 5px;
+  text-decoration: none;
+  font-size: 30px;
+}
+.fa-brands:hover {
+  color: #bfc0c0;
+}
+.fa-solid:hover {
+  color: #bfc0c0;
+}
+
+/* ------------------------Aqui comienza el footer-------------------- */
+footer{
+  background-color: #000;
+  margin-top: 100px;
+  justify-content: center;
+  padding: 30px;
+}
+.icons{
+  display: flex;
+  justify-content: center;
+}
+.menu-f{
+  display: flex;
+  justify-content: center;
+}
+.menu-f a:hover{
+  color: #bfc0c0;
+  transition: all 0.6 ease;
+}
+
+  footer p{
+  color: #dee2e6;
+  font-family: var(--lETRA-1--);
+  font-size: 14px;
+  text-align: center;
+}

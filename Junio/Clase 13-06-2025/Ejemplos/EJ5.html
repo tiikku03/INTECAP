@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="formulario">
+ <label > Nombre:</label>
+ <input type="text" id="nombre" name="nombre"> <br> <br>
+ <label>Apellido</label>
+ <input type="text" id="apellido" name="apellido"> <br> <br>
+ <button type="button" onclick="Showdatos()">Mostrar Datos</button>
+ <select name="mensaje" id="mensajes">
+  <option value="hola">Hola</option>
+  <option value="Buena noche">Buena noche</option>
+  <option value="Feliz Noche">Feliz Noche</option>
+ </select>
+    </form>
+    <div id="DatosMostrados"></div>
+    <script>
+        function Showdatos(){
+            let nombre = document.getElementById("nombre").value;
+            let apellido = document.getElementById("apellido").value;
+            let mensaje = document.getElementById("mensaje").value;
+            let DatosMostrados = document.getElementById("DatosMostrados");
+            DatosMostrados.innerHTML = "<hr>"+"nombre: "+ nombre + "Apellido: " + apellido + "Mensaje" + mensaje + "<hr>";
+        }
+    </script>
+</body>
+</html>
