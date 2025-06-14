@@ -58,11 +58,11 @@ function ShowProd() {
 
 
     document.write('<div>');
+     document.write(`<p> ${producto.Ph}</p>`);
 
     document.write(`<h2>${producto.Name} ${producto.Code} </h2>`);
     document.write(`<p>${producto.Description}</p>`);
 
-    document.write(`<p>Photo: ${producto.Ph}</p>`);
     document.write(`<p>Price: $${producto.Price}</p>`);
 
     document.write('</div>');
