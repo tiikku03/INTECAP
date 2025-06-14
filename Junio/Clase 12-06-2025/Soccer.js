@@ -1,10 +1,10 @@
 
 const Products= [
 {
-    Code: "SX4120101",
+      Code: "SX4120101",
     Name:"Medias",
     Description: "Medias Nike Academy Classic Blanca",
-    Ph: "",
+    Ph:'<img src="img/S1.png"' ,
     Price: 195.00
 
 },
