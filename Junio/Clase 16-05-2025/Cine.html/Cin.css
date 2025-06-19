@@ -34,7 +34,7 @@
 }
 
 body {
-  color: var(--color18--);
+  background-color: #212121;
   max-width: 1700px;
   margin: 0 auto;
   padding: 0 20px;
@@ -44,7 +44,7 @@ body {
 /*-------------------------- aqui comienza el header------------------------------ */
 header {
   display: flex;
-  background-color: var(--color11--);
+  background-color:#212121;
 }
 .cinema {
   display: flex;
@@ -107,7 +107,7 @@ header {
 }
 /*----------------------------------Aqui comienza el banner-------------------------------------*/
 .banner {
-  background-image: linear-gradient(to right, white 30%, transparent),
+  background-image: linear-gradient(to right, rgb(0, 0, 0) 30%, transparent),
     url(img/banner.png);
   background-size: cover;
   background-repeat: no-repeat;
