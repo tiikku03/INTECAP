@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Sancreek&family=Vollkorn+SC:wght@400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Pompiere&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+
+:root{
+   --background-color: #f9f5f0;
+  /*   Tonos neutros */
+   --color10--: #780000;
+  --color11--: #fff;
+  --color12--: #fefdf9;
+  --color13--: #f8f9fa;
+  --color14--: #f5f3f4;
+  --color15--: #dee2e6;
+  --color16--: #b2b6b6;
+  --color17--: #fafafa;
+  --color18--: #212121;
+  /* letras */
+  --lETRA-1--: "Poppins";
+  --lETRA-2--: "Amatic SC";
+  --lETRA-3--: "Alumni Sans Pinstripe";
+  --lETRA-4--: "Bodoni Moda";
+  --lETRA-5--: "Cormorant";
+  --lETRA-8--: "Pompiere";
+  --LETRA-9--: "Sour Gummy";
+  --Letra-10--: "Creepster";
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #212121;
+  background-color: var(--color11--);
+  width: 100%;
+  margin: 0 auto;
+}
+/*-------------------------- aqui comienza el header------------------------------ */
+header{
+  display: flex;
+  background-color: var(--color16--);
+  width: 100%;
+}
+.cinema{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.up{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.down{
+ display: flex;
+ width: 100%;
+ justify-content: space-between;
+ align-items: center;
+}
+/* -------------------------------------Icons------------------------------------- */
+.social{
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.fa-brands {
+  color: #fff;
+  margin-left: 5px;
+  text-decoration: none;
+  font-size: 30px;
+}
+.fa-brands:hover {
+  color: #bfc0c0;
+}
+/*-------------------------------------- logo ---------------------------------------*/
+.logo img{
+    width: 200px;
+}
+/*-------------------------------------- menu-------------------------------- */
+.menu{
+  display: flex;
+  gap: 10px;
+}
+.menu li {
+  list-style: none;
+  display: inline-block;
+}
+.menu a{
+  font-family: var(--lETRA-1--);
+  font-size: 25px;
+  text-decoration: none;
+  color: #dee2e6;
+  transition:  all 0.6s ease;
+}
+.menu a:hover{
+  transition:  all 0.6s ease;
+  color: #bfc0c0;
+}
+.line{
+  font-size: 30px;
+  color: #fff;
+}
+
+/*---------------------------------------Aqui comienza el main---------------- */
+
+/* -----------------------Aqui comienzan las peliculas------------------------------- */
+.movies{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Pelicula{
+  display: flex;
+  margin-top: 10px;
+  padding: 20px;
+}
+.left img{
+  width: 150px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hidden{
+  display: none;
+}
+/* -----------------------Aqui comienza la informacion de las peliculas----------------------- */
+.right{
+  margin-left: 10px;
+  margin-top: 30px;
+  color: #bfc0c0;
+}
+#Opcion{
+  background-color: #b2070f;
+  border-radius: 5px;
+  width: 50px;
+  text-align: center;
+  height: 30px;
+}
+
+select{
+  display: block;
+}
+
+.amountsContainer{
+   display: flex;
+   width: 15rem;
+   display: flex;
+   justify-content: space-between;
+   justify-self: center;
+}
+
+.showingCartInformation{
+  margin-left: 20%;
+}
+
+.movies3D, .movies2D {
+    height: 4rem;
+    width: 7rem;
+    font-size: 2rem;
+    display: flex; 
+    align-items: center;
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+
+.movies3D div, .movies2D div { 
+    display: block; 
+}
+
+.tittle{
+  font-size: 1rem;
+}
+
+
+
+/*----------------------------Formulario de Comprador------------------------*/
+.comprador {
+  height: 10rem;
+  margin-top: 3rem;
+  border-style: groove; 
+}
