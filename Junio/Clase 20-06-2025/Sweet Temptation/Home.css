@@ -1,0 +1,558 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Sancreek&family=Vollkorn+SC:wght@400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Pompiere&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+
+:root {
+  /* Fila superior (más claros a medios) */
+  --color1--: #e3f2fd;
+  --color2--: #bbdefb;
+  --color3--: #90caf9;
+  --color4--: #64b5f6;
+  --color5--: #42a5f5;
+
+  /* Fila inferior (más oscuros) */
+  --color6--: #2196f3;
+  --color7--: #1e88e5;
+  --color8--: #1976d2;
+  --color9--: #1565c0;
+  --color10--: #0d47a1;
+  --color11--: #003873;
+
+  --background-color: #f9f5f0;
+
+  /*   Tonos neutros */
+  --color11--: #fff;
+  --color12--: #fefdf9;
+  --color13--: #f8f9fa;
+  --color14--: #f5f3f4;
+  --color15--: #dee2e6;
+  --color16--: #bfc0c0;
+  --color17--: #fafafa;
+  /* letras */
+  --lETRA-1--: "Poppins";
+  --lETRA-2--: "Amatic SC";
+  --lETRA-3--: "Alumni Sans Pinstripe";
+  --lETRA-4--: "Bodoni Moda";
+  --lETRA-5--: "Cormorant";
+  --lETRA-8--: "Pompiere";
+  --LETRA-9--: "Sour Gummy";
+  --Letra-10--: "Creepster";
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #f9f5f0;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/*-------------------------- aqui comienza el header------------------------------ */
+header {
+  background-color: #003873;
+}
+.up {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  justify-content: space-between;
+  background-color: #003873;
+}
+.down {
+    background-color: #dee2e6;
+  display: flex;
+  justify-content: center;
+}
+/* -------------------------------------Icons------------------------------------- */
+.social {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+.fa-brands {
+  color: #fff;
+  margin-left: 5px;
+  text-decoration: none;
+  font-size: 40px;
+}
+.fa-brands:hover {
+  color: #bfc0c0;
+}
+/*-------------------------------------- logo ---------------------------------------*/
+.logo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.logo img {
+  width: 500px;
+}
+.logo span {
+  justify-content: flex-end;
+  color: #fff;
+  font-size: 25px;
+  font-family: var(--lETRA-1--);
+}
+/*-------------------------------------- Search------------------------------- */
+.search-bread {
+  align-content: center;
+}
+.Find-bread{
+    border: none;
+    border-radius: 5px;
+    height: 33px;
+    width: 550px;
+    text-align: center;
+    font-family: var(--LETRA-9--);
+    font-size: 25px;
+    margin: 10px;
+    color: #003873;
+}
+/*-------------------------------------- menu-------------------------------- */
+.menu-container{
+ display: flex;
+ align-items: center;
+ gap: 20px;
+}
+.conteiner-navbar,
+li,
+a {
+  color: #003873;
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.6 ease;
+  font-family: var(--lETRA-1--);
+}
+.menu a:hover {
+  color: #bfc0c0;
+    transition: all 0.6 ease;
+}
+/*----------------------------------Aqui comienza el banner-------------------------------------*/
+.banner {
+  background-image:
+    url(img/banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.content-banner {
+  margin: 0 auto;
+  padding: 10%;
+  animation: Entrada2 0.9s ease;
+}
+@keyframes Entrada2 {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+/* Aqui comienza la presentacion  */
+.Nosotros{
+ padding: 10px;
+}
+h1{
+  font-size: 40px;
+  color: #003873;
+  text-align: center;
+  font-family: var(--lETRA-4--);
+}
+.Presentation p{
+  text-align: center;
+    font-family: var(--lETRA-1--);
+    color: #003873;
+    font-size: 20px;
+}
+/* Aqui comienzan las secciones */
+.secciones{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+.panaderia,.reposteria{
+    width: 16%;
+    text-align: center;
+}
+.panaderia img, .reposteria img{
+   width: 100%;
+}
+.panaderia p, .reposteria p {
+    font-size: 20px;
+    color: #003873;
+    align-content: center;
+    margin-left: 10px;
+    font-family: var(--lETRA-1--);
+}
+/* Aqui comienzan algunas imagenes de productos */
+.parent {
+margin-top: 10px;
+display: grid;
+gap: 1px;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(1, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+.parent img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  transform: scale(0.96);
+  transition: all 0.6s ease;
+}
+.parent img:hover{
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.6s ease;
+}
+/* ------------------Aqui comienza el footer------------------------- */
+footer{
+  margin-top: 20px;
+  background-color: #003873;
+  padding: 50px 20px;
+}
+.cont{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.footer-container{
+  width: 33.3%;
+}
+h3{
+  color: #fefdf9;
+  font-family: var(--lETRA-5--);
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.footer-container p{
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: var(--lETRA-1--);
+  color: #f5f3f4;
+}
+.list-footer a{
+ list-style: none;
+ color: #dee2e6;
+ justify-content: flex-end;
+ font-family: var(--lETRA-1--);
+ font-size: 20px;
+}
+.list-footer a:hover{
+  color: #bfc0c0;
+}
+.social-footer{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+/* Aqui comienza la ubicacion */
+.located{
+  width: 400px;
+  height: 150px;
+}
+@media only screen and (max-width: 375px){
+    /* header */
+  .up{
+    display: flex;
+    flex-direction: column;
+  }
+  /* logo */
+  .logo img {
+  width: 300px;
+}
+.logo span{
+  font-size: 20px;
+}
+/* input */
+  .Find-bread{
+    height: 20px;
+    width: 300px;
+    font-size: 20px;
+  }
+  /* icons social */
+  .social{
+    justify-content: center;
+  }
+  .fa-brands {
+    font-size: 20px;
+  }
+  /* nav menu */
+  .menu a {
+    font-size: 15px;
+  }
+  /* Presentacion */
+  h1{
+    font-size: 25px;
+  }
+  .Presentation p{
+    font-size: 10px;
+  }
+  /* secciones */
+  .panaderia img, .reposteria img{
+   width: 70px;
+  }
+  .panaderia p, .reposteria p{
+    font-size: 10px;
+  }
+  /* footer */
+  .cont{
+    display: flex;
+    flex-direction: column;
+  }
+  h3{
+    font-size: 20px;
+    text-align:start;
+  }
+  .footer-container p{
+    font-size: 13px;
+  }
+  .footer-container li{
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .social-footer{
+    justify-content: flex-start;
+  }
+  /* ubicacion */
+  .located{
+  width: 250px;
+  height: 100px;
+}
+}
+@media only screen and (min-width: 376px) and (max-width: 425px){
+      /* header */
+  .up{
+    display: flex;
+    flex-direction: column;
+  }
+  /* logo */
+  .logo img {
+  width: 300px;
+}
+.logo span{
+  font-size: 20px;
+}
+/* input */
+  .Find-bread{
+    height: 20px;
+    width: 300px;
+    font-size: 20px;
+  }
+  /* icons social */
+  .social-footer .fa-brands{
+    font-size: 25px;
+    justify-content: center;
+  }
+  
+  /* nav menu */
+  .menu a {
+    font-size: 15px;
+  }
+  /* Presentacion */
+  h1{
+    font-size: 25px;
+  }
+  .Presentation p{
+    font-size: 10px;
+  }
+  /* secciones */
+  .panaderia img, .reposteria img{
+   width: 70px;
+  }
+  .panaderia p, .reposteria p{
+    font-size: 10px;
+  }
+  /* footer */
+  .cont{
+    display: flex;
+    flex-direction: column;
+  }
+  h3{
+    font-size: 30px;
+    text-align:start;
+  }
+  .footer-container p{
+    font-size: 13px;
+  }
+  .footer-container li{
+    display: flex;
+    justify-content: flex-start;
+  }
+  .footer-container a{
+    font-size: 15px;
+  }
+  .social-footer{
+    justify-content: flex-start;
+  }
+  /* ubicacion */
+  .located{
+  width: 200px;
+  height: 90px;
+}
+}
+@media only screen and (min-width: 426px) and (max-width: 768px){
+        /* header */
+  .up{
+    display: flex;
+    flex-direction: column;
+  }
+  /* logo */
+  .logo img {
+  width: 500px;
+}
+.logo span{
+  font-size: 20px;
+}
+/* input */
+  .Find-bread{
+    height: 20px;
+    width: 300px;
+    font-size: 20px;
+  }
+  .search-bread{
+    text-align: center;
+  }
+  /* icons social */
+  .social {
+    font-size: 30px;
+    justify-content: center;
+  }
+  
+  /* nav menu */
+  .menu a {
+    font-size: 15px;
+  }
+  /* Presentacion */
+  h1{
+    font-size: 35px;
+  }
+  .Presentation p{
+    font-size: 15px;
+  }
+  /* secciones */
+  .panaderia img, .reposteria img{
+   width: 150px;
+  }
+  .panaderia p, .reposteria p{
+    font-size: 20px;
+  }
+  /* footer */
+  .cont{
+    display: flex;
+    flex-direction: column;
+  }
+  h3{
+    font-size: 40px;
+    text-align:start;
+  }
+  .footer-container p{
+    font-size: 19px;
+  }
+  .footer-container li{
+    display: flex;
+    justify-content: flex-start;
+  }
+  .footer-container a{
+    font-size: 19px;
+  }
+  .social-footer{
+    justify-content: flex-start;
+  }
+  .social-footer a{
+    font-size: 40px;
+  }
+  /* ubicacion */
+  .located{
+  width: 400px;
+  height: 100px;
+}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+        /* header */
+  .up{
+    display: flex;
+    flex-direction: column;
+  }
+  /* logo */
+  .logo img {
+  width: 300px;
+}
+.logo span{
+  font-size: 20px;
+}
+/* input */
+  .Find-bread{
+    height: 20px;
+    width: 300px;
+    font-size: 20px;
+  }
+  .search-bread{
+    text-align: center;
+  }
+  /* icons social */
+  .social {
+    font-size: 30px;
+    justify-content: center;
+  }
+  
+  /* nav menu */
+  .menu a {
+    font-size: 15px;
+  }
+  /* Presentacion */
+  h1{
+    font-size: 35px;
+  }
+  .Presentation p{
+    font-size: 15px;
+  }
+  /* secciones */
+  .panaderia img, .reposteria img{
+   width: 150px;
+  }
+  .panaderia p, .reposteria p{
+    font-size: 20px;
+  }
+  /* footer */
+  .cont{
+    display: flex;
+    flex-direction: column;
+  }
+  h3{
+    font-size: 40px;
+    text-align:start;
+  }
+  .footer-container p{
+    font-size: 19px;
+  }
+  .footer-container li{
+    display: flex;
+    justify-content: flex-start;
+  }
+  .footer-container a{
+    font-size: 19px;
+  }
+  .social-footer{
+    justify-content: flex-start;
+  }
+  .social-footer a{
+    font-size: 40px;
+  }
+  /* ubicacion */
+  .located{
+  width: 400px;
+  height: 100px;
+}
+}

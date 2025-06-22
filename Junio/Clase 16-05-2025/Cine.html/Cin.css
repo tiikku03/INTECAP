@@ -38,13 +38,12 @@ body {
   max-width: 1700px;
   margin: 0 auto;
   padding: 0 20px;
-  
 }
 
 /*-------------------------- aqui comienza el header------------------------------ */
 header {
   display: flex;
-  background-color:#212121;
+  background-color: #212121;
 }
 .cinema {
   display: flex;
@@ -140,12 +139,17 @@ header {
 
 /* -----------------------Aqui comienzan las peliculas------------------------------- */
 .estrenos {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, auto);
   gap: 20px;
   padding: 30px;
   margin-bottom: 20px;
   justify-content: center;
   text-align: center;
+}
+.Pelicula {
+  margin-top: 60px;
 }
 .Pelicula img {
   width: 250px;
@@ -170,4 +174,196 @@ header {
 .Pelicula button:hover {
   background-color: #b2070f;
   transition: all 0.5s ease;
+}
+/* -----------------------Rresponsive--------------------- */
+/*------------------------------- Mobile M----------------------- */
+@media only screen and (max-width: 375px) {
+  /* header */
+  .fa-brands {
+    font-size: 15px;
+  }
+  .menu a {
+    font-size: 15px;
+  }
+  .line {
+    font-size: 20px;
+  }
+  /* peliculas */
+  .estrenos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .Pelicula {
+  }
+  .Pelicula button {
+    padding: 0px 5px;
+  }
+  .Pelicula img {
+    width: 150px;
+    height: 90%;
+  }
+  .pelicula button a {
+    font-size: 5px;
+  }
+}
+/* Mobile L */
+/*------------------------------- Mobile M----------------------- */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  /* header */
+  .fa-brands {
+    font-size: 20px;
+  }
+  .menu a {
+    font-size: 25px;
+  }
+  .line {
+    font-size: 30px;
+  }
+  /* peliculas */
+  .estrenos {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(10, auto);
+    padding: 10px;
+  }
+  .Pelicula {
+  }
+  .Pelicula button {
+    padding: 0px 5px;
+  }
+  .Pelicula img {
+    width: 200px;
+    height: 100%;
+  }
+  .pelicula button a {
+    font-size: 5px;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  /* header */
+  .fa-brands {
+    font-size: 25px;
+  }
+  .menu a {
+    font-size: 30px;
+  }
+  .line {
+    font-size: 30px;
+  }
+  /* peliculas */
+  .estrenos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    padding: 10px;
+  }
+  .Pelicula {
+  }
+  .Pelicula button {
+    padding: 10px 15px;
+  }
+  .Pelicula img {
+    width: 200px;
+    height: 100%;
+  }
+  .pelicula button a {
+    font-size: 10px;
+  }
+}
+/* Laptop 1024 */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* header */
+  .fa-brands {
+    font-size: 35px;
+  }
+  .menu a {
+    font-size: 30px;
+  }
+  .line {
+    font-size: 30px;
+  }
+  /* peliculas */
+  .estrenos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    padding: 10px;
+  }
+  .Pelicula {
+  }
+  .Pelicula button {
+    padding: 10px 30px;
+  }
+  .Pelicula img {
+    width: 250px;
+    height: 90%;
+  }
+  .pelicula button a {
+    font-size: 15px;
+  }
+}
+/* Laptop L */
+@media only screen and (min-width: 1025px) and (max-width: 1299px) {
+  /* header */
+  .fa-brands {
+    font-size: 40px;
+  }
+  .menu a {
+    font-size: 35px;
+  }
+  .line {
+    font-size: 30px;
+  }
+  /* peliculas */
+  .estrenos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    padding: 10px;
+  }
+  .Pelicula {
+  }
+  .Pelicula button {
+    padding: 10px 30px;
+  }
+  .Pelicula img {
+    width: 250px;
+    height: 100%;
+  }
+  .pelicula button a {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1440px) {
+  /* header */
+  .fa-brands {
+    font-size: 40px;
+  }
+  .menu a {
+    font-size: 35px;
+  }
+  .line {
+    font-size: 30px;
+  }
+  /* peliculas */
+  .estrenos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, auto);
+    padding: 10px;
+  }
+  .Pelicula {
+  }
+  .Pelicula button {
+    padding: 10px 30px;
+  }
+  .Pelicula img {
+    width: 250px;
+    height: 100%;
+  }
+  .pelicula button a {
+    font-size: 15px;
+  }
 }

@@ -1,0 +1,39 @@
+
+/* .container{
+    background-color: grey;
+    min-height: 200px;
+    padding: 1rem 2rem;
+}
+@media(width < 550px){
+    .container{
+        background-color: indigo;
+    }
+}
+@media(width > 750px){
+    .container{
+        background-color: green;
+    }
+}
+ */
+ .container{
+    background-color: grey;
+    min-height: 200px;
+    padding: 1rem 2rem;
+    
+    @media(width < 550px){background-color: indigo;}
+    @media(width > 750px){background-color: green;}
+    @media(400px < width < 800px){
+        /* css */
+    }
+ }
+/* -------- pantallas menores de 600px --------
+ @media screen and (width<600px) {
+
+ }
+
+ -----Previsualizaciones y formatos de impresion ----
+ @media print{
+ } 
+ */
+
+

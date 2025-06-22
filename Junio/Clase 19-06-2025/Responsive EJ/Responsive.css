@@ -1,0 +1,96 @@
+/* Para dispositivos que no cumplen las coindiciones */
+.example {
+  padding: 20px;
+  color: cadetblue;
+  background-color: beige;
+}
+.country {
+  background-color: beige;
+  color: chartreuse;
+  display: block;
+}
+/* Dispositivos Pequeños */
+@media only screen and (max-width: 600px) {
+  .example {
+    background-color: red;
+    color: green;
+    font-size: 1em;
+  }
+  .country {
+    background-color: red;
+    color: green;
+    width: 25%;
+  }
+  img {
+    width: 25%;
+    height: 25%;
+  }
+}
+/* Dispositivos Grandes*/
+@media only screen and (min-width: 600px) {
+  .example {
+    background-color: green;
+    color: brown;
+    font-size: 1.5em;
+  }
+  .country {
+    background-color: green;
+    color: brown;
+    width: 35%;
+  }
+  img {
+    width: 35%;
+    height: 35%;
+  }
+}
+/* Dispositivos Medianos*/
+@media only screen and (min-width: 800px) {
+  .example {
+    background-color: greenyellow;
+    color: darkkhaki;
+    font-size: 2em;
+  }
+  .country {
+    background-color: greenyellow;
+    color: darkkhaki;
+    width: 30%;
+  }
+  img {
+    width: 30%;
+    height: 30%;
+  }
+}
+/* Dispositivos Largos*/
+@media only screen and (min-width: 1024px) {
+  .example {
+    background-color: orange;
+    color: lightgreen;
+    font-size: 2.5em;
+  }
+  .country {
+    background-color: orange;
+    color: lightgreen;
+    width: 75%;
+  }
+  img {
+    width: 50%;
+    height: 50%;
+  }
+}
+/* Dispositivos Muy Grandes*/
+@media only screen and (min-width: 1024px) {
+  .example {
+    background-color: darkslategray;
+    color: blueviolet;
+    font-size: 3em;
+  }
+  .country {
+    background-color: darkslategray;
+    color: blueviolet;
+    width: 100%;
+  }
+  img {
+    width: 60%;
+    height: 60%;
+  }
+}
