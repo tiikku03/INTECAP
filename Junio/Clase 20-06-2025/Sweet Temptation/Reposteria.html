@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Reposteria.css">
-     <script src="https://kit.fontawesome.com/6013ac0acd.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6013ac0acd.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-      <!-- Aqui comienza el header -->
+    <!-- Aqui comienza el header -->
     <header>
         <nav class="navbar">
             <section class="up">
@@ -40,11 +42,11 @@
             </section>
         </nav>
     </header>
-     <main>
+    <main>
         <section class="content">
             <!-- producto 1 -->
-           <div class="product">
-                 <div class="Product-photo">
+            <div class="product">
+                <div class="Product-photo">
                     <img src="img/Cake1.png" alt="">
                 </div>
                 <div class="specifications">
@@ -56,14 +58,15 @@
                     </div>
                     <div class="purchase-options">
                         <label for="quantity" hidden>Cantidad</label>
-                        <input type="number" class="amount" id="quantity" placeholder="Ingrese la cantidad"><br>
-                        <button class="buy-button">Comprar</button>
+                        <input type="number" class="amount" pattern="[0-9]*\.?[0-9]*" id="quantity" min="0"
+                            placeholder="Ingrese la cantidad"><br>
+                        <button class="buy-button">añadir</button>
                     </div>
                 </div>
-           </div>
+            </div>
             <!-- Producto 2 -->
-           <div class="product">
-                 <div class="Product-photo">
+            <div class="product">
+                <div class="Product-photo">
                     <img src="img/Cake2.png" alt="">
                 </div>
                 <div class="specifications">
@@ -75,14 +78,15 @@
                     </div>
                     <div class="purchase-options">
                         <label for="quantity" hidden>Cantidad</label>
-                        <input type="number" class="amount" id="quantity" placeholder="Ingrese la cantidad"><br>
-                        <button class="buy-button">Comprar</button>
+                        <input type="number" class="amount" pattern="[0-9]*\.?[0-9]*" id="quantity" min="0"
+                            placeholder="Ingrese la cantidad"><br>
+                        <button class="buy-button">añadir</button>
                     </div>
                 </div>
-           </div>
-             <!-- Producto 3 -->
-           <div class="product">
-                 <div class="Product-photo">
+            </div>
+            <!-- Producto 3 -->
+            <div class="product">
+                <div class="Product-photo">
                     <img src="img/Cake3.png" alt="">
                 </div>
                 <div class="specifications">
@@ -94,33 +98,35 @@
                     </div>
                     <div class="purchase-options">
                         <label for="quantity" hidden>Cantidad</label>
-                        <input type="number" class="amount" id="quantity" placeholder="Ingrese la cantidad"><br>
-                        <button class="buy-button">Comprar</button>
+                        <input type="number" class="amount" pattern="[0-9]*\.?[0-9]*" id="quantity" min="0"
+                            placeholder="Ingrese la cantidad"><br>
+                        <button class="buy-button">añadir</button>
                     </div>
                 </div>
-           </div>
-             <!-- Producto 4 -->
-           <div class="product">
-                 <div class="Product-photo">
+            </div>
+            <!-- Producto 4 -->
+            <div class="product">
+                <div class="Product-photo">
                     <img src="img/Cake4.png" alt="">
                 </div>
                 <div class="specifications">
                     <div class="description">
-                        <P>Pastel Crème Brûlée</P>
+                        <P>Pastel Creme Brulee</P>
                     </div>
                     <div class="price">
                         <P>Q445.00</P>
                     </div>
                     <div class="purchase-options">
                         <label for="quantity" hidden>Cantidad</label>
-                        <input type="number" class="amount" id="quantity" placeholder="Ingrese la cantidad"><br>
-                        <button class="buy-button">Comprar</button>
+                        <input type="number" class="amount" pattern="[0-9]*\.?[0-9]*" min="0" id="quantity"
+                            placeholder="Ingrese la cantidad"><br>
+                        <button class="buy-button">añadir</button>
                     </div>
                 </div>
-           </div>
-             <!-- Producto 5 -->
-           <div class="product">
-                 <div class="Product-photo">
+            </div>
+            <!-- Producto 5 -->
+            <div class="product">
+                <div class="Product-photo">
                     <img src="img/Cake5.png" alt="">
                 </div>
                 <div class="specifications">
@@ -132,14 +138,15 @@
                     </div>
                     <div class="purchase-options">
                         <label for="quantity" hidden>Cantidad</label>
-                        <input type="number" class="amount" id="quantity" placeholder="Ingrese la cantidad"><br>
-                        <button class="buy-button">Comprar</button>
+                        <input type="number" class="amount" pattern="[0-9]*\.?[0-9]*" id="quantity" min="0"
+                            placeholder="Ingrese la cantidad"><br>
+                        <button class="buy-button">añadir</button>
                     </div>
                 </div>
-           </div>
-             <!-- Producto 6 -->
-           <div class="product">
-                 <div class="Product-photo">
+            </div>
+            <!-- Producto 6 -->
+            <div class="product">
+                <div class="Product-photo">
                     <img src="img/Cake6.png" alt="">
                 </div>
                 <div class="specifications">
@@ -151,15 +158,30 @@
                     </div>
                     <div class="purchase-options">
                         <label for="quantity" hidden>Cantidad</label>
-                        <input type="number" class="amount" id="quantity" placeholder="Ingrese la cantidad"><br>
-                        <button class="buy-button">Comprar</button>
+                        <input type="number" class="amount" pattern="[0-9]*\.?[0-9]*" id="quantity" min="0"
+                            placeholder="Ingrese la cantidad"><br>
+                        <button class="buy-button">añadir</button>
                     </div>
                 </div>
-           </div>
+            </div>
         </section>
-
+        <section class="billing">
+            <table class="" id="bill">
+                
+            </table>
+            <form action="/" class="billingForm">
+                <label for="userName">Nombre</label>
+                <input type="text" id="userName">
+                <label for="phoneNumber">Numero de celular</label>
+                <input type="tel" id="phoneNumber">
+                <label for="address">direccion</label>
+                <input type="text" name="address" id="address">
+                <button type="submit" class="buy-button">Finalizar compra</button>
+                <div id="endMessage"></div>
+            </form>
+        </section>
     </main>
-     <!--Aqui comienza le footer  -->
+    <!--Aqui comienza le footer  -->
     <footer>
         <div class="cont">
             <div class="footer-container">
@@ -191,4 +213,5 @@
     </footer>
 </body>
 <script src="Reposteria.js"></script>
+
 </html>
