@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: rubik;
+}
+body .history {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .history p {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 70%;
+  margin-top: 3rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.reiews {
+  height: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+
+.reiew {
+  border: solid black 1px;
+  height: auto;
+  width: 15rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 1rem 0 1rem 0;
+  background-color: #fb8500;
+}
+.reiew .calificacion {
+  height: 1.7rem;
+  justify-content: center;
+  margin: 0.2rem 0 0.2rem 0;
+}
+.reiew .cliente {
+  font-weight: 600;
+}
+
+.reiew:nth-child(1) {
+  rotate: 8deg;
+}
+
+.reiew:last-child {
+  rotate: -8deg;
+}
+
+.mision,
+.vision {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mision p,
+.vision p {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 70%;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.vision {
+  margin-top: 5rem;
+}
+
+.mision {
+  margin-bottom: 5rem;
+}
+
+.ubicaciones {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+.ubicaciones .ubicacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+.ubicaciones .ubicacion .direccion {
+  font-weight: 600;
+  font-size: 1rem;
+}/*# sourceMappingURL=styleIndex.css.map */
