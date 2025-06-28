@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2e9e4;
+  font-family: rubik;
+}
+
+.banner {
+  height: 45vh;
+  background-image: url("../images/banner.png");
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main h2 {
+  font-weight: 400;
+  margin-top: 5rem;
+}/*# sourceMappingURL=Style.css.map */

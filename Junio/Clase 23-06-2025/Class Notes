@@ -1,0 +1,10 @@
+Scss: Es un tipo de archivo especial donde se puede
+      escribir codigo css de una manera no repetitiva
+      
+Para enlazar el archivo scss a la pagina realizar lo siguiente:
+    1) Abrir la consolola en la direccion donde se encuentea el archivo scss
+    2) Escribir en la consola el siguiente comando
+            scss NombreDelArchivo.scss:ArchivoDestino.css
+
+Para hacer HotReload:
+    

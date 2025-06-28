@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+$bodyColor: #f2e9e4;
+$colorTwo: #c9ada7;
+$colorThree: #9a8c98;
+$colorFour: #4a4e69;
+$colorFive: #22223b;
+$fontFamily: rubik;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $bodyColor;
+    font-family:  $fontFamily;
+}
+
+.banner{
+    height: 45vh;
+    background-image: url('../images/banner.png') ;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        font-weight: 400;
+        margin-top: 5rem;
+    }
+}
