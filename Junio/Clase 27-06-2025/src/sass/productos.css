@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: rubik;
+  font-size: 0.8rem;
+}
+
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  min-width: 325px;
+  background: repeating-linear-gradient(90deg, #36b1cf, #36b1cf 10%, transparent 9%, transparent 15%), repeating-linear-gradient(#36b1cf 5%, #36b1cf 0%, #ffa5ab 5%, #ffa5ab 100%);
+  height: 15rem;
+  width: 100%;
+}
+header .socialNetwork .fa-brands,
+header .internalLinks a {
+  font-size: 1.5rem;
+  margin: 0 0.5rem 0 0.5rem;
+  color: #000;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 4rem;
+}
+h1 a {
+  text-decoration: none;
+  color: #000;
+}
+h1 a:visited {
+  color: #000;
+}
+
+.promocion {
+  display: flex;
+}
+.promocion div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  background-color: #f74a55;
+}
+.promocion .text {
+  width: 40rem;
+  padding: 0.5rem;
+}
+@media screen and (max-width: 600px) {
+  .promocion .text {
+    width: 15rem;
+    padding: 0.5rem;
+    min-width: 8rem;
+    text-align: center;
+  }
+}
+.promocion p {
+  text-align: center;
+}
+.promocion .triangulo1 {
+  width: 0;
+  height: 0;
+  border-top: 1.5rem solid transparent;
+  border-bottom: 1.5rem solid transparent;
+  border-left: 1.5rem solid white;
+}
+.promocion .triangulo3 {
+  width: 0;
+  height: 0;
+  border-top: 1.5rem solid transparent;
+  border-bottom: 1.5rem solid transparent;
+  border-left: 1.5rem solid white;
+  rotate: 180deg;
+}
+
+.tittle {
+  font-size: 3rem;
+  margin-top: 5rem;
+}
+
+main {
+  width: 60%;
+  min-width: 240px;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menus,
+.bebidas,
+.postres {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.menu {
+  background-color: rgb(255, 234, 234);
+  border-radius: 35px;
+  min-width: 200px;
+  width: 200px;
+  margin: 1.5rem;
+}
+.menu h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.menu h2,
+.menu p,
+.menu label,
+.menu input,
+.menu div {
+  margin: 0.3rem;
+}
+.menu label {
+  margin-left: 1rem;
+}
+.menu p {
+  text-align: center;
+  font-weight: 600;
+}
+.menu input {
+  height: 20px;
+  width: 2.7rem;
+  background-color: inherit;
+  text-align: center;
+  border: none;
+}
+.menu img {
+  grid-column: 1, 4;
+}
+.menu button {
+  margin-left: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  border-radius: 40px 40px 10px 10px;
+  height: auto;
+  width: 90%;
+  margin: 0.5rem;
+}
+
+.comprarMenu {
+  background-color: #ffa5ab;
+  border: none;
+  border-radius: 5px;
+  height: 1.5rem;
+  width: 6rem;
+  border: solid #f78088 2px;
+}
+
+/*--------------Billing form-----------------------*/
+.billing {
+  padding-top: 5rem;
+  height: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.billingForm {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.billingForm input {
+  border: #bfc0c0 solid 1px;
+  width: 20rem;
+}
+
+.bill {
+  width: 80%;
+  border: solid #c4bcbc 1px;
+  margin-bottom: 3rem;
+  padding: 1rem;
+}
+
+.productAmount {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.billingForm .buy-button {
+  width: 30%;
+  border-radius: 15px;
+  align-self: center;
+}
+
+footer {
+  height: 10rem;
+}
+
+#endMessage {
+  height: auto;
+  width: 30rem;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 500px) {
+  #endMessage {
+    height: auto;
+    width: 20rem;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+  }
+}/*# sourceMappingURL=productos.css.map */

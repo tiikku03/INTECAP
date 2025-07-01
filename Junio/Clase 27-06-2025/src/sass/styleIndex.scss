@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 $bodyColor: #fff;
-$colorTwo: #219ebc;
+$colorTwo: #36b1cf;
 $colorThree: #023047;
 $colorFour: #ffb703;
-$colorFive: #fb8500;
+$colorFive: #ffa5ab;
 $fontFamily: rubik;
 
 * {
@@ -23,9 +23,44 @@ body {
         align-items: center;
         p {
             height: fit-content;
-            width: 70%;
+            width: 50%;
             margin-top: 3rem;
         }
+    }
+}
+
+header {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+
+    background: repeating-linear-gradient(90deg, $colorTwo, $colorTwo 10%, transparent 9%, transparent 15%),
+        repeating-linear-gradient($colorTwo 5%, $colorTwo 0%, $colorFive 5%, $colorFive 100%);
+
+    height: 15rem;
+    width: 100%;
+    margin-bottom: 8rem;
+
+    & .socialNetwork .fa-brands,
+    .internalLinks a {
+        font-size: 1.5rem;
+        margin: 0 0.5rem 0 0.5rem;
+        color: #000;
+        text-decoration: none;
+    }
+}
+h1 {
+    font-size: 4rem;
+    & a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    & a:visited {
+        color: #000;
     }
 }
 
@@ -34,6 +69,7 @@ main {
     flex-direction: column;
     align-items: center;
 }
+
 h1 {
     font-size: 3rem;
     text-align: center;
@@ -76,10 +112,16 @@ h1 {
 
 .mision,
 .vision {
+    border-radius: 2rem;
+    width: 50%;
+    margin: 3rem;
+    padding: 1rem;
+    background-color: $colorTwo;
     display: flex;
     flex-direction: column;
     align-items: center;
     h2 {
+        color: $colorThree;
     }
     p {
         height: fit-content;
@@ -114,4 +156,10 @@ h1 {
             font-size: 1rem;
         }
     }
+}
+
+footer {
+    background: $colorTwo;
+    height: 15rem;
+    width: 100%;
 }
