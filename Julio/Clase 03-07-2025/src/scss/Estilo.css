@@ -1,0 +1,43 @@
+.box {
+  border-radius: 10px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 100px;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+.tittle {
+  color: blue;
+  font-size: 24px;
+}
+
+.default-box {
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.custom-box {
+  border: 3px solid red;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.container-x {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100px;
+  background-color: #e0f7fa;
+}
+
+.container-y {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+  background-color: #e8f5e9;
+}/*# sourceMappingURL=Estilo.css.map */

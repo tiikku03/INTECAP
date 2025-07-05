@@ -79,6 +79,7 @@ const saborVelozMenus = [
 
 const buttonMenu = document.getElementsByClassName("comprarMenu");
 
+
 function managingUserPurchase(object, amountRequested) {
   if (amountRequested !== "") {
     (object.amountUserWants = parseInt(amountRequested)),
