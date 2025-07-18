@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Sancreek&family=Vollkorn+SC:wght@400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Pompiere&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+body {
+  font-family: Arial;
+  text-align: center;
+  padding: 30px;
+  background-color: #fff;
+}
+
+nav .fa-brands {
+  color: #000;
+  margin-left: 5px;
+  text-decoration: none;
+  font-size: 30px;
+  margin-top: 5px;
+  transition: all 0.6s ease;
+}
+nav .fa-brands:hover {
+  transition: all 0.6s ease;
+  color: #bfc0c0;
+}
+nav .menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+nav .menu ul {
+  display: flex;
+}
+nav .menu li {
+  list-style: none;
+}
+nav .menu a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  padding: 8px 16px;
+  transition: color 0.3s;
+}
+nav .menu a:hover {
+  color: #bfc0c0;
+}
+
+.ProductForm {
+  padding: 40px;
+}
+.ProductForm .group {
+  margin: 10px;
+  font-family: "Poppins";
+}
+.ProductForm .group input {
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+.ProductForm .submit-button {
+  font-family: "Poppins";
+  background-color: #3c6e71;
+  width: 220px;
+  padding: 5px;
+}
+
+.Share,
+.Share-button,
+.Delet-button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+#resultado {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.ProductForm {
+  margin-top: 40px;
+}
+.ProductForm .group {
+  display: flex;
+  justify-content: center;
+}
+.ProductForm .group Data {
+  justify-content: left;
+}
+
+.productos-grid {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Card {
+  background-color: #fff;
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 200px;
+  width: 100%;
+  transition: all 0.6s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.Card:hover {
+  transform: scale(1) translateX(15px);
+  transition: all 0.6s ease;
+}
+.Card .Nombre {
+  font-family: "Bodoni Moda";
+}
+.Card .Precio {
+  font-family: "Sour Gummy";
+}
+.Card .moreInfo {
+  margin: 10px;
+  padding: 5px;
+  font-family: "Poppins";
+}
+
+hr {
+  color: #3c6e71;
+  margin-top: 20px;
+  width: 500px;
+}/*# sourceMappingURL=app.css.map */

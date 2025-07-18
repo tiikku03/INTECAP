@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: Arial;
+        text-align: center;
+        padding: 30px;
+        background-color: #f9f9f9;
+    }
+    .Share, .Share-button{
+    padding: 10px;
+    font-size: 16px;
+    }
+    #resultado{
+        margin-top: 20px;
+        font-size: 15px;
+    }
+</style>
+<body>
+    <h1>Buscar Producto</h1>
+    <p>Escribe el nombre del producto a buscar:</p>
+    <input type="text" id="busqueda" placeholder="Ej: Laptop" class="Share">
+    <button class="Share-button" onclick="FindProduct()">Buscar</button> 
+    <div id="resultado"></div>
+    <script src="../js/app.js"></script>
+</body>
+</html>

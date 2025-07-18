@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../sass/app.css">
+    <script src="https://kit.fontawesome.com/6013ac0acd.js" crossorigin="anonymous"></script>
+    <title>Vaquita</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="redes">
+                <a href="https://www.facebook.com/" i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://x.com/?lang=es" i class="fa-brands fa-square-x-twitter"></i></a>
+            </div>
+            <div class="menu">
+
+                <ul class="pages">
+                    <li><a href="Empleados.html">Control de Empleados</a></li>
+                    <li><a href="tiendas.html">Control de tiendas</a></li>
+                    <li><a href="Productos.html">Control de Productos</a></li>
+                </ul>
+            </div>
+
+            <div class="Vaquita">
+                <img src="../images/logo.png" alt="" class="logo">
+                <h2 class="title">Control Productos</h2>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <label for="busqueda" hidden>Buscador</label>
+        <input type="text" id="busqueda" placeholder="Buscar" class="Share">
+        <button class="Share-button" onclick="FindProduct()">Encontrar</button>
+        <button class="Delet-button" onclick="CleanSearch()">Borrar</button>
+
+        <form action="/" id="newProductForm" class="ProductForm">
+            <h3>Agregar Producto</h3>
+            <div class="group">
+                <label for="newName" hidden>Nombre</label> <br>
+                <input type="text" required id="newName" class="Data" placeholder="Nombre">
+            </div>
+            <div class="group">
+                <label for="newPrice" hidden>Precio</label> <br>
+                <input type="text" required id="newPrice" class="Data" placeholder="Precio">
+            </div>
+            <div class="group">
+                <label for="newStock" hidden>Stock</label> <br>
+                <input type="text" required id="newStock" class="Data" placeholder="Stock">
+            </div>
+            <button type="submit" class="submit-button ">Guardar</button>
+        </form>
+        <hr>
+        <div id="resultado" class="productos-grid"></div>
+    </main>
+    <script src="../js/Productos.js"></script>
+</body>
+
+</html>
+
+
+
