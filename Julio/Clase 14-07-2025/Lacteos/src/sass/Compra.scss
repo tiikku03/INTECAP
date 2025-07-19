@@ -56,7 +56,9 @@ $letra-5: "Alumni Sans Pinstripe";
         scale: 1;
     }
 }
-
+body{
+    text-align: center;
+}
 header {
     text-align: center;
     nav {
@@ -110,5 +112,39 @@ header {
                 font-size: 30px;
             }
         }
+    }
+}
+main {
+    .procucto-inf{
+      font-size: 1.5rem;
+      margin: 10px;
+      color: #000;
+      font-family: $letra-4;
+    }
+    .customerForm{
+        font-family: $letra-1;
+      background: #415a77;
+justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;     
+    width: 400px;     
+    padding: 10px;   
+    border-radius: 10px; 
+    margin-bottom: 50px;
+    .form-group input{
+     padding: 10px;
+     font-family: $letra-1;
+    }
+    }
+    .totalproducto{
+      color: #e9c46a;
+      font-size: 2rem;
+      font-family: $letra-2;
+    }
+    .endMessage{
+     font-family: $letra-1;
+     
     }
 }

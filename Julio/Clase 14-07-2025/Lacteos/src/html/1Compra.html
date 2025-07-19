@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <script src="https://kit.fontawesome.com/6013ac0acd.js" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="../sass/Compra.css">
+    <script src="https://kit.fontawesome.com/6013ac0acd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../sass/Compra.css">
     <title>Document</title>
 </head>
 
 <body>
-        <header>
+    <header>
         <nav>
             <div class="header-top">
                 <div class="redes">
@@ -45,35 +45,39 @@
             </div>
         </nav>
     </header>
-    <section>
+   <main>
+     <section class="procucto-inf">
         <article>
-            <p id="nombreProducto">nombre:</p>
-            <p id="precioProducto">Precio</p>
-            <p id="cantidadProducto">Stock</p>
+            <p class="customerInf" id="nombreProducto">nombre:</p>
+            <p class="customerInf" id="precioProducto">Precio</p>
+            <p class="customerInf" id="cantidadProducto">Stock</p>
         </article>
     </section>
 
-    <form action="/">
-       <div class="form-group">
-                <label for="customerName">Nombre</label>
-                <input type="text" id="customerName" required placeholder="Tu nombre">
-            </div>
-            <div class="form-group">
-                <label for="Address">Dirección:</label>
-                <input type="text" id="Address" required placeholder="Tu dirección de entrega">
-            </div>
-            <div class="form-group">
-                <label for="Phone">Teléfono:</label>
-                <input type="tel" id="Phone" required placeholder="Tu número de teléfono">
-            </div>
-            <div class="form-group">
-                <label for="Email">Correo Electrónico:</label>
-                <input type="email" id="Email" required placeholder="Tu correo electrónico">
-            </div>
+    <form action="/" class="customerForm">
+        <div class="form-group">
+            <label for="customerName">Nombre</label><br>
+            <input type="text" id="customerName" required placeholder="Tu nombre">
+        </div>
+        <div class="form-group">
+            <label for="Address">Dirección:</label><br>
+            <input type="text" id="Address" required placeholder="Tu dirección de entrega">
+        </div>
+        <div class="form-group">
+            <label for="Phone">Teléfono:</label><br>
+            <input type="tel" id="Phone" required placeholder="Tu número de teléfono">
+        </div>
+        <div class="form-group">
+            <label for="Email">Correo Electrónico:</label><br>
+            <input type="email" id="Email" required placeholder="Tu correo electrónico">
+        </div><br>
 
         <button type="submit">Comprar</button>
-    </form>
+    </form> 
 
+    <div id="totalproducto"></div>
+    <div id="endMessage"></div>
+   </main>
     <script src="../js/Comprar.js"></script>
 </body>
 
