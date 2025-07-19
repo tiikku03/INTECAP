@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../sass/Empleados.css">
+    <script src="https://kit.fontawesome.com/6013ac0acd.js" crossorigin="anonymous"></script>
+    <title>Personal</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="header-top">
+                <div class="redes">
+                    <a href="https://www.facebook.com/" i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://x.com/?lang=es" i class="fa-brands fa-square-x-twitter"></i></a>
+                </div>
+                <div class="separador">
+                    |
+                </div>
+                <div class="container-user">
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+            <div class="header-middle">
+
+                <div class="menu">
+                    <ul class="pages">
+                        <li><a href="Empleados.html">Control de Empleados</a></li>
+                        <li><a href="tiendas.html">Control de tiendas</a></li>
+                        <li><a href="Productos.html">Control de Productos</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header-Button">
+                <div class="Vaquita">
+                    <img src="../images/logo.png" alt="" class="logo">
+                    <h2 class="title">Control de Personal</h2>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <label for="busqueda" hidden>Buscar Personal</label>
+        <input type="text" id="busqueda" placeholder="Buscar" class="Search">
+        <button class="Search" onclick="FindPersonal()">Encontrar</button>
+        <button class="Delet-button" onclick="CleanSearch()">Borrar</button>
+
+        <form action="/" id="newProductForm" class="ProductForm">
+            <h3>Agregar Personal</h3>
+            <div class="group">
+                <label for="newName" hidden>Nombre</label> <br>
+                <input type="text" required id="newName" class="Data" placeholder="Nombre">
+            </div>
+            <div class="group">
+                <label for="newSueldo" hidden>Precio</label> <br>
+                <input type="text" required id="newSueldo" class="Data" placeholder="sueldo">
+            </div>
+            <div class="group">
+                <label for="newPuesto" hidden>Stock</label> <br>
+                <input type="text" required id="newPuesto" class="Data" placeholder="puesto">
+            </div>
+            <button type="submit" class="submit-button">Guardar</button>
+        </form>
+        <hr>
+        <div id="resultado" class="Personal"></div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="../js/Empleados.js"></script>
+</body>
+
+</html>
