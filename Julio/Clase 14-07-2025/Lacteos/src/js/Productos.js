@@ -46,22 +46,27 @@ function FindProduct() {
                     <p class="Stock"> Stock: ${producto.stock}</p>
                     <button class="moreInfo buy-button">Comprar</button>
                     <label for="cantidad" hidden>cantidad</label>
-                    <input type="number" id="cantidad" min="0" max="${producto.stock}"  placeholder="Cantidad">
+                    <input type="number" class="cantidad" id="cantidad" min="0" max="${producto.stock}"  placeholder="Cantidad">
                    </div>
                  </section>
             `;
       resultado.appendChild(productCard);
 
       const buyButton = productCard.querySelector(".buy-button");
+      const cantidadInput = productCard.querySelector(".cantidad");
+
       buyButton.addEventListener("click", () => {
+        const cantidadSeleccionada = cantidadInput.value;
+
         alert(
-          `¡Has seleccionado ${producto.nombre} para comprar! Precio: $${producto.precio}`
+          `¡Has seleccionado ${producto.nombre} para comprar! Precio: $${producto.precio} - Cantidad: ${cantidadSeleccionada}`
         );
         window.location.href = `1Compra.html?Producto=${encodeURIComponent(
-  producto.nombre
-)}&Precio=${encodeURIComponent(
-  producto.precio
-)}&Stock=${encodeURIComponent(producto.stock)}`;
+          producto.nombre
+        )}&Precio=${encodeURIComponent(
+          producto.precio
+        )}&cantidad=${encodeURIComponent(
+          cantidadSeleccionada)}`;
       });
     });
   } else {
