@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6013ac0acd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../sass/Personal.css">
+    <title>Document</title>
+</head>
+</head>
+<body>
+     <header>
+        <img src="../imgs/logo.png" alt="logo" class="logo">
+        <nav>
+            <ul class="nav-links">
+                <li class="active"><a href="destinos.html">Destinos</a></li>
+                <li class="active"><a href="Personal.html">Personal</a></li>
+                <li class="active"><a href="lineasA.html">Lineas Asociadas</a></li>
+            </ul>
+        </nav>
+        <a href="Contacto.html"><button class="Ingresar">Contactanos</button></a>
+    </header>
+    <main>
+    <div class="items">
+        <input type="text" id="busqueda" placeholder="Buscar Personal..." class="Search">
+    <button class="Find-button" onclick="FindPersonal()">Buscar</button> 
+    <button class="Delet-button" onclick="CleanSearch()">Borrar</button>
+    <button class="Add-Person" id="showFormButton" onclick="AddPerson()">Agregar Persona</button>
+    </div>
+
+     <form id="formPersonal" class="formPersonal" style="display: none;" onsubmit="GuardarPersona(event)">
+    <label for="foto">Foto URL:</label><br>
+    <input type="text" id="foto" name="foto" placeholder="Foto URL" required><br>
+
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required><br>
+
+    <label for="direccion">Dirección:</label><br>
+    <input type="text" id="direccion" name="direccion" placeholder="Dirección" required><br>
+
+    <label for="genero">Género:</label><br>
+    <input type="text" id="genero" name="genero" placeholder="Masculino/Femenino" required><br>
+
+    <label for="dpi">DPI:</label><br>
+    <input type="text" id="dpi" name="dpi" placeholder="DPI" required><br>
+
+    <label for="puesto">Puesto:</label><br>
+    <input type="text" id="puesto" name="puesto" placeholder="Puesto" required><br>
+
+    <button type="submit">Guardar Persona</button>
+
+</form>
+    <div id="resultado"></div>
+  <div id="personal">
+  </div>
+    </main>
+    <script src="../js/Personal.js"></script>
+</body>
+</html>
+
+

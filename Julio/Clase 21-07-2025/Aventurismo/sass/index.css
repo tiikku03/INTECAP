@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Sancreek&family=Vollkorn+SC:wght@400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Pompiere&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #000;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 10%;
+  position: sticky;
+  top: 0;
+  font-family: "Poppins";
+}
+header .logo {
+  cursor: pointer;
+  width: 120px;
+  margin-right: auto;
+}
+header .logo img {
+  width: 100px;
+}
+header .nav-links {
+  background-color: #000;
+  list-style: none;
+}
+header .active,
+header a {
+  text-decoration: none;
+  background-color: #000;
+  display: inline-block;
+  color: #fff;
+  margin: 0 20px;
+  transition: all 0.3s ease 0s;
+}
+header .active:hover,
+header a:hover {
+  color: #bfc0c0;
+  transition: all 0.3s ease 0s;
+}
+header .Ingresar {
+  font-family: "Poppins";
+  padding: 9px 25px;
+  background-color: rgb(0, 136, 169);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+header .Ingresar:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+  transition: all 0.3s ease 0s;
+}
+header .Ingresar a {
+  background-color: rgb(0, 136, 169);
+  text-decoration: none;
+  background-color: rgba(0, 136, 169, 0.8);
+  transition: all 0.3s ease 0s;
+  color: #fff;
+}
+
+/* Formulario de Contacto */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  max-width: 600px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+form h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: "Bodoni Moda";
+  font-size: 2.5rem;
+}
+form fieldset {
+  border: none;
+  padding: 0;
+}
+form fieldset legend {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Bodoni Moda";
+  margin-bottom: 1rem;
+}
+form fieldset label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+  font-family: "Poppins";
+}
+form fieldset input,
+form fieldset textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: "Poppins";
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+form fieldset input:focus,
+form fieldset textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+form fieldset textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+form fieldset .submitButton {
+  display: block;
+  width: 12rem;
+  height: 3rem;
+  margin: 2rem auto 0;
+  background-color: #489645;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Poppins";
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+form fieldset .submitButton:hover {
+  background-color: #3a7a38;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(72, 150, 69, 0.3);
+}
+form fieldset .submitButton:active {
+  transform: translateY(0);
+}
+@media (max-width: 768px) {
+  form {
+    width: 95%;
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+  }
+  form h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  form fieldset legend {
+    font-size: 1.5rem;
+  }
+  form fieldset label {
+    font-size: 0.9rem;
+  }
+  form fieldset input,
+  form fieldset textarea {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+  form fieldset .submitButton {
+    width: 100%;
+    height: 2.5rem;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  form {
+    width: 98%;
+    padding: 1rem 0.75rem;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+  }
+  form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  form fieldset legend {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+  }
+  form fieldset label {
+    font-size: 0.85rem;
+    margin-bottom: 0.3rem;
+  }
+  form fieldset input,
+  form fieldset textarea {
+    padding: 0.5rem;
+    margin-bottom: 0.8rem;
+    font-size: 0.85rem;
+  }
+  form fieldset textarea {
+    min-height: 100px;
+  }
+  form fieldset .submitButton {
+    height: 2.2rem;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 320px) {
+  form {
+    width: 100%;
+    padding: 0.75rem 0.5rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: none;
+  }
+  form h2 {
+    font-size: 1.5rem;
+  }
+  form fieldset legend {
+    font-size: 1.2rem;
+  }
+  form fieldset .submitButton {
+    height: 2rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* ---------------- */
+footer {
+  margin-top: 100px;
+  background-color: #000;
+  padding: 20px 50px;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.icon-elem {
+  list-style: none;
+}
+
+.icon {
+  color: #E0E1DD;
+  font-size: 32px;
+  display: inline-block;
+  margin: 0 10px;
+  transition: all 0.6s ease;
+  opacity: 0.7;
+}
+
+.icon:hover {
+  color: #fff;
+  font-size: 40px;
+  transition: all 0.6s ease;
+  opacity: 1;
+}
+
+.menu-f {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.menu-f a {
+  color: #E0E1DD;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-size: 20px;
+}
+
+.menu-elem {
+  list-style: none;
+}
+
+.menu-icon {
+  margin: 10px;
+  display: inline-block;
+  font-size: 25px;
+  text-decoration: none;
+  opacity: 0.75;
+  transition: all 0.6s ease;
+}
+
+.menu-icon:hover {
+  opacity: 1;
+  font-size: 30px;
+  transition: all 0.6s ease;
+  color: #fff;
+}
+
+.content {
+  display: flex;
+}
+
+.tetx {
+  color: #E0E1DD;
+  opacity: 0.75;
+}/*# sourceMappingURL=index.css.map */
