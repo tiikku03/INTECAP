@@ -10,16 +10,10 @@
 </head>
 
 <body>
+    <!-- Aqui comienza el header -->
     <header>
         <div class="logo">
             <img src="../img/logo.png" alt="">
-            <div class="redes">
-                <ul>
-                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></li>
-                    <li><a href="https://www.twitter.com/"><i class="fa-brands fa-square-x-twitter"></i></a></li>
-                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a></li>
-                </ul>
-            </div>
         </div>
         <nav class="nav-menu">
             <ul>
@@ -27,20 +21,59 @@
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="Empleados.html">Empleados</a></li>
                 <li><a href="Compras.html">Compras</a></li>
-                <li><a href="about.html">Acerca de Nosotros</a></li>
             </ul>
         </nav>
         <div class="user-container">
             <a href="Clientes.html"><button>Contáctanos</button></a>
-            <i class="fa-solid fa-user"></i>
-            |
-            <span class="user-name">Usuario</span>
+            <div class="redes">
+                <ul>
+                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></li> 
+                    <li><a href="https://www.twitter.com/"><i class="fa-brands fa-square-x-twitter"></i></a></li> 
+                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a></li> 
+                </ul>
+            </div>
         </div>
     </header>
+    <!-- Aqui comienza el banner -->
+     <section class="banner">
+        <a href="#Us"><button>Acerca de Nosotros</button></a>
+     </section>
+    <!-- Aqui comienza el main -->
+     <main>
+        <section class="Us" id="Us">
+            <div class="Us-container">
+                <h2>Sobre nosotros</h2>
+                <p>¡Bienvenido a Clip Office Guatemala! Desde 2002, hemos sido tu aliado estratégico para artículos de oficina, escolares, muebles, computadoras y electrónicos. Fuimos la primera incursión de Clip Office en el mercado centroamericano y hoy, con 9 tiendas en el país, nos enorgullece ofrecerte la calidad y los precios que antes solo eran accesibles para los grandes mayoristas. Te invitamos a explorar nuestro sitio y descubrir la amplia variedad de productos y servicios que tenemos para ti.</p>
+            </div>
+            <div class="Us-image">
+                <img src="../img/us2.png" alt="">
+            </div>
+        </section>
+        <section class="services">
+            <div class="service-container">
+                <div class="service-item">
+                    <a href="servicios.html"><img src="../img/service.png" alt="Service 1"></a>
+                    <h3>Servicios</h3>
+                    <p>En Clip Office, vamos más allá de simplemente vender productos. Hemos diseñado una gama completa de servicios pensada para facilitar tu vida y la de tu empresa.</p>
+                </div>
+                <div class="service-item">
+                    <a href="Empleados.html"><img src="../img/equipo.png" alt="Service 2"></a>
+                    <h3>Equipo de Oficina</h3>
+                    <p>En Clip Office, creemos que nuestro mayor activo es nuestro equipo. Somos una empresa líder en Guatemala con una sólida trayectoria en el país. Buscamos personas apasionadas, comprometidas y con ganas de crecer.</p>
+                </div>
+                <div class="service-item">
+                    <a href="Compras.html"><img src="../img/Compras.png" alt="Service 3"></a>
+                    <h3>Comprar Articulos</h3>
+                    <p>En Clip Office Guatemala, queremos que tu experiencia de compra sea lo más cómoda y segura posible. Nuestra tienda en línea está abierta 24/7 para que puedas encontrar lo que necesitas, cuando lo necesites.</p>
+                </div>
+            </div>
+        </section>
+     </main>
+    <!-- Aqui comienza el footer -->
     <footer>
         <div class="f-container">
             <div class="footer-container">
-                <h6>About</h6>
+                <h6>About us</h6>
                 <ul class="lists">
 
                 </ul>
@@ -56,11 +89,11 @@
                 </ul>
             </div>
             <div class="footer-container">
-                <h6>Suscribete</h6>
+                <h6>Recibe Novedades</h6>
                 <label for="footer-email" hidden>Suscribete</label>
-                <input type="email" id="footer-email" placeholder="Enter your email" required>
-                <button onclick="notifysubmit()">Submit</button>
-                <div class="redes">
+                <input type="email" id="footer-email" class="footer-email" placeholder="Enter your email" required>
+                <button onclick="notifysubmit()" class="footer-button">Submit</button>
+                <div class="Social">
                     <ul>
                         <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></li>
                         <li><a href="https://www.twitter.com/"><i class="fa-brands fa-square-x-twitter"></i></a></li>

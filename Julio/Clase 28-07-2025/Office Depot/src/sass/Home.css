@@ -6,31 +6,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap");
 /* Letras */
 /* Colores */
+@keyframes intro {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes intro2 {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes intro3 {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* -----------------------Header------------------- */
 header {
+  background-color: #000;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  animation: intro 0.7s ease-in-out;
 }
 header .logo {
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 header .logo img {
-  width: 30%;
-  height: auto;
-}
-header .logo .redes ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-header .logo .redes ul li {
-  gap: 10px;
+  width: 15rem;
 }
 header .nav-menu {
   padding: 25px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 header .nav-menu ul {
   display: flex;
@@ -39,10 +71,14 @@ header .nav-menu ul {
   gap: 20px;
 }
 header .nav-menu ul a {
+  font-family: "Poppins";
+  color: #fff;
   text-decoration: none;
+  transition: all 0.3s ease 0s;
 }
 header .nav-menu ul a:hover {
-  text-decoration: underline;
+  color: #bfc0c0;
+  transition: all 0.3s ease 0s;
 }
 header .user-container {
   padding: 30px;
@@ -50,4 +86,236 @@ header .user-container {
   flex-wrap: wrap;
   align-items: center;
   gap: 10px;
+}
+header .user-container button {
+  font-family: "Poppins";
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 10px;
+  border: none;
+  transition: all 0.3s ease 0s;
+}
+header .user-container button:hover {
+  /* background-color: rgba(0, 136, 169, 0.8); */
+  background-color: #dee2e6;
+  color: #000;
+  transition: all 0.3s ease 0s;
+}
+header .user-container .redes {
+  padding: 10px;
+}
+header .user-container .redes ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header .user-container .redes ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+header .user-container .redes ul li a i {
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+header .user-container .redes ul li a i:hover {
+  color: #bfc0c0;
+  transition: all 0.3s ease 0s;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/Banner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation: intro3 1s ease-in-out;
+}
+.banner button {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-family: "Poppins";
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.banner button:hover {
+  background-color: #fff;
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* -----------------------Main----------------------- */
+main {
+  padding: 10px;
+}
+main .Us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  border-radius: 10px;
+  background-color: #000;
+  padding: 10px;
+  margin: 0 auto;
+  color: #fff;
+}
+main .Us .Us-container {
+  flex: 1 1 400px;
+  min-width: 400px;
+  padding: 20px;
+}
+main .Us .Us-container h2 {
+  font-family: "Bodoni Moda";
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #fff;
+}
+main .Us .Us-container p {
+  color: #bfc0c0;
+  font-family: "Poppins";
+}
+main .Us .Us-image {
+  flex: 1 1 400px;
+  min-width: 400px;
+  padding: 10px;
+}
+main .Us .Us-image img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  animation: intro2 0.7s ease-in-out;
+}
+
+/* -----------------------Services------------------- */
+.services {
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  text-align: center;
+}
+.services .service-container {
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.services .service-container .service-item {
+  width: 300px;
+  height: 400px;
+  padding: 10px;
+  background: #000;
+  border-radius: 10px;
+  color: #fff;
+}
+.services .service-container .service-item img {
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.services .service-container .service-item h3 {
+  font-family: "Bodoni Moda";
+  padding: 5px;
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+.services .service-container .service-item p {
+  font-family: "Poppins";
+  font-size: 13px;
+}
+
+/* -----------------------Footer------------------- */
+footer {
+  margin-top: 10px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-family: "Poppins";
+  animation: intro2 0.7s ease-in-out;
+}
+footer .f-container {
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+footer h6 {
+  font-family: "Bodoni Moda";
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+footer .lists {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+footer .lists li {
+  list-style: none;
+}
+footer .lists li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-size: 16px;
+  transition: all 0.3s ease 0s;
+}
+footer .lists li a:hover {
+  color: #bfc0c0;
+  transition: all 0.3s ease 0s;
+}
+footer .footer-email {
+  padding: 10px;
+  border-radius: 50px;
+  text-align: center;
+  font-family: "Poppins";
+}
+footer .footer-button {
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-family: "Poppins";
+  background-color: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+footer .footer-button:hover {
+  background-color: #dee2e6;
+  color: #000;
+  transition: all 0.3s ease 0s;
+}
+footer .Social ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.5rem;
+}
+footer .Social ul li {
+  list-style: none;
+}
+footer .Social i {
+  color: #fff;
 }/*# sourceMappingURL=Home.css.map */
