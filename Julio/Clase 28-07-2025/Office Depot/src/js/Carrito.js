@@ -1,10 +1,16 @@
 const productos = JSON.parse(localStorage.getItem("cart")) || [];
 
+function eliminarDelCarrito(productoAEliminar) {
+  const newProducts = productos.filter((p) => p.producto !== productoAEliminar);
+  localStorage.setItem("cart", JSON.stringify(newProducts));
+  console.log("productoEliminado");
+  location.reload();
+}
 
-
-window.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const productosContainer = document.querySelector(".productos");
   const loadMoreButton = document.querySelector(".LoadMoreButtons");
+
   const cards = productos.map((producto) => {
     return `
         <div class="contenedorProductosIndividual">
@@ -15,30 +21,48 @@ window.addEventListener("DOMContentLoaded", () => {
             </div>
             <p>${producto.descripcion}</p>
             <p>Cantidad: ${producto.cantidad}</p>
-            <input type="number" value="${producto.cantidad}">
-            <button class="Eliminar">Aliminar del carrito</button>
+            <input type="number" value="${producto.cantidad}" id="${producto.producto}" class="amount">
+            <button class="Eliminar" producto="${producto.producto}">Eliminar del carrito</button>
         </div>
         `;
   });
 
-  if (cards.length > 0) {
-    const carsToshow = cards.slice(0, 10);
-    productosContainer.innerHTML = carsToshow.join("");
-  }
+  productosContainer.innerHTML = cards.join("");
 
-  function loadingMoreContent() {
-    const currentLength = productosContainer.children.length;
-    const nextCards = cards.slice(currentLength, currentLength + 10);
-    productosContainer.innerHTML += nextCards.join("");
-  }
-
-  if (cards.length > 10) {
-    loadMoreButton.innerHTML = `<button class="btn">Cargar más productos</button>`;
-  }
   loadMoreButton.addEventListener("click", () => {
     loadingMoreContent();
     if (productosContainer.children.length >= cards.length) {
       loadMoreButton.innerHTML = "";
     }
   });
+
+  productosContainer.addEventListener("click", (event) => {
+    if (event.target.classList.contains("Eliminar")) {
+      const productoAEliminar = event.target.getAttribute("producto");
+      eliminarDelCarrito(productoAEliminar);
+    }
+  });
+
+  productosContainer.addEventListener("change", (event) => {
+    if (event.target.classList.contains("amount")) {
+      const newAmount = parseInt(event.target.value);
+      const productoIndex = productos.findIndex(
+        (p) => event.target.id === p.producto
+      );
+      if (productoIndex !== -1) {
+        productos[productoIndex].cantidad = newAmount;
+        localStorage.setItem("cart", JSON.stringify(productos));
+        console.log("Updated");
+      }
+    }
+  });
 });
+
+
+function showingTheBill() {
+
+}
+
+function showSimilarProducts(){
+  
+}
