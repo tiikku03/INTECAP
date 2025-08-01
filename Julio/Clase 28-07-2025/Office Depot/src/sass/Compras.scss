@@ -61,6 +61,12 @@ $color-12: #3c0518;
     box-sizing: border-box;
 }
 /* -----------------------Header------------------- */
+body {
+    font-family: $Letra-2;
+    background-color: $color-2;
+    color: $color-1;
+}
+
 header {
     background-color: $color-7;
     display: flex;
@@ -176,19 +182,95 @@ header {
                 border-radius: 10px;
                 margin-bottom: 15px;
             }
-            h3{
-                font-family: $Letra-1;
+            div{
                 padding: 5px;
                 font-size: 1.7rem;
                 margin-bottom: 10px;
             }
             p{
-                font-family: $Letra-2;
                 font-size: 13px;
             }
         }
     }
 }
+/* -----------------------Products------------------- */
+.productos{
+    margin: auto;
+    padding: 50px 0;
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .contenedorProductosIndividual{
+        padding: 1rem;
+        margin: 1rem;
+        background-color: #bfc0c0;
+        height: auto;
+        width: 20rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 12rem;
+            height: 12rem;
+        }
+
+        div{
+            padding: 1rem;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            h3{
+                font-size: 1.5remrem;
+                margin-bottom: 10px;
+            }
+        }
+        button{
+            font-family: $Letra-2;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: $color-1;
+            color: $color-7;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+            &:hover {
+                background-color: $color-4;
+                color: $color-7;
+                transition: all 0.3s ease 0s;
+            }
+        }
+
+
+    }
+}
+
+.LoadMoreButtons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    .btn{
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: $colorThree;
+        color: $color-7;
+        border: none;
+        cursor: pointer;
+        font-family: $Letra-2;
+        transition: all 0.3s ease 0s;
+        &:hover {
+            background-color: $color-4;
+            color: $color-7;
+            transition: all 0.3s ease 0s;
+        }
+    }
+}
+
 /* -----------------------Footer------------------- */
 footer{
     margin-top: 10px;
@@ -265,3 +347,4 @@ footer{
         }
     }
 }
+

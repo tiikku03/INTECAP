@@ -43,6 +43,12 @@
 }
 
 /* -----------------------Header------------------- */
+body {
+  font-family: "Poppins";
+  background-color: #fefdf9;
+  color: #fff;
+}
+
 header {
   background-color: #000;
   display: flex;
@@ -157,15 +163,85 @@ header .user-container .redes ul li a i:hover {
   border-radius: 10px;
   margin-bottom: 15px;
 }
-.services .service-container .service-item h3 {
-  font-family: "Bodoni Moda";
+.services .service-container .service-item div {
   padding: 5px;
   font-size: 1.7rem;
   margin-bottom: 10px;
 }
 .services .service-container .service-item p {
-  font-family: "Poppins";
   font-size: 13px;
+}
+
+/* -----------------------Products------------------- */
+.productos {
+  margin: auto;
+  padding: 50px 0;
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.productos .contenedorProductosIndividual {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #bfc0c0;
+  height: auto;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.productos .contenedorProductosIndividual img {
+  width: 12rem;
+  height: 12rem;
+}
+.productos .contenedorProductosIndividual div {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.productos .contenedorProductosIndividual div h3 {
+  font-size: 1.5remrem;
+  margin-bottom: 10px;
+}
+.productos .contenedorProductosIndividual button {
+  font-family: "Poppins";
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.productos .contenedorProductosIndividual button:hover {
+  background-color: #dee2e6;
+  color: #000;
+  transition: all 0.3s ease 0s;
+}
+
+.LoadMoreButtons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.LoadMoreButtons .btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  font-family: "Poppins";
+  transition: all 0.3s ease 0s;
+}
+.LoadMoreButtons .btn:hover {
+  background-color: #dee2e6;
+  color: #000;
+  transition: all 0.3s ease 0s;
 }
 
 /* -----------------------Footer------------------- */
