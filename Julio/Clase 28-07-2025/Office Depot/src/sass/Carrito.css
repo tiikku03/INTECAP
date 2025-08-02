@@ -56,36 +56,43 @@ header {
   flex-wrap: wrap;
   animation: intro 0.7s ease-in-out;
 }
+
 header .logo {
   cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 header .logo img {
   width: 15rem;
 }
+
 header .nav-menu {
   padding: 25px;
   display: flex;
   align-items: center;
 }
+
 header .nav-menu ul {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   gap: 20px;
 }
+
 header .nav-menu ul a {
   font-family: "Poppins";
   color: #fff;
   text-decoration: none;
   transition: all 0.3s ease 0s;
 }
+
 header .nav-menu ul a:hover {
   color: #bfc0c0;
   transition: all 0.3s ease 0s;
 }
+
 header .user-container {
   padding: 30px;
   display: flex;
@@ -93,6 +100,7 @@ header .user-container {
   align-items: center;
   gap: 10px;
 }
+
 header .user-container button {
   font-family: "Poppins";
   font-size: 13px;
@@ -101,15 +109,18 @@ header .user-container button {
   border: none;
   transition: all 0.3s ease 0s;
 }
+
 header .user-container button:hover {
   /* background-color: rgba(0, 136, 169, 0.8); */
   background-color: #dee2e6;
   color: #000;
   transition: all 0.3s ease 0s;
 }
+
 header .user-container .redes {
   padding: 10px;
 }
+
 header .user-container .redes ul {
   display: flex;
   gap: 15px;
@@ -117,15 +128,18 @@ header .user-container .redes ul {
   margin: 0;
   padding: 0;
 }
+
 header .user-container .redes ul li a {
   color: inherit;
   text-decoration: none;
 }
+
 header .user-container .redes ul li a i {
   color: #fff;
   font-size: 1.2rem;
   transition: color 0.3s ease;
 }
+
 header .user-container .redes ul li a i:hover {
   color: #bfc0c0;
   transition: all 0.3s ease 0s;
@@ -138,6 +152,7 @@ header .user-container .redes ul li a i:hover {
   margin: 10px auto;
   text-align: center;
 }
+
 .services .service-container {
   padding: 50px;
   display: flex;
@@ -146,6 +161,7 @@ header .user-container .redes ul li a i:hover {
   align-items: center;
   gap: 20px;
 }
+
 .services .service-container .service-item {
   width: 300px;
   height: 400px;
@@ -154,20 +170,23 @@ header .user-container .redes ul li a i:hover {
   border-radius: 10px;
   color: #fff;
 }
+
 .services .service-container .service-item img {
   width: 100%;
   height: 150px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 15px;
 }
+
 .services .service-container .service-item div {
   padding: 5px;
   font-size: 1.7rem;
   margin-bottom: 10px;
 }
+
 .services .service-container .service-item p {
   font-size: 13px;
 }
@@ -182,6 +201,7 @@ header .user-container .redes ul li a i:hover {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 .productos .contenedorProductosIndividual {
   padding: 1rem;
   margin: 1rem;
@@ -192,20 +212,24 @@ header .user-container .redes ul li a i:hover {
   flex-direction: column;
   align-items: center;
 }
+
 .productos .contenedorProductosIndividual img {
   width: 12rem;
   height: 12rem;
 }
+
 .productos .contenedorProductosIndividual div {
   padding: 1rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
+
 .productos .contenedorProductosIndividual div h3 {
   font-size: 1.5remrem;
   margin-bottom: 10px;
 }
+
 .productos .contenedorProductosIndividual button {
   font-family: "Poppins";
   padding: 10px 20px;
@@ -216,6 +240,7 @@ header .user-container .redes ul li a i:hover {
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
+
 .productos .contenedorProductosIndividual button:hover {
   background-color: #dee2e6;
   color: #000;
@@ -228,6 +253,7 @@ header .user-container .redes ul li a i:hover {
   justify-content: center;
   margin-top: 20px;
 }
+
 .LoadMoreButtons .btn {
   padding: 10px 20px;
   border-radius: 5px;
@@ -238,6 +264,7 @@ header .user-container .redes ul li a i:hover {
   font-family: "Poppins";
   transition: all 0.3s ease 0s;
 }
+
 .LoadMoreButtons .btn:hover {
   background-color: #dee2e6;
   color: #000;
@@ -254,26 +281,31 @@ footer {
   font-family: "Poppins";
   animation: intro2 0.7s ease-in-out;
 }
+
 footer .f-container {
   gap: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 footer h6 {
   font-family: "Bodoni Moda";
   font-size: 20px;
   margin-bottom: 10px;
 }
+
 footer .lists {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
 }
+
 footer .lists li {
   list-style: none;
 }
+
 footer .lists li a {
   color: #fff;
   text-decoration: none;
@@ -281,16 +313,19 @@ footer .lists li a {
   font-size: 16px;
   transition: all 0.3s ease 0s;
 }
+
 footer .lists li a:hover {
   color: #bfc0c0;
   transition: all 0.3s ease 0s;
 }
+
 footer .footer-email {
   padding: 10px;
   border-radius: 50px;
   text-align: center;
   font-family: "Poppins";
 }
+
 footer .footer-button {
   padding: 10px 20px;
   border-radius: 50px;
@@ -301,20 +336,24 @@ footer .footer-button {
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
+
 footer .footer-button:hover {
   background-color: #dee2e6;
   color: #000;
   transition: all 0.3s ease 0s;
 }
+
 footer .Social ul {
   display: flex;
   justify-content: center;
   gap: 10px;
   font-size: 1.5rem;
 }
+
 footer .Social ul li {
   list-style: none;
 }
+
 footer .Social i {
   color: #fff;
-}/*# sourceMappingURL=Compras.css.map */
+} /*# sourceMappingURL=Carrito.css.map */
