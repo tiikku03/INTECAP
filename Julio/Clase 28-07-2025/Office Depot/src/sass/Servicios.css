@@ -70,6 +70,12 @@ header .nav-menu ul {
   list-style: none;
   gap: 20px;
 }
+header .nav-menu ul .container-cart {
+  color: #fff;
+}
+header .nav-menu ul .container-cart i {
+  font-size: 20px;
+}
 header .nav-menu ul a {
   font-family: "Poppins";
   color: #fff;

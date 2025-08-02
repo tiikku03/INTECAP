@@ -85,6 +85,11 @@ header {
             flex-wrap: wrap;
             list-style: none;
             gap: 20px;
+             .container-cart{
+                color: #fff;
+                i{
+                    font-size: 20px;
+                }}
             a {
                 font-family: $Letra-2;
                 color: $color-1;
