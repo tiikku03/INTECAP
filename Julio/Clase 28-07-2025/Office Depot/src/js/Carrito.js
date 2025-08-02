@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const billArray = productos.map((producto) => {
       return `
         <tr>
-          <td>$${producto.producto}</td>
+          <td>${producto.producto}</td>
           <td>${producto.precio * producto.cantidad}</td>
         </tr>`;
     });
