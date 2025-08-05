@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap");
+/* Letras */
+$Letra-1: "Bodoni Moda";
+$Letra-2: "Poppins";
+$Letra-3: "Sour Gummy";
+$Letra-4: "Aboreto";
+$Letra-5: "Bellefair";
+$Letra-6: "Nova Cut";
+/* Colores */
+$color-1: #fff;
+$color-2: #fefdf9;
+$color-3: #f8f9fa;
+$color-4: #dee2e6;
+$color-5: #bfc0c0;
+$color-6: #fafafa;
+$color-7: #000;
+$color-8: #751006;
+$color-9: #670d0b;
+$color-10: #580b0f;
+$color-11: #4a0814;
+$color-12: #3c0518;
+
+@keyframes intro{
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    } 
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes intro2{
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    } 
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes intro3{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    } 
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* -----------------------Header------------------- */
+header {
+    position: sticky;
+    top: 0;
+    background-color: $color-7;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: intro 0.7s ease-in-out;
+    .logo {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            width: 20rem;
+        }
+    }
+    .nav-menu {
+        padding: 25px;
+        display: flex;
+        align-items: center;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            gap: 20px;
+             .container-cart{
+                color: #fff;
+                i{
+                    font-size: 20px;
+                }}
+            a {
+                font-family: $Letra-2;
+                color: $color-1;
+                text-decoration: none;
+                transition: all 0.3s ease 0s;
+                &:hover{
+                    color: $color-5;
+                    transition: all 0.3s ease 0s;
+                }
+            }
+        }
+    }
+    .user-container {
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        button {
+            font-family: $Letra-2;
+            font-size: 13px;
+            border-radius: 20px;
+            padding: 10px;
+            border: none;
+            transition: all 0.3s ease 0s;
+            &:hover {
+                /* background-color: rgba(0, 136, 169, 0.8); */
+                background-color: #dee2e6;
+                color: $color-7;
+                transition: all 0.3s ease 0s;
+            }
+        }
+        .redes {
+            padding: 10px;
+            ul {
+                display: flex;
+                gap: 15px;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    a {
+                        color: inherit;
+                        text-decoration: none;
+
+                        i {
+                            color: $color-1;
+                            font-size: 1.2rem;
+                            transition: color 0.3s ease;
+
+                            &:hover {
+                                color: $color-5;
+                                transition: all 0.3s ease 0s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* -----------------------Main------------------- */
+main {
+.content-f{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+flex-wrap: wrap;
+min-height: 80vh;
+padding: 2rem;
+@media (max-width: 768px) {
+            flex-direction: column; 
+            gap: 1rem;
+        }
+form {
+    max-width: 600px;
+    width: 90%; 
+    margin: 0;
+    padding: 2rem 1.5rem; 
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    animation: intro3 0.7s ease-in-out;
+    fieldset {
+        border: none;
+        padding: 0;
+
+        legend {
+            font-weight: bold;
+            font-size: 2rem;
+            text-align: center;
+            font-family: $Letra-2;
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #333;
+            font-family:$Letra-1;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-family: $Letra-1 ;
+            font-size: 1rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+            &:focus {
+                border-color: #007bff;
+                outline: none;
+                box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+            }
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .submitButton {
+            display: block;
+            width: 12rem;
+            height: 3rem;
+            margin: 2rem auto 0;
+            background-color: #489645;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: $Letra-1;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: #3a7a38;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(72, 150, 69, 0.3);
+            }
+
+            &:active {
+                transform: translateY(0);
+            }
+        }
+    }
+
+    // Responsive breakpoints
+    @media (max-width: 768px) {
+        width: 95%;
+        padding: 1.5rem 1rem;
+        margin-top: 2rem;
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        fieldset {
+            legend {
+                font-size: 1.5rem;
+            }
+
+            label {
+                font-size: 0.9rem;
+            }
+
+            input,
+            textarea {
+                padding: 0.6rem;
+                font-size: 0.9rem;
+            }
+
+            .submitButton {
+                width: 100%;
+                height: 2.5rem;
+                font-size: 1rem;
+                margin-top: 1.5rem;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        width: 98%;
+        padding: 1rem 0.75rem;
+        margin-top: 1.5rem;
+        border-radius: 8px;
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        fieldset {
+            legend {
+                font-size: 1.3rem;
+                margin-bottom: 0.8rem;
+            }
+
+            label {
+                font-size: 0.85rem;
+                margin-bottom: 0.3rem;
+            }
+
+            input,
+            textarea {
+                padding: 0.5rem;
+                margin-bottom: 0.8rem;
+                font-size: 0.85rem;
+            }
+
+            textarea {
+                min-height: 100px;
+            }
+
+            .submitButton {
+                height: 2.2rem;
+                font-size: 0.9rem;
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    @media (max-width: 320px) {
+        width: 100%;
+        padding: 0.75rem 0.5rem;
+        border-radius: 5px;
+        border: none;
+        box-shadow: none;
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        fieldset {
+            legend {
+                font-size: 1.2rem;
+            }
+
+            .submitButton {
+                height: 2rem;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+.form-img{
+    width: 100%;
+    max-width: 490px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 100%;
+        height: auto;
+        max-width: 500px; 
+        border-radius: 10px; 
+        animation: intro3 0.7s ease-in-out;
+    }
+}
+}
+}
+/* ---------------- */
+
+/* -----------------------Footer------------------- */
+footer{
+    margin-top: 10px;
+    background-color: $color-7;
+    color: $color-1;
+    text-align: center;
+    padding: 20px;
+    font-family: $Letra-2;
+    animation: intro2 0.7s ease-in-out;
+    .f-container{
+        gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    h6{
+        font-family: $Letra-1;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .lists{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        li{
+            list-style: none;
+            a{
+                color: $color-1;
+                text-decoration: none;
+                font-family: $Letra-2;
+                font-size: 16px;
+                transition: all 0.3s ease 0s;
+                &:hover{
+                    color: $color-5;
+                    transition: all 0.3s ease 0s;
+                }
+            }
+        }
+    }
+    .footer-email{
+        padding: 10px;
+        border-radius: 50px;
+        text-align: center;
+        font-family: $Letra-2;
+    }
+    .footer-button{
+        padding: 10px 20px;
+        border-radius: 50px;
+        font-family: $Letra-2;
+        background-color: $color-1;
+        color: $color-7;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        &:hover {
+            background-color: $color-4;
+            color: $color-7;
+            transition: all 0.3s ease 0s;
+        }
+    }
+    .Social{
+        ul{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            font-size: 1.5rem;
+            li{
+                list-style: none;
+            }
+        }
+        i{
+            color: $color-1;
+        }
+    }
+}

@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap");
+/* Letras */
+:root{
+  --Letra-1: "Bodoni Moda";
+  --Letra-2: "Poppins";
+  --Letra-3: "Sour Gummy";
+  --Letra-4: "Aboreto";
+  --Letra-5: "Bellefair";
+  --Letra-6: "Nova Cut";
+}
+
+/* -----Header------------- */
+header {
+  background: rgb(172, 180, 226);
+  padding: 20px;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+.menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+  justify-content: center;
+  margin: 0;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-family: var(--Letra-3);
+  font-size: 20px;
+}
+.social {
+  display: flex;
+}
+
+.social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.social li {
+  margin-right: 10px;
+}
+
+.tittle {
+    font-family: var(--Letra-1);
+  flex-grow: 1;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.user {
+  display: flex;
+}
+
+.user ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.user li {
+  margin-left: 10px;
+}
+
+i {
+  color: white;
+  font-size: 2rem;
+}
+
+/* ---------Animación simplificada y efectiva------------ */
+@keyframes fade {
+  0% { opacity: 0; }
+  12.5% { opacity: 1; }   
+  25% { opacity: 0; }
+  100% { opacity: 0; }
+}
+/* ---------Base para el contenedor------------------- */
+.container {
+  background: rgb(172, 180, 226);
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+/* ---------Base para todas las imagenes------------------- */
+.img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: fade 24s infinite;
+}
+/* -----1RA imagen ------Comienza visible------------ */
+.img1 {
+  background-image: url(../Carrusel/img/frutas.jfif);
+  animation-delay: 0s;
+  opacity: 1;
+}
+/* -------2DA imagen ----aparece despues de 3s------------ */
+.img2 {
+  background-image: url(../Carrusel/img/Frutas.jpg);
+  animation-delay: 3s;
+}
+/* -------3RA imagen ----aparece despues de 6s------------ */
+.img3 {
+  background-image: url(../Carrusel/img/frutas2.png);
+  animation-delay: 6s;
+}
+/* -------4TA imagen ----aparece despues de 9s------------ */
+.img4 {
+  background-image: url(../Carrusel/img/moras.jpeg);
+  animation-delay: 9s;
+}
+.img5 {
+  background-image: url(../Carrusel/img/Frutas3.png);
+  animation-delay: 12s;
+}
+.img6 {
+  background-image: url(../Carrusel/img/Frutas4.png);
+  animation-delay: 15s;
+}
+.img7 {
+  background-image: url(../Carrusel/img/Frutas5.png);
+  animation-delay: 18s;
+}
+.img8{
+    background-image: url(../Carrusel/img/Frutas6.png);
+    animation-delay: 21s;
+}
