@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap");
+
+/* Letras */
+:root {
+    --Letra-1: "Bodoni Moda";
+    --Letra-2: "Poppins";
+    --Letra-3: "Sour Gummy";
+    --Letra-4: "Aboreto";
+    --Letra-5: "Bellefair";
+    --Letra-6: "Nova Cut";
+}
+
+/* -------------Mixins------------------ */
+
+/* -------------Keyframes------------------ */
+@keyframes fade {
+    0% { opacity: 0; }
+    12.5% { opacity: 1; }
+    25% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* -------------body------------------ */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--Letra-2);
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* -------------Header------------------ */
+header {
+    background: #000;
+    color: #fff;
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+        font-family: var(--Letra-2);
+        font-size: 14px;
+
+        .social {
+            gap: 10px;
+
+            ul {
+                display: flex;
+                list-style: none;
+                gap: 15px;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    display: inline-block;
+
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                        font-size: 25px;
+                        transition: color 0.3s ease;
+
+                        &:hover {
+                            color: #cecece;
+                        }
+                    }
+                }
+            }
+        }
+
+        .tittle h1 {
+            font-family: var(--Letra-1);
+            font-size: 1.8rem;
+            margin: 0;
+        }
+
+        .user {
+            ul {
+                display: flex;
+                list-style: none;
+                gap: 10px;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    display: inline-block;
+
+                    a {
+                        font-size: 30px;
+                        color: #fff;
+                        text-decoration: none;
+                        transition: color 0.3s ease;
+
+                        &:hover {
+                            color: #cecece;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .down {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+
+        .menu ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+
+            a {
+                font-family: var(--Letra-2);
+                text-decoration: none;
+                color: #fff;
+                font-size: 1.1rem;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: #cecece;
+                }
+            }
+        }
+    }
+}
+/* ---------Main----------------------- */
+main{
+    justify-content: center;
+    align-items: flex-start; // Cambiar de center a flex-start
+    flex-wrap: wrap;
+    display: flex;
+    gap: 50px;
+    
+    /* -------------Carrusel------------------ */
+.banner {
+    background-color: #000;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    .banner-item {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        top: 0;
+        opacity: 0;
+        animation: fade 24s infinite;
+    }
+
+    .img1 {
+        background-image: url(../imgs/Ins.png);
+        animation-delay: 0s;
+        opacity: 1;
+    }
+
+    .img2 {
+        background-image: url(../imgs/Ins2.png);
+        animation-delay: 6s;
+    }
+
+    .img3 {
+        background-image: url(../imgs/Ins3.png);
+        animation-delay: 12s;
+    }
+
+    .img4 {
+        background-image: url(../imgs/Ins4.png);
+        animation-delay: 18s;
+    }
+}
+
+/* ---------Docentes------------------ */
+    .docente{
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 25px;
+        width: 500px;
+        height: 800px; // Cambiar de auto a una altura fija
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #e0e0e0;
+        
+        &:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            border-color: #000;
+        }
+        
+        article {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: space-between; // Agregar esta línea
+        }
+        
+        .img-intrustor{ // Corregir typo: intrustor -> instructor
+            width: 100%;
+            height: 250px; // Cambiar de 300px a 250px
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            flex-shrink: 0; // Agregar esta línea
+        }
+        button{
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #252f56 ;
+            font-family: var(--Letra-2);
+            color: #fff;
+            transition: all 0.3s ease;
+            &:hover {
+                transition: all 0.3s ease;
+                background-color: #394a75;
+            }
+        }
+        #cursosImpartidos{
+            display: none; // Ocultar por defecto
+        }
+    }
+}
+/* -------------Footer---------------- */
+footer {
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px 20px 20px;
+    color: #fff;
+    margin-top: 50px;
+
+    .f-info {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: var(--Letra-2);
+        gap: 40px;
+        width: 100%;
+
+        .f-container {
+            .f-item {
+                h3 {
+                    font-size: 1.2rem;
+                    margin-bottom: 15px;
+                    color: #fff;
+                }
+
+                p {
+                    margin: 8px 0;
+                    color: #ccc;
+                }
+            }
+
+            ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    list-style: none;
+                    margin: 8px 0;
+
+                    a {
+                        color: #ccc;
+                        text-decoration: none;
+                        transition: color 0.3s ease;
+
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .line {
+        width: 60%;
+        max-width: 400px;
+        height: 1px;
+        background-color: #555;
+        margin: 30px 0 20px 0;
+    }
+
+    .-local {
+        text-align: center;
+        color: #888;
+        font-size: 0.9rem;
+    }
+}
