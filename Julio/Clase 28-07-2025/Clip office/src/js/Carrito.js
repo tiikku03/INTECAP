@@ -3,10 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //
   // 1. Declaración de variables y elementos del DOM
   //
-  const productosContainer = document.querySelector(".productos");
-  const billContainer = document.querySelector(".billTable");
-  const loadMoreButton = document.querySelector(".LoadMoreButtons");
-  let productos = JSON.parse(localStorage.getItem("cart")) || [];
+   
 
   //
   // 2. Funciones para la manipulación del DOM
