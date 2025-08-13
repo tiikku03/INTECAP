@@ -1,0 +1,17 @@
+#cuadro{
+    width: 200px;
+    height: 150px;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+#tecla{
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding: 10px;
+    
+}
