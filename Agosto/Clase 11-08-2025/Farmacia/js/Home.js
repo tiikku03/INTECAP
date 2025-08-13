@@ -1,3 +1,7 @@
+//Model al entrar a la pagina
+
+
+
 // Recibe Novedades
 function notifysubmit(){
     const footerEmail = document.getElementById("footer-email").value;
