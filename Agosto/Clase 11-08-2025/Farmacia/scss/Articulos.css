@@ -122,20 +122,89 @@ header .user-container .redes ul {
   margin: 0;
   padding: 0;
 }
-header .user-container .redes ul li a {
-  color: inherit;
+header .user-container .redes ul a {
+  color: #000;
   text-decoration: none;
 }
-header .user-container .redes ul li a i {
-  color: #fff;
+header .user-container .redes ul a i {
+  color: #000;
   font-size: 1.2rem;
   transition: color 0.3s ease;
 }
-header .user-container .redes ul li a i:hover {
+header .user-container .redes ul a i:hover {
   color: #bfc0c0;
   transition: all 0.3s ease 0s;
 }
 
+/* -----------------------Main--------------------- */
+main .Articulos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 10px;
+  gap: 20px;
+}
+main .Articulos .articulo-container {
+  border-radius: 10px;
+  justify-content: center;
+  padding: 3rem;
+  margin: 10px;
+  max-width: 440px;
+  height: 600px;
+  background: #fafafa;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  animation: intro3 0.7s;
+}
+main .Articulos .articulo-container .img-articulo {
+  width: 350px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .Articulos .articulo-container .name-articulos {
+  font-family: "Bodoni Moda";
+  font-size: 30px;
+}
+main .Articulos .articulo-container .descripcion-articulo {
+  font-family: "Bellefair";
+}
+main .Articulos .articulo-container .precio-articulo {
+  font-family: "Sour Gummy";
+  color: #ff4444;
+  margin: 5px;
+}
+main .Articulos .articulo-container .buy-btn {
+  font-family: "Poppins";
+  color: #fff;
+  background: #000;
+  border-radius: 10px;
+  padding: 12px 25px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: center;
+  width: 100%;
+  transition: all 0.4s ease;
+}
+main .Articulos .articulo-container .buy-btn:hover {
+  background: #fff;
+  color: #000;
+  border: #000 2px solid;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------footer------------- ----- */
 footer {
   margin-top: 10px;
   background-color: #fff;
@@ -208,4 +277,40 @@ footer .Social ul li {
 }
 footer .Social i {
   color: #000;
+}
+
+/* Responsive */
+/* Header */
+@media (max-width: 700px) {
+  header .header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+/* Articulos */
+@media (max-width: 700px) {
+  main .Articulos {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+  }
+  main .Articulos .articulo-container {
+    max-width: 98vw;
+    width: 98vw;
+    height: auto;
+    padding: 1rem;
+    margin: 10px 0;
+  }
+  main .Articulos .articulo-container .img-articulo {
+    width: 100%;
+    max-width: 98vw;
+    height: auto;
+    min-height: 180px;
+  }
 }/*# sourceMappingURL=Articulos.css.map */

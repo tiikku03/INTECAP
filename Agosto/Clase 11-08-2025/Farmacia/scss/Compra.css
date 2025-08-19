@@ -136,17 +136,14 @@ header .user-container .redes ul li a i:hover {
   transition: all 0.3s ease 0s;
 }
 
-/* -----------------------Main--------------------- */
-main .articulos {
+/* ----------------Main------------------ */
+main {
+  align-items: center;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 5px;
-  padding: 10px;
-  gap: 20px;
 }
-main .articulos .articulo-container {
+main .articulo-container {
   border-radius: 10px;
   justify-content: center;
   padding: 3rem;
@@ -155,79 +152,44 @@ main .articulos .articulo-container {
   height: 600px;
   background: #fafafa;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
-  animation: intro3 0.7s;
 }
-main .articulos .articulo-container .imagen-articulo,
-main .articulos .articulo-container .imag-articulo {
+main .articulo-container .img-articulo {
   width: 350px;
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main .articulos .articulo-container .name-articulos,
-main .articulos .articulo-container .nombre-articulo {
+main .articulo-container .name-articulos {
   font-family: "Bodoni Moda";
-  font-size: 20px;
+  font-size: 30px;
 }
-main .articulos .articulo-container .descripcion-articulo {
+main .articulo-container .descripcion-articulo {
   font-family: "Bellefair";
 }
-main .articulos .articulo-container .precio-articulo {
+main .articulo-container .precio-articulo {
   font-family: "Sour Gummy";
   color: #ff4444;
   margin: 5px;
 }
-main .articulos .articulo-container .buy-btn,
-main .articulos .articulo-container .close,
-main .articulos .articulo-container .Show {
-  font-family: "Poppins";
-  color: #fff;
-  background: #000;
-  border-radius: 10px;
-  padding: 12px 25px;
-  margin: 5px;
-  border: none;
+main .articulo-container button {
+  padding: 10px;
   font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  align-self: center;
-  width: 100%;
-  transition: all 0.4s ease;
+  font-family: "Bellefair";
 }
-main .articulos .articulo-container .buy-btn:hover,
-main .articulos .articulo-container .close:hover,
-main .articulos .articulo-container .Show:hover {
-  background: #fff;
-  color: #000;
-  border: #000 2px solid;
-  transition: all 0.4s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  transform: translateY(-2px);
+main .vacio {
+  font-family: "Poppins";
 }
-main .articulos dialog {
-  border: none;
-  margin: 20px;
-  max-width: 280px;
-  padding: 18px 12px;
-  border-radius: 12px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
-  background: #fff;
-  animation: intro3 0.5s;
-  position: relative;
-  z-index: 1001;
+main .Regresar {
+  padding: 10px;
+  margin-left: 20px;
 }
-main .articulos dialog .img-articulo,
-main .articulos dialog .imagen-articulo {
-  width: 220px;
-  height: 140px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 12px;
+main .Regresar button {
+  padding: 10px;
+  font-size: 1rem;
+  font-family: "Bellefair";
 }
 
-/* ------------------------footer------------- ----- */
+/* --------Footer--------------------------- */
 footer {
   margin-top: 10px;
   background-color: #fff;
@@ -300,46 +262,4 @@ footer .Social ul li {
 }
 footer .Social i {
   color: #000;
-}
-
-/* -----Responsive----- */
-@media (max-width: 700px) {
-  header .header-row {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-  }
-  .nav-menu ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-@media (max-width: 700px) {
-  main .articulos {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 5px;
-  }
-  main .articulos .articulo-container {
-    max-width: 98vw;
-    width: 98vw;
-    height: auto;
-    padding: 1rem;
-    margin: 10px 0;
-  }
-  main .articulos .articulo-container .imagen-articulo,
-  main .articulos .articulo-container .imag-articulo {
-    width: 100%;
-    max-width: 98vw;
-    height: auto;
-    min-height: 180px;
-  }
-  dialog .img-articulo,
-  dialog .imagen-articulo {
-    width: 98vw;
-    max-width: 220px;
-    height: auto;
-    min-height: 120px;
-  }
-}/*# sourceMappingURL=Medicina.css.map */
+}/*# sourceMappingURL=Compra.css.map */

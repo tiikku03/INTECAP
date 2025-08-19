@@ -20,33 +20,32 @@ $color-5: #bfc0c0;
 $color-6: #fafafa;
 $color-7: #000;
 
-
-@keyframes intro{
-    from{
+@keyframes intro {
+    from {
         opacity: 0;
         transform: translateY(-50px);
-    } 
-    to{
+    }
+    to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-@keyframes intro2{
-    from{
+@keyframes intro2 {
+    from {
         opacity: 0;
         transform: translateY(50px);
-    } 
-    to{
+    }
+    to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-@keyframes intro3{
-    from{
+@keyframes intro3 {
+    from {
         opacity: 0;
         transform: scale(0);
-    } 
-    to{
+    }
+    to {
         opacity: 1;
         transform: scale(1);
     }
@@ -75,7 +74,6 @@ header {
         }
     }
     .nav-menu {
-
         padding: 25px;
         display: flex;
         align-items: center;
@@ -84,22 +82,22 @@ header {
             flex-wrap: wrap;
             list-style: none;
             gap: 20px;
-               #cart-count {
-    background-color: #ff4444;
-    color: #000;
-    border-radius: 50%;
-    padding: 2px 6px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    min-width: 18px;
-    text-align: center;
-  }
+            #cart-count {
+                background-color: #ff4444;
+                color: #000;
+                border-radius: 50%;
+                padding: 2px 6px;
+                font-size: 0.8rem;
+                font-weight: bold;
+                min-width: 18px;
+                text-align: center;
+            }
             a {
                 font-family: $Letra-2;
                 color: $color-7;
                 text-decoration: none;
                 transition: all 0.3s ease 0s;
-                &:hover{
+                &:hover {
                     color: $color-5;
                     transition: all 0.3s ease 0s;
                 }
@@ -136,11 +134,11 @@ header {
 
                 li {
                     a {
-                        color: inherit;
+                        color: #000;
                         text-decoration: none;
 
                         i {
-                            color: $color-1;
+                            color: $color-7;
                             font-size: 1.2rem;
                             transition: color 0.3s ease;
 
@@ -155,6 +153,96 @@ header {
         }
     }
 }
+/* -----------------------Main--------------------- */
+main {
+    .articulos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        padding: 10px;
+        gap: 20px;
+        .articulo-container {
+            border-radius: 10px;
+            justify-content: center;
+            padding: 3rem;
+            margin: 10px;
+            max-width: 440px;
+            height: 600px;
+            background: #fafafa;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+            animation: intro3 0.7s;
+            .imagen-articulo,
+            .imag-articulo {
+                width: 350px;
+                height: 300px;
+                object-fit: cover;
+            }
+            .name-articulos,
+            .nombre-articulo {
+                font-family: $Letra-1;
+                font-size: 20px;
+            }
+            .descripcion-articulo {
+                font-family: $Letra-5;
+            }
+            .precio-articulo {
+                font-family: $Letra-3;
+                color: #ff4444;
+                margin: 5px;
+            }
+            .buy-btn,
+            .close,
+            .Show {
+                font-family: $Letra-2;
+                color: #fff;
+                background: #000;
+                border-radius: 10px;
+                padding: 12px 25px;
+                margin: 5px;
+                border: none;
+                font-size: 1rem;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                align-self: center;
+                width: 100%;
+                transition: all 0.4s ease;
+                &:hover {
+                    background: #fff;
+                    color: #000;
+                    border: #000 2px solid;
+                    transition: all 0.4s ease;
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+                    transform: translateY(-2px);
+                }
+            }
+        }
+
+        dialog {
+            border: none;
+            margin: 20px;
+            max-width: 280px;
+            padding: 18px 12px;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+            background: #fff;
+            animation: intro3 0.5s;
+            position: relative;
+            z-index: 1001;
+        }
+        dialog .img-articulo,
+        dialog .imagen-articulo {
+            width: 220px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+    }
+}
+/* ------------------------footer------------- ----- */
 footer {
     margin-top: 10px;
     background-color: $color-1;
@@ -240,5 +328,48 @@ footer {
         i {
             color: $color-7;
         }
+    }
+}
+/* -----Responsive----- */
+
+@media (max-width: 700px) {
+    header .header-row {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    main .articulos {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 5px;
+    }
+    main .articulos .articulo-container {
+        max-width: 98vw;
+        width: 98vw;
+        height: auto;
+        padding: 1rem;
+        margin: 10px 0;
+    }
+    main .articulos .articulo-container .imagen-articulo,
+    main .articulos .articulo-container .imag-articulo {
+        width: 100%;
+        max-width: 98vw;
+        height: auto;
+        min-height: 180px;
+    }
+    dialog .img-articulo,
+    dialog .imagen-articulo {
+        width: 98vw;
+        max-width: 220px;
+        height: auto;
+        min-height: 120px;
     }
 }

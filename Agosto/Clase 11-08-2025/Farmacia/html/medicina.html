@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medicamentos y Fármacos | Farmacia La Salud</title>
-    <meta name="description" content="Explora una amplia selección de medicamentos con y sin receta. Encuentra descripciones, precios y más en nuestra tienda en línea.">
+    <meta name="description"
+        content="Explora una amplia selección de medicamentos con y sin receta. Encuentra descripciones, precios y más en nuestra tienda en línea.">
     <link rel="canonical" href="https://www.farmaciaysalud.com/medicamentos">
     <link rel="stylesheet" href="../scss/Medicina.css">
-    <title>Medicamentos y Fármacos | Farmacia La Salud</title>
+    <title>Medicamentos y Fármacos | Farmacia La Salud | Medicinas | Articulos </title>
 </head>
+
 <body>
     <!-- Aqui comienza el header -->
     <header>
@@ -19,10 +22,10 @@
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="articulos.html">Articulos</a></li>
-                <li><a href="medicina.html">Compras</a></li>
+                <li><a href="medicina.html">Medicinas</a></li>
                 <li>
                     <div class="container-cart">
-                        <a href="Carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="Compra.html"><i class="fa-solid fa-cart-shopping"></i></a>
                         <span id="cart-count">(0)</span>
                     </div>
                 </li>
@@ -41,10 +44,184 @@
     </header>
     <!-- Aqui comienza el main -->
     <main>
-     
+        <!-- ----Aqui comienzan los medicamentos--- -->
+      <section class="articulos">
+
+      
+       <article class="articulo-container">
+
+            <img class="imagen-articulo" src="https://www.mercafarma.com.gt/wp-content/uploads/2024/10/PARACETAMOL-DENK-500MG-X-20-COMPRIMIDOS.jpg" alt="Paracetamol 500 mg">
+            <h2 class="nombre-articulo">Paracetamol 500 mg</h2>
+            <button class="buy-btn">Comprar Ahora</button>
+            <button class="Show" onclick="window.modal1.showModal();">Ver Detalles</button>
+
+            <dialog id="modal1">
+            <img class="img-articulo" src="https://www.mercafarma.com.gt/wp-content/uploads/2024/10/PARACETAMOL-DENK-500MG-X-20-COMPRIMIDOS.jpg" alt="Paracetamol 500 mg">
+            <h2 class="name-articulo">Paracetamol 500 mg</h2>
+            <p class="descripcion-articulo">Analgésico y antipirético usado para aliviar el dolor y reducir la fiebre.</p>
+            <p class="precio-articulo">15.00</p>
+            <button class="buy-btn">Comprar Ahora</button>
+            <button class="close" onclick="window.modal1.close();">Cerrar</button>
+            </dialog>
+       </article>
+
+       <article class="articulo-container">
+
+            <img class="imagen-articulo" src="https://www.lasanteca.com/userfiles/2018/12/IBUPROFENO-400MG-CAJA-POR-100-TABLETAS-CON-BLISTER.jpg" alt="Ibuprofeno 400 mg">
+            <h2 class="nombre-articulo">Ibuprofeno 400 mg</h2>
+            <button class="buy-btn">Comprar Ahora</button>
+            <button class="Show" onclick="window.modal2.showModal()">Ver Detalles</button>
+
+            <dialog id="modal2">
+            <img class="img-articulo" src="https://www.lasanteca.com/userfiles/2018/12/IBUPROFENO-400MG-CAJA-POR-100-TABLETAS-CON-BLISTER.jpg" alt="Ibuprofeno 400 mg">
+            <h2 class="name-articulo">Ibuprofeno 400 mg</h2>
+            <p class="descripcion-articulo">Antiinflamatorio no esteroideo (AINE) utilizado para aliviar el dolor y reducir la inflamación.</p>
+            <p class="precio-articulo">20.00</p>
+            <button class="buy-btn">Comprar Ahora</button>
+            <button class="close" onclick="window.modal2.close()">Cerrar</button>
+            </dialog>
+       </article>
+
+       <article class="articulo-container">
+
+            <img class="imagen-articulo" src="https://www.lasanteca.com/userfiles/2018/12/AMOXICILINA-500MG-CAJA-POR-50-CAPSULAS-CON-BLISTER.jpg" alt="Amoxicilina 500 mg">
+            <h2 class="nombre-articulo">Amoxicilina 500 mg</h2>
+            <button class="buy-btn">Comprar Ahora</button>
+            <button class="Show" onclick="window.modal3.showModal()">Ver Detalles</button>
+
+            <dialog id="modal3">
+            <img class="img-articulo" src="https://www.lasanteca.com/userfiles/2018/12/AMOXICILINA-500MG-CAJA-POR-50-CAPSULAS-CON-BLISTER.jpg" alt="Amoxicilina 500 mg">
+            <h2 class="name-articulo">Amoxicilina 500 mg</h2>
+            <p class="descripcion-articulo">Antibiótico para tratar infecciones bacterianas.</p>
+            <p class="precio-articulo">25.00</p>
+            <button class="buy-btn">Comprar Ahora</button>
+            <button class="close" onclick="window.modal3.close()">Cerrar</button>
+            </dialog>
+       </article>
+
+       <article class="articulo-container">
+
+            <img class="imagen-articulo" src="https://www.lasanteca.com/userfiles/2018/12/LORATADINA-10MG-CAJA-POR-10-TABLETAS-CON-BLISTER.jpg" alt="Loratadina 10 mg">
+            <h2 class="nombre-articulo">Loratadina 10 mg</h2>
+            <button class="buy-btn">Comprar Ahora</button>
+            <button class="Show" onclick="window.modal4.showModal()">Ver Detalles</button>
+
+            <dialog id="modal4">
+            <img class="img-articulo" src="https://www.lasanteca.com/userfiles/2018/12/LORATADINA-10MG-CAJA-POR-10-TABLETAS-CON-BLISTER.jpg" alt="Loratadina 10 mg">
+            <h2 class="name-articulo">Loratadina 10 mg</h2>
+            <p class="descripcion-articulo">Antihistamínico utilizado para aliviar los síntomas de alergia.</p>
+            <p class="precio-articulo">30.00</p>
+            <button class="buy-btn">Comprar Ahora</button>
+            <button class="close" onclick="window.modal4.close()">Cerrar</button>
+            </dialog>
+       </article>
+
+       <article class="articulo-container">
+
+            <img class="imagen-articulo" src="https://www.lasanteca.com/userfiles/2018/12/OMEPRAZOL-20MG-CAJA-POR-30-CAPSULAS-CON-BLISTER.png" alt="Omeprazol 20 mg">
+            <h2 class="nombre-articulo">Omeprazol 20 mg</h2>
+            <button class="buy-btn">Comprar Ahora</button>
+            <button class="Show" onclick="window.modal5.showModal()">Ver Detalles</button>
+
+            <dialog id="modal5">
+            <img class="img-articulo" src="https://www.lasanteca.com/userfiles/2018/12/OMEPRAZOL-20MG-CAJA-POR-30-CAPSULAS-CON-BLISTER.png" alt="Omeprazol 20 mg">
+            <h2 class="name-articulo">Omeprazol 20 mg</h2>
+            <p class="descripcion-articulo">Protector gástrico usado para gastritis, reflujo y úlceras.</p>
+            <p class="precio-articulo">35.00</p>
+            <button class="buy-btn">Comprar Ahora</button>
+            <button class="close" onclick="window.modal5.close()">Cerrar</button>
+            </dialog>
+       </article>
+             
+       <article class="articulo-container">
+
+            <img class="imagen-articulo" src="https://www.lasanteca.com/userfiles/2018/12/DICLOFENACO-S%E2%80%A1DICO-50MG-CAJA-POR-50-TABLETAS-INCLINADO.jpg" alt="Diclofenaco sódico 50 mg">
+            <h2 class="nombre-articulo">Diclofenaco sódico 50 mg</h2>
+            <button class="buy-btn">Comprar Ahora</button>
+            <button class="Show" onclick="window.modal6.showModal()">Ver Detalles</button>
+
+            <dialog id="modal6">
+            <img class="img-articulo" src="https://www.lasanteca.com/userfiles/2018/12/DICLOFENACO-S%E2%80%A1DICO-50MG-CAJA-POR-50-TABLETAS-INCLINADO.jpg" alt="Diclofenaco sódico 50 mg">
+            <h2 class="name-articulo">Diclofenaco sódico 50 mg</h2>
+            <p class="descripcion-articulo">Antiinflamatorio y analgésico para dolores musculares o articulares.</p>
+            <p class="precio-articulo">40.00</p>
+            <button class="buy-btn">Comprar Ahora</button>
+            <button class="close" onclick="window.modal6.close()">Cerrar</button>
+            </dialog>
+       </article>
+
+       <article class="articulo-container">
+
+            <img class="imagen-articulo" src="https://selectpharma.com.gt/sites/default/files/producto/acetaminofen_caja_120ml_5406_ed.jpg" alt="Acetaminofén jarabe infantil">
+            <h2 class="nombre-articulo">Acetaminofén jarabe infantil</h2>
+            <button class="buy-btn">Comprar Ahora</button>
+            <button class="Show" onclick="window.modal7.showModal()">Ver Detalles</button>
+
+            <dialog id="modal7">
+            <img class="img-articulo" src="https://selectpharma.com.gt/sites/default/files/producto/acetaminofen_caja_120ml_5406_ed.jpg" alt="Acetaminofén jarabe infantil">
+            <h2 class="name-articulo">Acetaminofén jarabe infantil</h2>
+            <p class="descripcion-articulo">Antipirético y analgésico para aliviar fiebre y dolor en niños.</p>
+            <p class="precio-articulo">25.00</p>
+            <button class="buy-btn">Comprar Ahora</button>
+            <button class="close" onclick="window.modal7.close()">Cerrar</button>
+            </dialog>
+       </article>
+
+       <article class="articulo-container">
+            
+            <img class="imagen-articulo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5EaK4j4ib_avC2mhtLknWhynvbt6YzqsZVw&s" alt="Metformina 850 mg">
+            <h2 class="nombre-articulo">Metformina 850 mg</h2>
+            <button class="buy-btn">Comprar Ahora</button>
+            <button class="Show" onclick="window.modal8.showModal()">Ver Detalles</button>
+
+            <dialog id="modal8">
+            <img class="img-articulo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5EaK4j4ib_avC2mhtLknWhynvbt6YzqsZVw&s" alt="Metformina 850 mg">
+            <h2 class="name-articulo">Metformina 850 mg</h2>
+            <p class="descripcion-articulo">Antidiabético oral utilizado para controlar los niveles de azúcar en sangre.</p>
+            <p class="precio-articulo">30.00</p>
+            <button class="buy-btn">Comprar Ahora</button>
+            <button class="close" onclick="window.modal8.close()">Cerrar</button>
+            </dialog>
+       </article>
+
+       <article class="articulo-container">
+
+            <img class="imagen-articulo" src="https://www.aspirina.com.mx/sites/g/files/vrxlpx53376/files/2024-05/Aspirina_tabletas_500_mg_empaque_lateral_izquierdo.png" alt="Ácido acetilsalicílico 100 mg">
+            <h2 class="nombre-articulo">Ácido acetilsalicílico 100 mg</h2>
+            <button class="buy-btn">Comprar Ahora</button>
+            <button class="Show" onclick="window.modal9.showModal()">Ver Detalles</button>
+
+            <dialog id="modal9">
+            <img class="img-articulo" src="https://www.aspirina.com.mx/sites/g/files/vrxlpx53376/files/2024-05/Aspirina_tabletas_500_mg_empaque_lateral_izquierdo.png" alt="Ácido acetilsalicílico 100 mg">
+            <h2 class="name-articulo">Ácido acetilsalicílico 100 mg</h2>
+            <p class="descripcion-articulo">Analgésico y antipirético utilizado para aliviar el dolor y reducir la fiebre.</p>
+            <p class="precio-articulo">15.00</p>
+            <button class="buy-btn">Comprar Ahora</button>
+            <button class="close" onclick="window.modal9.close()">Cerrar</button>
+            </dialog>
+       </article>
+
+       <article class="articulo-container">
+
+            <img class="imagen-articulo" src="https://farmaciaseconomicas.com.gt/wp-content/uploads/2022/03/salbutamol-caplin-Farmacias-Economicas.png" alt="Salbutamol inhalador">
+            <h2 class="nombre-articulo">Salbutamol inhalador</h2>
+            <button class="buy-btn">Comprar Ahora</button>
+            <button class="Show" onclick="window.modal10.showModal()">Ver Detalles</button>
+
+            <dialog id="modal10">
+            <img class="img-articulo" src="https://farmaciaseconomicas.com.gt/wp-content/uploads/2022/03/salbutamol-caplin-Farmacias-Economicas.png" alt="Salbutamol inhalador">
+            <h2 class="name-articulo">Salbutamol inhalador</h2>
+            <p class="descripcion-articulo">Broncodilatador utilizado para aliviar los síntomas del asma y otras afecciones respiratorias.</p>
+            <p class="precio-articulo">45.00</p>
+            <button class="buy-btn">Comprar Ahora</button>
+            <button class="close" onclick="window.modal10.close()">Cerrar</button>
+            </dialog>
+       </article>
+
+      </section>
     </main>
     <!-- Aqui comienza el footer -->
-   <footer>
+    <footer>
         <div class="f-container">
             <div class="footer-container">
                 <h6>More</h6>
@@ -78,7 +255,8 @@
         </div>
     </footer>
     <!-- JS -->
-     <script src="https://kit.fontawesome.com/6013ac0acd.js" crossorigin="anonymous"></script>
-     <script src="..//js/Medicinas.js"></script>
+    <script src="https://kit.fontawesome.com/6013ac0acd.js" crossorigin="anonymous"></script>
+    <script src="..//js/Medicinas.js"></script>
 </body>
+
 </html>
