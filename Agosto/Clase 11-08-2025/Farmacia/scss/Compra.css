@@ -188,6 +188,83 @@ main .Regresar button {
   font-size: 1rem;
   font-family: "Bellefair";
 }
+main .modal {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+main .modal.active,
+main .modal[style*="display: flex"] {
+  display: flex;
+  border: none;
+  margin: 20px;
+  max-width: 280px;
+  max-height: 400px;
+  padding: 18px 12px;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  background: #fff;
+  animation: intro3 0.5s;
+  position: relative;
+  z-index: 1001;
+}
+main .cerrar {
+  font-family: "Poppins";
+  color: #fff;
+  background: #000;
+  border-radius: 10px;
+  padding: 12px 25px;
+  margin: 5px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: center;
+  width: 100%;
+  transition: all 0.4s ease;
+}
+main .cerrar:hover {
+  background: #fff;
+  color: #000;
+  border: #000 2px solid;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+main .modal button {
+  font-family: "Poppins";
+  color: #fff;
+  background: #000;
+  border-radius: 10px;
+  padding: 12px 25px;
+  margin: 5px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: center;
+  width: 100%;
+  transition: all 0.4s ease;
+}
+main .modal button:hover {
+  background: #fff;
+  color: #000;
+  border: #000 2px solid;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
 
 /* --------Footer--------------------------- */
 footer {

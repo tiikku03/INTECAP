@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function(){
             <h2 class="name-articulo">${articulo.articuloName}</h2>
             <p class="descripcion-articulo">${articulo.descripcion}</p>
             <p class="precio-articulo">${articulo.precio}</p>
-            <button class="Confirmar">Confirmar Compra</button>
+            <button class="Confirmar" onclick="confirmarCompra()">Confirmar Compra</button>
             <button onclick="eliminar()">Eliminar Articulo</button>
        </article>
         ` ;
@@ -27,10 +27,38 @@ document.addEventListener("DOMContentLoaded", function(){
         volver.appendChild(VolverDiv);
     }
 });
-
+//eliminar
 function eliminar(){
   localStorage.removeItem("ArticuloFarmacia");
   location.reload();
+}
+function confirmarCompra() {
+    const modal = document.querySelector(".modal");
+    const totalCompra = document.getElementById("totalCompra");
+    const precio = articulo.precio;
+
+    totalCompra.textContent = precio;
+    modal.style.display = "flex";
+
+    const confirmarBtn = document.getElementById("confirmarCompra");
+    confirmarBtn.onclick = function() {
+        alert("Compra confirmada. Gracias por tu compra!");
+        localStorage.removeItem("ArticuloFarmacia");
+        modal.style.display = "none";
+        location.reload();
+    };
+
+    // Cerrar con el botón
+    const cerrarBtn = document.getElementById("cerrar");
+    cerrarBtn.onclick = function() {
+        modal.style.display = "none";
+    };
+
+    // Cerrar con el span
+    const cerrarSpan = document.querySelector(".cerrar");
+    cerrarSpan.onclick = function() {
+        modal.style.display = "none";
+    };
 }
 
 // Recibe Novedades
