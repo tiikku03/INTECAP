@@ -36,6 +36,23 @@
     transform: scale(1);
   }
 }
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -44,6 +61,7 @@
 
 /* -----------------------Header------------------- */
 header {
+  z-index: 100;
   background-color: #fff;
   display: flex;
   justify-content: center;
@@ -71,16 +89,6 @@ header .nav-menu ul {
   flex-wrap: wrap;
   list-style: none;
   gap: 20px;
-}
-header .nav-menu ul #cart-count {
-  background-color: #ff4444;
-  color: #000;
-  border-radius: 50%;
-  padding: 2px 6px;
-  font-size: 0.8rem;
-  font-weight: bold;
-  min-width: 18px;
-  text-align: center;
 }
 header .nav-menu ul a {
   font-family: "Poppins";
@@ -137,6 +145,78 @@ header .user-container .redes ul a i:hover {
 }
 
 /* -----------------------Main--------------------- */
+main .carrusel {
+  z-index: 200;
+  background-color: #000;
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+main .carrusel .img-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  opacity: 0;
+  animation: fade 12s infinite;
+}
+main .carrusel .carrusel1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://thumbs.dreamstime.com/b/pasta-dental-de-menta-con-hoja-natural-refrescante-sabor-cepillo-dientes-crema-hierbas-extra-efecto-blanqueador-farmacia-y-335968999.jpg");
+  animation-delay: 0s;
+}
+main .carrusel .carrusel2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://img.freepik.com/foto-gratis/lay-flat-accesorios-bano-concept_23-2148419429.jpg?semt=ais_hybrid&w=740&q=80");
+  animation-delay: 4s;
+}
+main .carrusel .carrusel3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://img.freepik.com/foto-gratis/productos-cosmeticos-spa-maquinilla-afeitar-cepillo-sobre-fondo-blanco_23-2147818093.jpg?semt=ais_items_boosted&w=740");
+  animation-delay: 8s;
+}
+main .carrusel .carrusel-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+}
+main .carrusel .carrusel-container h1 {
+  font-family: "Bodoni Moda";
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+main .carrusel .carrusel-container p {
+  font-size: 1.2rem;
+  font-family: "Poppins";
+  margin-bottom: 30px;
+}
+main .carrusel .carrusel-container .btn-explore {
+  font-family: "Poppins";
+  color: #fff;
+  background: #000;
+  border-radius: 10px;
+  padding: 12px 25px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: center;
+  min-width: 30%;
+  transition: all 0.4s ease;
+}
+main .carrusel .carrusel-container .btn-explore:hover {
+  background: #fff;
+  color: #000;
+  border: #000 2px solid;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
 main .Articulos {
   display: flex;
   flex-wrap: wrap;

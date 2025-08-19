@@ -20,33 +20,33 @@ $color-5: #bfc0c0;
 $color-6: #fafafa;
 $color-7: #000;
 
-
-@keyframes intro{
-    from{
+/* Keyframes */
+@keyframes intro {
+    from {
         opacity: 0;
         transform: translateY(-50px);
-    } 
-    to{
+    }
+    to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-@keyframes intro2{
-    from{
+@keyframes intro2 {
+    from {
         opacity: 0;
         transform: translateY(50px);
-    } 
-    to{
+    }
+    to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-@keyframes intro3{
-    from{
+@keyframes intro3 {
+    from {
         opacity: 0;
         transform: scale(0);
-    } 
-    to{
+    }
+    to {
         opacity: 1;
         transform: scale(1);
     }
@@ -68,6 +68,19 @@ $color-7: #000;
         opacity: 0;
     }
 }
+@keyframes slideShow2 {
+    0%,
+    45% {
+        opacity: 1;
+    }
+    50%,
+    95% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 * {
     margin: 0;
     padding: 0;
@@ -75,7 +88,6 @@ $color-7: #000;
 }
 /* -----------------------Header------------------- */
 header {
-    z-index: 100;
     background-color: $color-1;
     display: flex;
     justify-content: center;
@@ -93,7 +105,7 @@ header {
         }
     }
     .nav-menu {
-        padding: 25px;
+        padding: 20px;
         display: flex;
         align-items: center;
         ul {
@@ -101,13 +113,12 @@ header {
             flex-wrap: wrap;
             list-style: none;
             gap: 20px;
-
             a {
                 font-family: $Letra-2;
                 color: $color-7;
                 text-decoration: none;
                 transition: all 0.3s ease 0s;
-                &:hover{
+                &:hover {
                     color: $color-5;
                     transition: all 0.3s ease 0s;
                 }
@@ -141,6 +152,8 @@ header {
                 list-style: none;
                 margin: 0;
                 padding: 0;
+
+                li {
                     a {
                         color: #000;
                         text-decoration: none;
@@ -156,160 +169,111 @@ header {
                             }
                         }
                     }
-            }
-        }
-    }
-    
-}
-/* -----------------------Main--------------------- */
-main{
-        .carrusel {
-            z-index: 200;
-        background-color: #000;
-        position: relative;
-        width: 100%;
-        height: 90vh;
-        overflow: hidden;
-        .img-item {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-            top: 0;
-            opacity: 0;
-            animation: fade 12s infinite;
-        }
-        .carrusel1 {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url("https://thumbs.dreamstime.com/b/pasta-dental-de-menta-con-hoja-natural-refrescante-sabor-cepillo-dientes-crema-hierbas-extra-efecto-blanqueador-farmacia-y-335968999.jpg");
-            animation-delay: 0s;
-        }
-        .carrusel2 {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url("https://img.freepik.com/foto-gratis/lay-flat-accesorios-bano-concept_23-2148419429.jpg?semt=ais_hybrid&w=740&q=80");
-            animation-delay: 4s;
-        }
-        .carrusel3 {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url("https://img.freepik.com/foto-gratis/productos-cosmeticos-spa-maquinilla-afeitar-cepillo-sobre-fondo-blanco_23-2147818093.jpg?semt=ais_items_boosted&w=740");
-            animation-delay: 8s;
-        }
-        .carrusel-container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #fff;
-            text-align: center;
-            z-index: 1; // Asegura que el contenido esté por encima de las imágenes
-            h1 {
-                font-family: $Letra-1;
-                font-size: 3rem;
-                margin-bottom: 20px;
-            }
-
-            p {
-                font-size: 1.2rem;
-                font-family: $Letra-2;
-                margin-bottom: 30px;
-            }
-
-            .btn-explore {
-                font-family: $Letra-2;
-                color: #fff;
-                background: #000;
-                border-radius: 10px;
-                padding: 12px 25px;
-                border: none;
-                font-size: 1rem;
-                font-weight: 500;
-                cursor: pointer;
-                transition: all 0.3s ease;
-                align-self: center;
-                min-width: 30%;
-                transition: all 0.4s ease;
-                &:hover {
-                    background: #fff;
-                    color: #000;
-                    border: #000 2px solid;
-                    transition: all 0.4s ease;
-                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-                    transform: translateY(-2px);
                 }
             }
         }
     }
-    .Articulos{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin: 5px;
-        padding: 10px;
-        gap: 20px;
-        .articulo-container{
-        border-radius: 10px;
-        justify-content: center;
-        padding: 3rem;
-        margin: 10px;
-        max-width: 440px;
-        height: 600px;
-        background: #fafafa;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
-        animation: intro3 0.7s;
-        .img-articulo{
-        width: 350px;
-        height: 300px;
-        object-fit: cover;
-        
+}
+/* main */
+main{
+    
+.content-f{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+flex-wrap: wrap;
+min-height: 80vh;
+padding: 2rem;
+@media (max-width: 768px) {
+            flex-direction: column; 
+            gap: 1rem;
         }
-        .name-articulos{
-        font-family: $Letra-1;
-        font-size: 30px;
+form {
+    max-width: 600px;
+    width: 90%; 
+    margin: 0;
+    padding: 2rem 1.5rem; 
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    animation: intro3 0.7s ease-in-out;
+    fieldset {
+        border: none;
+        padding: 0;
+
+        legend {
+            font-weight: bold;
+            font-size: 2rem;
+            text-align: center;
+            font-family: $Letra-2;
+            margin-bottom: 1rem;
         }
-        .descripcion-articulo{
-        font-family: $Letra-5;
-        }
-        .precio-articulo{
-        font-family: $Letra-3;
-        color: #ff4444;
-        margin: 5px;
-        }
-        .buy-btn{
-            font-family: $Letra-2 ;
-            color: #fff;
-            background: #000;
-            border-radius: 10px;
-            padding: 12px 25px;
-            border: none;
-            font-size: 1rem;
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
             font-weight: 500;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            align-self: center;
+            color: #333;
+            font-family:$Letra-1;
+        }
+
+        input,
+        textarea {
             width: 100%;
-            transition: all 0.4s ease;
-            &:hover {
-                background: #fff;
-                        color: #000;
-                        border: #000 2px solid;
-                        transition: all 0.4s ease;
-                        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-                        transform: translateY(-2px);
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-family: $Letra-1 ;
+            font-size: 1rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+            &:focus {
+                border-color: #007bff;
+                outline: none;
+                box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
             }
         }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .submitButton {
+            display: block;
+            width: 12rem;
+            height: 3rem;
+            margin: 2rem auto 0;
+            background-color: #489645;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: $Letra-1;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: #3a7a38;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(72, 150, 69, 0.3);
+            }
+
+            &:active {
+                transform: translateY(0);
+            }
         }
     }
+}}
 }
-/* ------------------------------------------------- */
-/* ------------------------------------------------- */
-/* ------------------------------------------------- */
-/* ------------------------------------------------- */
-/* ------------------------------------------------- */
-/* ------------------------footer------------- ----- */
+/* ---Footer---------------- */
 footer {
-    margin-top: 10px;
+    border-top: 1px solid #000;
     background-color: $color-1;
     color: $color-7;
     text-align: center;
@@ -325,7 +289,7 @@ footer {
     }
 
     h6 {
-        font-family: $Letra-6; // Cambiado a $Letra-6 porque $Letra-7 no existe
+        font-family: $Letra-6;
         font-size: 20px;
         margin-bottom: 10px;
     }
@@ -394,42 +358,4 @@ footer {
             color: $color-7;
         }
     }
-}
-
-/* Responsive */
-/* Header */
-@media (max-width: 700px) {
-  header .header-row {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-  }
-  .nav-menu ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-
-
-/* Articulos */
-@media (max-width: 700px) {
-  main .Articulos {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 5px;
-  }
-  main .Articulos .articulo-container {
-    max-width: 98vw;
-    width: 98vw;
-    height: auto;
-    padding: 1rem;
-    margin: 10px 0;
-  }
-  main .Articulos .articulo-container .img-articulo {
-    width: 100%;
-    max-width: 98vw;
-    height: auto;
-    min-height: 180px;
-  }
 }

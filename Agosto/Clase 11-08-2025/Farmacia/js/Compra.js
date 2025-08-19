@@ -28,10 +28,6 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 });
 
-function Confirmar(){ 
-   
-}
-
 function eliminar(){
   localStorage.removeItem("ArticuloFarmacia");
   location.reload();

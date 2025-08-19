@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medicamentos y Fármacos | Farmacia La Salud</title>
-    <meta name="description" content="Finaliza tu compra de forma segura en Farmacia Salud. Revisa tu carrito y completa tu pedido para recibir tus medicamentos y artículos en la comodidad de tu hogar.">
+    <meta name="description"
+        content="¿Necesitas ayuda? Ponte en contacto con Farmacia Salud. Encuentra nuestras direcciones, números de teléfono y horario de atención. Estamos aquí para servirte.">
     <link rel="canonical" href="https://www.farmaciaysalud.com/medicamentos">
-    <link rel="stylesheet" href="../scss/Compra.css">
-    <title>Medicamentos y Fármacos | Farmacia La Salud | Confirmar Compra</title>
+    <link rel="stylesheet" href="../scss/Contacto.css">
+    <title>Medicamentos y Fármacos | Farmacia La Salud | Contactanos</title>
 </head>
+
 <body>
     <!-- Aqui comienza el header -->
     <header>
@@ -28,7 +31,7 @@
             </ul>
         </nav>
         <div class="user-container">
-            <a href="Clientes.html"><button>Contáctanos</button></a>
+            <a href="Contacto.html"><button>Contáctanos</button></a>
             <div class="redes">
                 <ul>
                     <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></li>
@@ -40,11 +43,29 @@
     </header>
     <!-- Aqui comienza el main -->
     <main>
-     <div id="AP-Comprar"></div>
-     <div id="volver"></div>
+        <div class="content-f">
+            <!-- Formulario -->
+            <Form id="formulario">
+                <Fieldset>
+                    <legend>
+                        <h3>Formulario de Contacto</h3>
+                    </legend>
+                    <label for="Nombre"></label>
+                    <input type="text" id="Nombre" name="Nombre" placeholder="Nombre Completo" required>
+                    <label for="Email"></label>
+                    <input type="email" id="Email" name="Email" placeholder="Correo Electrónico" required>
+                    <label for="Telefono"></label>
+                    <input type="tel" id="Telefono" name="Telefono" placeholder="Teléfono" required>
+                    <label for="Mensaje"></label>
+                    <textarea id="Mensaje" name="Mensaje" placeholder="Escribe tus dudas o comentarios aquí..."
+                        cols="25" rows="5"></textarea>
+                    <button type="submit" class="submitButton">Enviar Consulta</button>
+                </Fieldset>
+            </Form>
+        </div>
     </main>
     <!-- Aqui comienza el footer -->
-   <footer>
+    <footer>
         <div class="f-container">
             <div class="footer-container">
                 <h6>More</h6>
@@ -78,10 +99,8 @@
         </div>
     </footer>
     <!-- JS -->
-     <script src="https://kit.fontawesome.com/6013ac0acd.js" crossorigin="anonymous"></script>
-     <script src="..//js/Compra.js"></script>
+    <script src="https://kit.fontawesome.com/6013ac0acd.js" crossorigin="anonymous"></script>
+    <script src="..//js/Contacto.js"></script>
 </body>
+
 </html>
-
-
-

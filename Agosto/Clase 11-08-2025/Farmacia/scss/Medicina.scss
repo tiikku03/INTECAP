@@ -50,6 +50,23 @@ $color-7: #000;
         transform: scale(1);
     }
 }
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 * {
     margin: 0;
     padding: 0;
@@ -82,16 +99,7 @@ header {
             flex-wrap: wrap;
             list-style: none;
             gap: 20px;
-            #cart-count {
-                background-color: #ff4444;
-                color: #000;
-                border-radius: 50%;
-                padding: 2px 6px;
-                font-size: 0.8rem;
-                font-weight: bold;
-                min-width: 18px;
-                text-align: center;
-            }
+
             a {
                 font-family: $Letra-2;
                 color: $color-7;
@@ -155,6 +163,82 @@ header {
 }
 /* -----------------------Main--------------------- */
 main {
+        .carrusel {
+        background-color: #000;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        .img-item {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            top: 0;
+            opacity: 0;
+            animation: fade 12s infinite;
+        }
+        .carrusel1 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("https://cuidateplus.marca.com/sites/default/files/styles/natural/public/cms/2023-07/medicamentos-alimentos.jpg.webp?itok=1GsdEpF7");
+            animation-delay: 0s;
+        }
+        .carrusel2 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("https://cdn.prod.website-files.com/5d7a94353af021115b819cf3/6092d1a517d49cbe3f4e4dd2_Doble%20medication.jpg");
+            animation-delay: 4s;
+        }
+        .carrusel3 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("https://plus.unsplash.com/premium_photo-1668898899024-02f028349666?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            animation-delay: 8s;
+        }
+        .carrusel-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            text-align: center;
+            z-index: 1; // Asegura que el contenido esté por encima de las imágenes
+            h1 {
+                font-family: $Letra-1;
+                font-size: 3rem;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 1.2rem;
+                font-family: $Letra-2;
+                margin-bottom: 30px;
+            }
+
+            .btn-explore {
+                font-family: $Letra-2;
+                color: #fff;
+                background: #000;
+                border-radius: 10px;
+                padding: 12px 25px;
+                border: none;
+                font-size: 1rem;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                align-self: center;
+                min-width: 30%;
+                transition: all 0.4s ease;
+                &:hover {
+                    background: #fff;
+                    color: #000;
+                    border: #000 2px solid;
+                    transition: all 0.4s ease;
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+                    transform: translateY(-2px);
+                }
+            }
+        }
+    }
     .articulos {
         display: flex;
         flex-wrap: wrap;
