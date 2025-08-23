@@ -88,6 +88,7 @@ $color-7: #000;
 }
 /* -----------------------Header------------------- */
 header {
+    z-index: 1;
     background-color: $color-1;
     display: flex;
     justify-content: center;
@@ -182,6 +183,7 @@ main {
         width: 100%;
         height: 90vh;
         overflow: hidden;
+        z-index: 2;
         .img-item {
             position: absolute;
             width: 100%;
@@ -290,6 +292,7 @@ main {
                 font-size: 16px;
             }
             img {
+                z-index: 0;
                 width: 400px;
                 height: 320px;
                 object-fit: cover;

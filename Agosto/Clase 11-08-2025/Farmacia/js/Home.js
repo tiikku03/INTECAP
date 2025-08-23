@@ -33,6 +33,26 @@ imagenMedicinas.forEach(imagen => {
     });
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Recibe Novedades
 function notifysubmit(){
     const footerEmail = document.getElementById("footer-email").value;

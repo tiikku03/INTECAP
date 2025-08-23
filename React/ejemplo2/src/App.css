@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap");
+:root {
+  /* Letras */
+  --Letra-1: "Bodoni Moda";
+  --Letra-2: "Poppins";
+  --Letra-3: "Sour Gummy";
+  --Letra-4: "Aboreto";
+  --Letra-5: "Bellefair";
+  --Letra-6: "Nova Cut";
+
+  /* Colores */
+  --color-1: #000;
+  --color-2: #fefdf9;
+  --color-3: #f8f9fa;
+  --color-4: #dee2e6;
+  --color-5: #bfc0c0;
+  --color-6: #fafafa;
+  --color-7: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+background: #00c6ff;  
+background: -webkit-linear-gradient(to right, #0072ff, #00c6ff); 
+background: linear-gradient(to right, #0072ff, #00c6ff);
+
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+h1{
+    font-family: var(--Letra-1);
+    font-size: 48px;
+    margin-bottom: 1rem;
+
+}
+nav{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--Letra-2);
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+.List{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    gap: 1rem;
+}
+.List li{
+    transition: all 0.5s ease;
+}
+.List li:hover{
+    transition: all 0.5s ease;
+    transform: translateY(-2px);
+}
+.List li a{
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.List li a:hover{
+    color: #bfc0c8;
+    text-decoration: underline;
+    transition: all 0.5s ease;
+}
+/* Main */
+.Main{
+    flex: 1;
+    padding: 3rem; font-size: 1.5rem;
+}
+.Main h1{
+    font-family: var(--Letra-6);
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.Main h2{
+    font-family: var(--Letra-3);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.Escudo-giratorio {
+    animation: girar 5s linear infinite;
+    width: 200px;
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;
+}
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.Main p{
+    font-family: var(--Letra-2);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+    padding: 2rem;
+       transition: all 0.5s ease;
+}
+.Main p:hover{
+       transition: all 0.5s ease;
+    background-color: var(--color-6);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.Main b{
+    font-family: var(--Letra-3);
+    font-size: 2rem;
+}
+.Bandera-gif{
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+}
+
+
+/* footer */
+footer{
+    background: #00c6ff; 
+    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff); 
+    background: linear-gradient(to right, #0072ff, #00c6ff); 
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-family: var(--Letra-2);
+    font-size: 1.2rem;
+}
