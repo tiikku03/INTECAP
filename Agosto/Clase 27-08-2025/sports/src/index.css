@@ -1,0 +1,158 @@
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #f8f9fa;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 0;
+}
+
+.accesorios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.Accesorio-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 24px 18px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.3s, transform 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.Accesorio-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  transform: translateY(-4px) scale(1.03);
+}
+
+.img-accesorio {
+  width: 100%;
+  max-width: 220px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.title {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 1.2rem;
+  margin: 8px 0 6px 0;
+  color: #222;
+  text-align: center;
+}
+
+.description {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.price {
+  font-size: 1.1rem;
+  color: #007bff;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.btn-ver-mas {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+
+.btn-ver-mas:hover {
+  background: #0056b3;
+}
+
+/* Modal styles */
+.modal-encima {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+
+.modal-container {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  padding: 32px 24px;
+  min-width: 320px;
+  max-width: 95vw;
+  text-align: center;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: #ff4d4f;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.close-btn:hover {
+  background: #d32f2f;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .App {
+    padding: 10px 0;
+  }
+  .accesorios {
+    gap: 16px;
+  }
+  .Accesorio-card {
+    width: 96vw;
+    max-width: 340px;
+    padding: 16px 8px;
+  }
+  .modal-container {
+    min-width: 90vw;
+    padding: 18px 8px;
+  }
+  .img-accesorio {
+    max-width: 90vw;
+    height: 120px;
+  }
+}

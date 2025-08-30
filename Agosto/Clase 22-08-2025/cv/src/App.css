@@ -26,7 +26,56 @@
   --color-6: #fafafa;
   --color-7: #001011;
 }
+/* -------------Keyframes------------------ */
+@keyframes fade {
+    0% { opacity: 0; }
+    12.5% { opacity: 1; }
+    25% { opacity: 0; }
+    100% { opacity: 0; }
+}
+/* rotate perfil */
+@keyframes AutoRotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/*   animation: AutoRotate;
+animation-timeline: view(); */
 
+/* intro */
+@keyframes intro {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes intro2 {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes intro3 {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 *{
 
     background: #fffffc;
@@ -36,6 +85,7 @@
 header{
     top: 0;
     padding: 1rem;
+    animation: intro 1s ease forwards;
 }
 .navbar{
     display: flex;
@@ -95,6 +145,9 @@ header{
     transition: all 0.4s ease;
 }
 /* Main */
+main{
+    animation: intro 3s ease forwards;
+}
 .me{
     display: flex;
     flex-wrap: wrap;
@@ -196,10 +249,17 @@ width: 320px;
     flex-wrap: wrap;
     gap: 1rem;
 }
+.text span{
+    display: block;
+    font-family: var(--Letra-2);
+    font-size: 1.2rem;
+    color: var(--color-5);
+    text-align: center;
+}
 .text h2{
     text-align: center;
-    font-size:2rem;
-    font-family:var(--Letra-1);
+    font-size:3rem;
+    font-family:var(--Letra-2);
 }
 .text p{
     text-align: center;
@@ -213,6 +273,7 @@ width: 320px;
     flex-wrap: wrap;
     align-items: center;
     gap: 0.5rem;
+    margin: 5rem 0;
 }
 .skill-elements{
     display: flex;
@@ -245,4 +306,219 @@ width: 30px;
 height: 30px;
 object-fit: contain;
 border-radius: 2px;
+/*   animation: AutoRotate;
+animation-timeline: view(); */
+}
+/* About me */
+.AboutMe{
+    margin: 5rem 0;
+}
+.me-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.AboutMe span{
+    display: block;
+    font-family: var(--Letra-2);
+    font-size: 20px;
+    color: #bfc0c0;
+    text-align: center;
+
+}
+.AboutMe h2{
+    font-family: var(--Letra-1);
+    font-size: 2rem;
+    text-align: center;
+}
+.my-self{
+    font-family: var(--Letra-2);
+    font-size: 1rem;
+    color: var(--color-7);
+    text-align: center;    
+}
+/* carrusel */
+.carrusel {
+  width: 350px;
+  height: 350px;
+  border-radius: 30%;
+  overflow: hidden;
+}
+
+.carrusel .item {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  opacity: 0;
+  animation: fade 4s infinite;
+}
+
+.carrusel .item.profile1 {
+    background-image: url('https://us.123rf.com/450wm/yupiramos/yupiramos2001/yupiramos200116727/137416832-empresario-elegante-avatar-car%C3%A1cter-icono-vector-ilustraci%C3%B3n-dise%C3%B1o.jpg?ver=6');
+  animation-delay: 0s;
+}
+.carrusel .item.profile2 {
+  background-image: url('https://img.freepik.com/vector-premium/ilustracion-vectorial-retrato-hombre-negocios_1299369-177.jpg');
+  animation-delay: 2s;
+}
+/* Información Laboral */
+.inf-Experience{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+.Education{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid var(--color-5);
+    border-radius: 5px;
+    width: 150px;
+    padding: 10px;
+    transition:  all 0.5s ease;
+}
+.Education:hover{
+    transition:  all 0.5s ease;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--color-7);
+}
+.Education h3{
+    font-size: 1.2rem;
+    font-family: var(--Letra-2);
+    color: var(--color-7);
+    margin-right: 0.5rem;
+}
+.Education p{
+    font-family: var(--Letra-3);
+    color: var(--color-5);
+    text-align: center;
+    font-size: 0.9rem;
+}
+.about-Experience{
+    font-family: var(--Letra-2);
+    color: var(--color-7);
+    text-align: center;
+}
+.about-Experience p{
+    margin: 1rem;
+    font-size: 1rem;
+    width: 300px;
+}
+/* Proyectos */
+.Projects-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5rem 0;
+}
+.Projects-container span{
+    display: block;
+    font-family: var(--Letra-2);
+    font-size: 1.2rem;
+    color: var(--color-5);
+    text-align: center;
+}
+.Projects-container h2{
+    font-family: var(--Letra-4);
+    text-align: center;
+    color: var(--color-7);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #000;
+}
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.project{
+    padding: 10px;
+    border: 1px solid var(--color-4);
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project:hover{
+    transition: all 0.4s ease;
+    border: 1px solid var(--color-7);
+    transform: translateY(-5px);
+}
+.project img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.ver-projecto{
+  margin-top: 20px;
+  color: #fff;
+  background: #000;
+  border-radius: 10px;
+  padding: 12px 25px;
+  border: none;
+  font-family: var(--Letra-2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: center;
+}
+.ver-projecto:hover{
+    background: #fff;
+  color: #000;
+  border: #000 2px solid;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px); 
+}
+/* footer */
+footer{
+    padding: 1rem;
+    text-align: center;
+    margin-top: 5rem;
+    animation: intro2 1s ease forwards;
+}
+.nav-links-footer{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.nav-links-footer a{
+    text-decoration: none;
+    color: var(--color-7);
+    font-family: var(--Letra-2);
+    display: inline;
+    transition: all 0.4s ease;
+}
+.nav-links-footer li{
+    display: inline;
+    transition: all 0.4s ease;
+}
+.nav-links-footer li:hover{
+    transform: translateY(-2px);
+    transition: all 0.4s ease;
+}
+.nav-links-footer a:hover{
+    color: var(--color-5);
+    transform: translateY(-2px);
+    text-decoration: underline;
+    transition: all 0.4s ease;
+}
+.copyright{
+    font-family: var(--Letra-2);
+    color: var(--color-7);  
 }

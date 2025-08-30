@@ -1,4 +1,7 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAward } from '@fortawesome/free-solid-svg-icons';
+import { faBuildingColumns } from '@fortawesome/free-solid-svg-icons';
 
 export const Main = () => {
   return (
@@ -10,10 +13,8 @@ export const Main = () => {
           <h2>Victor Ticurú</h2>
           <p>Web Developer</p>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            odit totam illum quasi quam numquam quaerat atque, corporis, ratione
-            aperiam architecto eius ad id amet. Ex, cumque! Quibusdam, quos cum.
+          <p className="my-self">
+          Soy Victor Ticurú, un desarrollador web con muchas ganas de aprender. Me apasiona crear interfaces de usuario atractivas y funcionales. Estoy en constante aprendizaje de tecnologías front-end y back-end para construir sitios web robustos y escalables. Me encanta enfrentar nuevos desafíos y estoy muy motivado para crecer profesionalmente.
           </p>
         </div>
         <div className="photo">
@@ -26,8 +27,9 @@ export const Main = () => {
       </div>
       <section className="skills">
         <div className="text">
+          <span>Explora mis</span>
           <h2>Habilidades</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+          <p>He dedicado mi tiempo a desarrollar proyectos personales que me han permitido aplicar y consolidar mis conocimientos en HTML, CSS, JavaScript y React.</p>
         </div>
        <div className="skill-elements">
          <div className="skill">
@@ -53,8 +55,57 @@ export const Main = () => {
         </div>
        </div>
       </section>
+      <section className="AboutMe">
+        <span>conoce más</span>
+        <h2>Sobre mí</h2>
+       <article className="me-container">
+<div className="carrusel">
+  <div className="item profile1"></div>
+  <div className="item profile2"></div>
+</div>
+        <article className="Experience">
+         <div className="inf-Experience">
+            <div className="Education">
+              <FontAwesomeIcon icon={faAward} />
+              <h3>Experiencia</h3>
+              <p>sin experiencia</p>
+            </div>
+            <div className="Education">
+              <FontAwesomeIcon icon={faBuildingColumns} />
+              <h3>Educación</h3>
+              <p>Intecap</p>
+            </div>
+         </div>
+         <div className="about-Experience">
+          <p>
+           He trabajado en proyectos personales para poner en práctica las habilidades adquiridas, desde el diseño hasta el despliegue.
+          </p>
+         </div>
+        </article>
+       </article>
+      </section>
+      <section className="Projects-container">
+        <span>Conoce mis</span>
+        <h2>Proyectos</h2>
+        <article className="projects">
+          <div className="project">
+            <img src="Farmacia.png" alt="Proyecto Farmacia" />
+            <a href="https://victor-ticuru-full-stack-2025.on.drv.tw/Intecap/lecture_7/Farmacia/html/home.html"><button className="ver-projecto">Ver Proyecto</button></a>
+          </div>
+          <div className="project">
+            <img src="Panaderia.png" alt="Proyecto Panaderia" />
+            <a href="https://victor-ticuru-full-stack-2025.on.drv.tw/Intecap/Clase%2020-06-2025/Sweet%20Temptation/Home.html"><button className="ver-projecto">Ver Proyecto</button></a>
+          </div>
+          <div className="project">
+            <img src="MaterialesOficina.png" alt="Proyecto Materiales de oficina" />
+            <a href="https://victor-ticuru-full-stack-2025.on.drv.tw/Intecap/Clip%20office/src/html/home.html"><button className="ver-projecto">Ver Proyecto</button></a>
+          </div>
+        </article>
+      </section>
       <section className="contact"></section>
     </main>
   );
 };
 export default Main;
+
+
