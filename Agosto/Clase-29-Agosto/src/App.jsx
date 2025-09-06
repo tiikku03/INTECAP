@@ -1,7 +1,6 @@
 import Card from "./Components/Card";
 import Cart from "./Components/Cart";
 
-
 function App() {
 
   return (

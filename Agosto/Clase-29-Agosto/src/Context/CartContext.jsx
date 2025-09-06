@@ -22,10 +22,8 @@ export function CartProvider({ children }) {
   };
   
   const removeFromCart = (nombre) => setCart(cart.filter(i => i.nombre !== nombre));
-
-  
-
-  return (
+    
+    return (
     <CartContext.Provider value={{ cart, addToCart, removeFromCart }}>
       {children}
     </CartContext.Provider>

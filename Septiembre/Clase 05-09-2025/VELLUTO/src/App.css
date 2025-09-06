@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chango&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+:root {
+  /* Letras */
+  --Letra-0: "Bodoni Moda SC";
+  --Letra-1: "Bodoni Moda";
+  --Letra-2: "Poppins";
+  --Letra-3: "Sour Gummy";
+  --Letra-4: "Aboreto";
+  --Letra-5: "Bellefair";
+  --Letra-6: "Nova Cut";
+  --Letra-7: "Smooch Sans";
+  --Letra-8: "Chango";
+  --Letra-9: "Zain";
+  --Letra-10: "Bebas Neue";
+
+  --color-background: #E7E5DC;
+  --color-0: #EAD2B7;
+  --color-1: #E3B47C; 
+  --color-2: #D8A975; 
+  --color-3: #CE9F6F; 
+  --color-4: #C59769; 
+  --color-5: #BC8E63; 
+  --color-6: #B4865D; 
+  --color-7: #AD7F58; 
+  --color-8: #A57753; 
+  --color-9: #9C6E4E; 
+  --color-10: #926A48; 
+
+    /* otros Colores */
+  --color-11: #000;
+  --color-12: #fefdf9;
+  --color-13: #f8f9fa;
+  --color-14: #f7f4f3;
+  --color-15: #dee2e6;
+  --color-16: #bfc0c0;
+  --color-17: #fafafa;
+  --color-18: #001011;
+
+  --color-texto-claro: #F5EFE1;
+  --color-texto-oscuro: #2A2A2A; 
+
+  /* Sombras y efectos */
+  --sombra-sutil: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --sombra-media: 0 8px 16px rgba(0, 0, 0, 0.15);
+  --transicion-suave: 0.3s ease-in-out;
+
+}
+
+* {    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+/* -------------------------------------------------------Header--------------------------------------------- */
+header {
+  background-image: url('./assets/39.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+.navigation{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  position: sticky;
+}
+.navigation:hover{
+      background-color: var(--color-4);
+}
+
+.header-section {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+.header-section > * {
+    background-color: transparent;
+
+  }
+  /* Titulo */
+.logo-section p {
+    font-family: var(--Letra-0);
+    font-size: 1.8rem;
+    color: var(--color-texto-oscuro);
+    letter-spacing: 2px;
+    background-color: transparent;
+}
+.nav-section {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.icons-section {
+    gap: 1.5rem;
+}
+
+.desktop-icons {
+    display: flex;
+    gap: 1.5rem;
+    background-color: transparent;
+}
+.desktop-icons > * {
+    background-color: transparent;
+}
+
+.nav-list {
+  /* ... tus estilos existentes para la lista de navegación ... */
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  background-color: transparent;
+  font-family: var(--Letra-2);
+}
+.nav-list > * {
+    background-color: transparent;
+}
+.nav-item a {
+  text-decoration: none;
+  color: var(--color-texto-oscuro);
+  font-weight: 500;
+  text-transform: lowercase;
+  font-size: 0.9rem;
+  transition: color var(--transicion-suave);
+}
+.nav-item a:hover {
+  text-decoration: underline;
+  transition: color var(--transicion-suave);
+  color: var(--color-texto-claro);
+}
+
+/* Oculta el menú hamburguesa en desktop */
+.nav-toggle {
+  display: none;
+}
+
+/* Estilos para el menú overlay en móvil */
+.mobile-menu {
+    position: fixed;
+    top: 70px; /* Altura del header */
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: var(--color-12);
+    z-index: 999;
+    padding: 2rem;
+    animation: fadeIn 0.5s ease;
+}
+.nav-list-mobile {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: transparent;
+}
+
+
+/* ----------------- VISTA MÓVIL ----------------- */
+@media (max-width: 768px) {
+  /* Oculta la navegación principal y los iconos de usuario/carrito */
+  .nav-section,
+  .desktop-icons {
+    display: none;
+  }
+
+  /* Muestra el botón de hamburguesa */
+  .nav-toggle {
+    display: flex !important;
+    flex-direction: column;
+    margin: 15px;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  
+  /* ... tus estilos existentes para .nav-toggle y .nav-toggle.open ... */
+  .nav-toggle span {
+    width: 30px;
+    height: 4px;
+    background-color: var(--color-2);
+    margin-bottom: 5px;
+    border-radius: 2px;
+    transform-origin: 5px 0;
+    transition: all 0.3s linear;
+  }
+  .nav-toggle.open span:nth-child(1) {
+    transform: rotate(45deg) translate(0px, 0px);
+  }
+  .nav-toggle.open span:nth-child(2) {
+    display: none;
+  }
+  .nav-toggle.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(-5px, 1px);
+  }
+}
+/* -----------------------------------------------------Footer-------------------------------------------------- */
+footer {
+height: 10vh;
+}

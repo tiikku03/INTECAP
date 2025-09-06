@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+.Header {
+  background: #005cbf;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+.Navbar {
+  background: #333;
+  padding: 10px;
+  position: relative;
+}
+.menu-list {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+.menu-list li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.Menu-Icon {
+  display: none;
+  font-size: 26px;
+  color: #fff;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .menu-list {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 50%;
+    padding: 20px;
+  }
+  .toggle:checked + .Menu-Icon + .menu-list {
+    display: flex;
+  }
+  .Menu-Icon {
+    display: block;
+  }
+}
+.content {
+  padding: 20px;
+}
+.grid-Buses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+.Card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.Card h3 {
+  margin: 10px 0;
+  color: #333;
+}
+.Card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.img-departamento {
+  width: 70%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer {
+  background: #005cbf;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
